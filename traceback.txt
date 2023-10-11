@@ -1,0 +1,32 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 92, in script
+    "{cps=10}{i}{color=#a50000}"SARAH"{/i}{/color}{/cps}"
+  File "renpy/common/00library.rpy", line 321, in say
+    who(what, interact=interact, *args, **kwargs)
+Exception: Say has image attributes ('SARAH',), but there's no image tag associated with the speaking character.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 92, in script
+    "{cps=10}{i}{color=#a50000}"SARAH"{/i}{/color}{/cps}"
+  File "E:\Az12\renpy-8.1.1-sdk\renpy\ast.py", line 930, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "E:\Az12\renpy-8.1.1-sdk\renpy\exports.py", line 1471, in say
+    renpy.store.say(who, what, *args, **kwargs)
+  File "renpy/common/00library.rpy", line 321, in say
+    who(what, interact=interact, *args, **kwargs)
+  File "E:\Az12\renpy-8.1.1-sdk\renpy\character.py", line 1290, in __call__
+    old_attr_state = self.handle_say_attributes(False, interact)
+  File "E:\Az12\renpy-8.1.1-sdk\renpy\character.py", line 1109, in handle_say_attributes
+    if self.resolve_say_attributes(predicting, attrs):
+  File "E:\Az12\renpy-8.1.1-sdk\renpy\character.py", line 1035, in resolve_say_attributes
+    raise Exception("Say has image attributes %r, but there's no image tag associated with the speaking character." % (attrs,))
+Exception: Say has image attributes ('SARAH',), but there's no image tag associated with the speaking character.
+
+Windows-10-10.0.19045 AMD64
+Ren'Py 8.1.1.23060707
+Demo 1.0
+Tue Oct 10 11:00:05 2023

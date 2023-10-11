@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 92: end of line expected.
+    "{cps=10}{i}{color=#a50000}""SARAH""{/i}{/color}{/cps}"
+                                       ^
+
+Ren'Py Version: Ren'Py 8.1.1.23060707
+Tue Oct 10 11:00:47 2023

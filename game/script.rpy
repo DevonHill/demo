@@ -4,6 +4,12 @@
 # cnth. image eileen happy = "eileen_happy.png"
 image bg cty = "images/cty.png"
 image logo text = Text("This is a text displayable.", size=30)
+image bg blck = "images/bg blck.png"
+image prologue = "images/prologue.jpg"
+
+define slowdissolve = Dissolve(1.0)
+define sh = Character("", window_background=None)
+ 
  
 screen find_home1():
     vbox:
@@ -21,12 +27,30 @@ screen find_home3():
         xalign 0.5 ypos 0.4
         text "aku telah menemukan tempat tinggal yang murah dan nyaman"
 
+screen bab1_l():
+    vbox:
+        xalign 0.5 ypos 0.3
+        text "{size=+50}BAB 1"
+
+screen prologue_text():
+    vbox:
+        xalign 0.5 ypos 0.42
+        text "{size=+20}P r o l o g u e"
+
+screen part_1():
+    vbox:
+        xalign 0.5 ypos 0.3
+        text "{size=+50}PART 1"
+
+screen jdl_prt1_l():
+    vbox:
+        xalign 0.5 ypos 0.42
+        text "{size=+20}Masa Perkenalan"
 # Deklarasikan karakter yang digunakan di game.
 define mc = Character("[name]")
 
-# Game dimulai disini.
 label start:
-    #show bg blck
+    show prologue
     "Gendermu?"
     menu:
         "Laki-Laki":
@@ -59,26 +83,41 @@ label start:
     
    
     label enter_l:
+        show bg blck
+        show screen bab1_l
+        with dissolve
+
+        pause 1.0
+
+        show screen prologue_text
+        with dissolve
+
+        pause 1.0
+         
+        hide bg blck
+        hide screen bab1_l
+        hide screen prologue_text
         #show bg cty
-        mc "{cps=25}Jadi inikah kota tujuanku{/cps}"
-        
+        mc "{cps=25}Jadi inikah kota tujuanku?{/cps}"
+        mc "{cps=25}Sepertinya ini kota yang sama seperti dulu"
+        mc "{cps=25}Kota yang damai dan tenang{/cps}"
         mc "{cps=15}Menarik...{/cps}"
 
     #show bg blck
     #with dissole    
     show screen find_home1
     with dissolve
-    "" ""
+    sh ""
     hide screen find_home1
 
     show screen find_home2
     with dissolve
-    "" ""
+    sh ""
     hide screen find_home2
 
     show screen find_home3
     with dissolve
-    "" ""
+    sh ""
     hide screen find_home3
 
     #show my room l
@@ -87,8 +126,25 @@ label start:
 
     #show my room l plafond
     #with pushdown
+    #with vpunch
     mc "{cps=25}aku akan menepati janjiku untuk bersekolah disana{/cps}"
     mc "{cps=25}apakah kau masih mengingatku{/cps}"
-    "" "{cps=10}{i}{color=#a50000}SARAH!{/i}{/color}{/cps}"
+    " " "{cps=10}{i}{color=#008cff}{size=+20}SARAH{/color}{/size}{size=+20}!{/i}{/cps}{/size}"
+
+    show bg blck
+    show screen part_1
+    with dissolve
+
+    pause 1.0
+
+    show screen jdl_prt1_l
+    with dissolve
+
+    pause 1.0
+    
+    hide bg blck
+    hide screen part_1
+    hide screen jdl_prt1_l
+    mc "hmmgdsygfuydgfuy"
 
     return

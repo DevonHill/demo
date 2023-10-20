@@ -211,13 +211,13 @@ label start:
     
     menu: 
         "dsakdjasda":
-             jump tipe_cowo1
+            jump tipe_cowo1
 
         "dsakdjasda":
-             jump tipe_cowo2
+            jump tipe_cowo2
 
         "dsakdjasda":
-             jump tipe_cowo3
+            jump tipe_cowo3
 
     label kursi_umum3:
         # show bg cty bench
@@ -237,10 +237,10 @@ label start:
 
     menu: 
         "dsakdjasda":
-             jump homeOr_go1
+            jump homeOr_go1
 
         "dsakdjasda":
-             jump homeOr_go2
+            jump homeOr_go2
     
 
     label edSementara:

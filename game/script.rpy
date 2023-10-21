@@ -266,8 +266,9 @@ label start:
     
 
     label edSementara:
-        mc "On-Going Update"
+        mc "On-Going Update":
             jump enter_p
+            
         return
 
 #    STORY  L

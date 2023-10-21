@@ -10,7 +10,12 @@ image prologue = "images/prologue.jpg"
 define slowdissolve = Dissolve(1.0)
 define sh = Character("", window_background=None)
  
+
 #  SCREEN P
+
+# Next job = 
+# 1. Kerjain bagian tipe cowok
+# 2. Kerjain bagian choice buat next story
 
 screen gabut1():
     vbox:
@@ -158,7 +163,7 @@ label start:
         "Teman disamping" "{cps=25}Menurut loh gimana? bukannya mikirin masa depan bagus tuh daripada mikirin cowo yang nggak jelas gitu? {/cps}"
 
     menu:
-        "Bosan ya... emang bosan atuh, tapi yang namanya tanggung jawab hidup ya... tinggal dijalanin aja atuh. Kalo stress tinggal nyari cowo, kalo kerja ya tinggal usaha.":
+        "Bosan ya... emang bosan atuh, tapi yang namanya tanggung jawab hidup ya... tinggal dijalanin aja. Kalo stress tinggal nyari cowo, kalo kerja ya tinggal usaha.":
             jump kursi_umum1
 
         "Bagi gua sih... hidup itu dibawa nyantai aja nggak sih? jadi menurut aku sih, maunya ngabisin momen-momen bahagia aja sih di sma.":
@@ -169,7 +174,7 @@ label start:
         
     label kursi_umum1:
         # show bg cty bench
-        mc "{cps=25}Kan ada juga tuh pepatah bilang kalo kerasnya usaha lo akan membuahkan hasil, tapi hanya waktu yang menawabnya. {/cps}"
+        mc "{cps=25}Kan ada juga tuh pepatah bilang kalo kerasnya usaha lo akan membuahkan hasil, tapi hanya waktu yang menjawabnya. {/cps}"
         "Teman disamping" "{cps=25}Kata-kata hari ini dari teman kocak si [name] {/cps}{cps=25}"
         "Teman disamping" "{cps=35}AnJay...{/cps}"
         "Teman disamping" "{cps=25}Tapi ada benernya juga lu, gua jadi merasa lebih semangat dari kota bosan ini. {/cps}"
@@ -187,6 +192,7 @@ label start:
         "Teman disamping" "{cps=25}Iya juga yaa, terus?{/cps}"
         mc "{cps=30}Kalo pengen milih jurusan kuliah itu sebenarnya panjang lebar gue jelasinnya, tapi biar singkat gini aja nih...{/cps}"
         mc "{cps=30}Dimana passion dan posisi lo, disitu tempat kuliah lo{/cps}"
+        mc "{cps=30}Sama satu lagi nih. kamu juga perlu liat bakatmu itu dimana{/cps}"
         mc "{cps=30}Udah, gitu simpelnya{/cps}"
         "Teman disamping" "{cps=25}Nah, jujurly aku pengen kuliah kedokteran sih, terus orang tua gue sebenarnya support sih, tapi gue liatnya mereka kayaknya nggak sanggup deh biayain semester gua{/cps}"
         "Teman disamping" "{cps=25}Modal buruh bisa apa coba?{/cps}"
@@ -198,6 +204,20 @@ label start:
         mc "{cps=20}Ohh ok deng{/cps}"
         "Teman disamping" "{cps=35}Makasih ya...{/cps}"
         mc "{cps=30}Sama-sama{/cps}"
+        mc "{cps=30}By the way, kamu lagi gabut juga nggak?{/cps}"
+        "Teman disamping" "{cps=35}Nggak juga..... emang kenapa?{/cps}"
+
+    menu:
+        "Mau ngerjain PR Matematika bareng nggak? ":
+            jump kerumahMcBareng
+        
+        "Kita bicara sama Orang Tua kamu yuk, biar mereka ngertiin kamu ":
+            jump kerumahTemenBareng
+        
+        "Aku mau pulang nih, ada yang gue kerjain dirumah ":
+            jump pulangSendiri_sendiri
+        
+
 
 
     label kursi_umum2:
@@ -208,7 +228,6 @@ label start:
         "Teman disamping" "{cps=25}Tipe cowomu gimana?{/cps}"
         mc "Wahhh, kalo itu sih...."
 
-    
     menu: 
         "dsakdjasda":
             jump tipe_cowo1
@@ -225,7 +244,8 @@ label start:
         "Teman disamping" "{cps=25}Ohh gitu... Tapi [name], bukannya takdir bisa diubah kalo kita usaha? Kan kita belum coba juga tuh?{/cps}"
         mc "{cps=25}Ya.... tetap aja sih, kamu ngubah takdir itu termasuk dalam perubahan yang udah ditakdirkan tuhan juga sih, aku kutip dari salah satu filsuf{/cps}"
         "Teman disamping" "{cps=25}Siapa namanya tuh?{/cps}"
-        mc "lupa"
+        mc "Aduh.... lupa nih"
+        mc "Takdir untuk lupa sesuatu yaa...."
         "Teman disamping" "{cps=25}Yaudah gapapa juga sih{/cps}"
         "Teman disamping" "{cps=25}Ohh iya nih{/cps}"
         "Teman disamping" "{cps=25}Aku lupa ada yang dikerjain dirumah, mungkin takdir juga gue lupa tuh{/cps}"
@@ -234,17 +254,20 @@ label start:
         mc "{cps=25}Ehh... Tunggu Bentar{/cps}"
         "Teman disamping" "{cps=25}Kenapa lagi ngab?{/cps}"
 
-
     menu: 
-        "dsakdjasda":
-            jump homeOr_go1
-
-        "dsakdjasda":
-            jump homeOr_go2
+        "Mau ngerjain PR Matematika bareng nggak? ":
+            jump kerumahMcBareng
+        
+        "Kita bicara sama Orang Tua kamu yuk, biar mereka ngertiin kamu ":
+            jump kerumahTemenBareng
+        
+        "Aku mau pulang nih, ada yang gue kerjain dirumah ":
+            jump pulangSendiri_sendiri
     
 
     label edSementara:
-        mc ""
+        mc "On-Going Update"
+            jump enter_p
         return
 
 #    STORY  L

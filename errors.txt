@@ -2,17 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 200: end of line expected.
-    mc "{cps=30}Sama-sama{/cps}":
-                                ^
-
-File "game/script.rpy", line 210: end of line expected.
-    mc "Wahhh, kalo itu sih....":
-                                ^
-
-File "game/script.rpy", line 237: end of line expected.
-    "Teman disamping" "{cps=25}Kenapa lagi ngab?{/cps}":
-                                                       ^
+File "game/script.rpy", line 270: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    jump enter_p
+    ^
 
 Ren'Py Version: Ren'Py 8.1.1.23060707
-Fri Oct 20 16:39:09 2023
+Sun Oct 22 01:28:02 2023

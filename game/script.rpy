@@ -50,6 +50,8 @@ screen find_home3():
         xalign 0.5 ypos 0.4
         text "aku telah menemukan tempat tinggal yang murah dan nyaman"
 
+# SCREEN BAB DAN JUDUL
+
 screen bab1_l():
     vbox:
         xalign 0.5 ypos 0.3
@@ -71,6 +73,10 @@ screen jdl_prt1_l():
         text "{size=+20}Masa Perkenalan"
 # Deklarasikan karakter yang digunakan di game.
 define mc = Character("[name]")
+
+
+# START GAME
+
 
 label start:
     show prologue
@@ -109,7 +115,10 @@ label start:
         "tidak":
             jump name_p
     
+
 #    STORY  P
+
+
     label enter_p:
         show bg blck
         show screen bab1_l

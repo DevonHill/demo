@@ -1,22 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 259, in script
-    jump homeOr_go1
-ScriptError: could not find label 'homeOr_go1'.
+  File "game/script.rpy", line 262, in script
+    jump kerumahTemenBareng
+ScriptError: could not find label 'kerumahTemenBareng'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 259, in script
-    jump homeOr_go1
+  File "game/script.rpy", line 262, in script
+    jump kerumahTemenBareng
   File "X:\Tasir\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 1992, in execute
     rv = renpy.game.script.lookup(target)
   File "X:\Tasir\RenPy\renpy-8.1.1-sdk\renpy\script.py", line 1013, in lookup
     raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'homeOr_go1'.
+ScriptError: could not find label 'kerumahTemenBareng'.
 
 Windows-10-10.0.17763 AMD64
 Ren'Py 8.1.1.23060707
 Demo 1.0
-Sun Oct 22 01:24:29 2023
+Sun Oct 22 01:36:39 2023

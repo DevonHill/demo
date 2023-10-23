@@ -44,7 +44,7 @@ screen gabut3():
 screen Nama():
     vbox:
         xalign 0.5 ypos 0.2
-        text "Namamu?"
+        text "Apakah namamu [name]?"
  
 screen find_home1():
     vbox:
@@ -95,7 +95,6 @@ label start:
     show prologue
     show screen gender
     menu:
-        xalign 0.5 ypos 0.3
         
         "Laki-Laki":
             jump name_l
@@ -105,36 +104,40 @@ label start:
     
 
     label name_l:
+    hide screen gender
     python:
         name = renpy.input("Nama Panggilanmu?")
 
         name = name.strip() or "L"
-    "Apakah namamu [name]?"
+    show screen Nama
     menu:
         "ya":
             jump enter_l
         
         "tidak":
-            jump name_l
+            jump name_l   
 
     label name_p:
+    hide screen gender
     python:
         name = renpy.input("Nama Panggilanmu?")
         
         name = name.strip() or "P"
-    "{cps=25}Apakah namamu [name]?{/cps}"
+    show screen Nama
     menu:
         "ya":
             jump enter_p
         
         "tidak":
             jump name_p
-    
+
 
 #    STORY  P
 
 
     label enter_p:
+        hide screen Nama
+
         show bg blck
         show screen bab1_l
         with dissolve
@@ -295,6 +298,8 @@ label start:
 
 
     label enter_l:
+        hide screen Nama
+        
         show bg blck
         show screen bab1_l
         with dissolve

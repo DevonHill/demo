@@ -1,48 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-<<<<<<< HEAD
-  File "game/script.rpy", line 13, in script
-    define sr = Ca
-  File "game/script.rpy", line 13, in <module>
-    define sr = Ca
-NameError: name 'Ca' is not defined
-=======
-  File "game/script.rpy", line 262, in script
-    jump kerumahTemenBareng
-ScriptError: could not find label 'kerumahTemenBareng'.
->>>>>>> 9acf264976e06268ccd079ec26a767cb0dc75d6e
+  File "game/script.rpy", line 292, in script
+    jump pulangSendiri_sendiri
+ScriptError: could not find label 'pulangSendiri_sendiri'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-<<<<<<< HEAD
-  File "game/script.rpy", line 13, in script
-    define sr = Ca
-  File "E:\Az12\renpy-8.1.1-sdk\renpy\ast.py", line 2508, in execute
-    self.set()
-  File "E:\Az12\renpy-8.1.1-sdk\renpy\ast.py", line 2522, in set
-    value = renpy.python.py_eval_bytecode(self.code.bytecode)
-  File "E:\Az12\renpy-8.1.1-sdk\renpy\python.py", line 1146, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 13, in <module>
-    define sr = Ca
-NameError: name 'Ca' is not defined
-=======
-  File "game/script.rpy", line 262, in script
-    jump kerumahTemenBareng
-  File "X:\Tasir\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 1992, in execute
+  File "game/script.rpy", line 292, in script
+    jump pulangSendiri_sendiri
+  File "E:\Az12\renpy-8.1.1-sdk\renpy\ast.py", line 1992, in execute
     rv = renpy.game.script.lookup(target)
-  File "X:\Tasir\RenPy\renpy-8.1.1-sdk\renpy\script.py", line 1013, in lookup
+  File "E:\Az12\renpy-8.1.1-sdk\renpy\script.py", line 1013, in lookup
     raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'kerumahTemenBareng'.
->>>>>>> 9acf264976e06268ccd079ec26a767cb0dc75d6e
+ScriptError: could not find label 'pulangSendiri_sendiri'.
 
-Windows-10-10.0.17763 AMD64
+Windows-10-10.0.19045 AMD64
 Ren'Py 8.1.1.23060707
 Demo 1.0
-<<<<<<< HEAD
-Fri Oct 13 10:17:35 2023
-=======
-Sun Oct 22 01:36:39 2023
->>>>>>> 9acf264976e06268ccd079ec26a767cb0dc75d6e
+Mon Oct 23 11:27:48 2023

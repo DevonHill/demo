@@ -3,6 +3,7 @@ errors listed below, and try again.
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 File "game/script.rpy", line 66: expected menuitem
     xalign 0.5 ypos 0.3
     ^
@@ -11,9 +12,16 @@ Ren'Py Version: Ren'Py 8.1.1.23060707
 Mon Oct 23 10:13:51 2023
 =======
 File "game/script.rpy", line 269: end of line expected.
+=======
+File "game/script.rpy", line 278: end of line expected.
+>>>>>>> main
     mc "On-Going Update":
                         ^
 
 Ren'Py Version: Ren'Py 8.1.1.23060707
+<<<<<<< HEAD
 Sun Oct 22 01:31:35 2023
 >>>>>>> 9acf264976e06268ccd079ec26a767cb0dc75d6e
+=======
+Mon Oct 23 10:54:49 2023
+>>>>>>> main

@@ -2,7 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 165: Indentation mismatch.
+File "game/script.rpy", line 66: expected menuitem
+    xalign 0.5 ypos 0.3
+    ^
 
 Ren'Py Version: Ren'Py 8.1.1.23060707
-Wed Oct 11 12:25:35 2023
+Mon Oct 23 10:13:51 2023

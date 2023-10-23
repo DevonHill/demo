@@ -9,7 +9,18 @@ image prologue = "images/prologue.jpg"
 
 define slowdissolve = Dissolve(1.0)
 define sh = Character("", window_background=None)
+define mc = Character("[name]")
+define sr = Character("Sarah", color="#008cff")
+
+screen gender():
+    vbox:
+        xalign 0.5 ypos 0.2
+        text "Gendermu?"
  
+screen Nama():
+    vbox:
+        xalign 0.5 ypos 0.2
+        text "Namamu?"
  
 screen find_home1():
     vbox:
@@ -47,12 +58,13 @@ screen jdl_prt1_l():
         xalign 0.5 ypos 0.42
         text "{size=+20}Masa Perkenalan"
 # Deklarasikan karakter yang digunakan di game.
-define mc = Character("[name]")
 
 label start:
     show prologue
-    "Gendermu?"
+    show screen gender
     menu:
+        xalign 0.5 ypos 0.3
+        
         "Laki-Laki":
             jump name_l
         
@@ -92,7 +104,7 @@ label start:
         show screen prologue_text
         with dissolve
 
-        pause 1.0
+        sh " "
          
         hide bg blck
         hide screen bab1_l
@@ -140,11 +152,21 @@ label start:
     show screen jdl_prt1_l
     with dissolve
 
-    pause 1.0
-    
+    " " " "   
     hide bg blck
     hide screen part_1
     hide screen jdl_prt1_l
-    mc "hmmgdsygfuydgfuy"
+    
+    #show bg schl
+    #with dissolve
+    mc "Jadi ini sekolahnya?"
+    mc "Berapa lama aku pergi sehingga sekolah ini terlihat berbeda"
+    mc "Terakhir kali aku di kota ini waktu aku masih kecil"
+    mc "Banyak sekali yang berbeda termasuk sekolah ini"
+    mc "Aku belum pernah masuk ke dalamnya sih waktu aku masih kecil"
+    mc "Siapa peduli"
+    mc "Aku akan menepati janjiku"
+    #show bg side_schl
+
 
     return

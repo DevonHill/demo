@@ -1,37 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 130, in script
-    "" "{cps=10}{i}{color="#008cff"}SARAH{/color}!{/i}{/cps}"
-  File "renpy/common/00library.rpy", line 321, in say
-    who(what, interact=interact, *args, **kwargs)
-Exception: Open text tag at end of string '{cps=10}{i}{color='.
+  File "game/script.rpy", line 262, in script
+    jump kerumahTemenBareng
+ScriptError: could not find label 'kerumahTemenBareng'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 130, in script
-    "" "{cps=10}{i}{color="#008cff"}SARAH{/color}!{/i}{/cps}"
-  File "E:\Az12\renpy-8.1.1-sdk\renpy\ast.py", line 930, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "E:\Az12\renpy-8.1.1-sdk\renpy\exports.py", line 1471, in say
-    renpy.store.say(who, what, *args, **kwargs)
-  File "renpy/common/00library.rpy", line 321, in say
-    who(what, interact=interact, *args, **kwargs)
-  File "E:\Az12\renpy-8.1.1-sdk\renpy\character.py", line 1352, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
-  File "E:\Az12\renpy-8.1.1-sdk\renpy\character.py", line 1003, in do_display
-    display_say(who,
-  File "E:\Az12\renpy-8.1.1-sdk\renpy\character.py", line 674, in display_say
-    what_text.update()
-  File "E:\Az12\renpy-8.1.1-sdk\renpy\text\text.py", line 1865, in update
-    tokens = self.tokenize(text)
-  File "E:\Az12\renpy-8.1.1-sdk\renpy\text\text.py", line 2345, in tokenize
-    tokens.extend(textsupport.tokenize(i))
-  File "textsupport.pyx", line 169, in renpy.text.textsupport.tokenize
-Exception: Open text tag at end of string '{cps=10}{i}{color='.
+  File "game/script.rpy", line 262, in script
+    jump kerumahTemenBareng
+  File "X:\Tasir\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 1992, in execute
+    rv = renpy.game.script.lookup(target)
+  File "X:\Tasir\RenPy\renpy-8.1.1-sdk\renpy\script.py", line 1013, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'kerumahTemenBareng'.
 
-Windows-10-10.0.19045 AMD64
+Windows-10-10.0.17763 AMD64
 Ren'Py 8.1.1.23060707
 Demo 1.0
-Wed Oct 11 11:44:06 2023
+Sun Oct 22 01:36:39 2023

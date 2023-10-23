@@ -273,11 +273,8 @@ label start:
         "Aku mau pulang nih, ada yang gue kerjain dirumah ":
             jump pulangSendiri_sendiri
     
-
-    label edSementara:
-        mc "On-Going Update":
-            
-        return
+     
+    return
 
 #    STORY  L
 

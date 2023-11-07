@@ -1,4 +1,4 @@
-# Kamu dapat taruh script game mu di file ini.
+﻿# Kamu dapat taruh script game mu di file ini.
 
 # Deklarasikan gambar di bawah line ini, menggunakan pernyataan image.
 # cnth. image eileen happy = "eileen_happy.png"
@@ -21,8 +21,10 @@ screen gender():
 #  SCREEN P
 
 # Next job = 
-# 1. Kerjain bagian tipe cowok
-# 2. Kerjain bagian choice buat next story
+# 1. Fix bagian takdir, sekira terlihat berlebih dan tak Sberdaya *
+# 2. Kerjain bagian tipe cowok
+# 3. Kerjain bagian choice buat next story
+# 4. Fix cps sesuai suasana
 
 screen gabut1():
     vbox:
@@ -199,6 +201,7 @@ label start:
         "Bebas sih, masalahnya kita gabisa tau takdir juga tuh. takdir kita juga sudah ditentukan tuhan dari lahir sampai mati. ":
             jump kursi_umum3
         
+
     label kursi_umum1:
         # show bg cty bench
         mc "{cps=25}Kan ada juga tuh pepatah bilang kalo kerasnya usaha lo akan membuahkan hasil, tapi hanya waktu yang menjawabnya. {/cps}"
@@ -243,9 +246,6 @@ label start:
         
         "Aku mau pulang nih, ada yang gue kerjain dirumah ":
             jump pulangSendiri_sendiri
-        
-
-
 
     label kursi_umum2:
         # show bg cty bench
@@ -256,22 +256,71 @@ label start:
         mc "Wahhh, kalo itu sih...."
 
     menu: 
-        "dsakdjasda":
+        "Cowo yang good looking, terus punya penghasilan sendiri, perhatian, cool, setia, effort sudah pasti. terusss.... murah hati, sabar, taat ibadah, kagak pelit, cowo yang royal, dan yang pasti se-agama ":
             jump tipe_cowo1
 
-        "dsakdjasda":
+        "Cukup satu kata, gabisa kalo nggak satu frekuensi, titik":
             jump tipe_cowo2
 
-        "dsakdjasda":
+        "Tipe yang bisa buat gua bahagia udah cukup kok":
             jump tipe_cowo3
+
+    label tipe_cowo1:
+        # show bg cty bench
+        "Teman disamping" "{cps=25}Gilaaa.... se Elit itu kah spek Cowo mu?{/cps}"
+        mc "{cps=25}Ahhahaahaa iya juga sih, cukup jadi tipe idaman aja sih kalo itu{/cps}"
+        mc "{cps=25}Tapi kalonya bisa dapet yang kaya gitu, auto ngamuk sendiri deh gua di kamar{/cps}"
+        "Teman disamping" "{cps=25}Kalonya gue bisa jadi gitu juga sih, tapi versi senyum-senyum sendiri{/cps}"
+        mc "{cps=25}Oalah, gitu....{/cps}"
+        "Teman disamping" "{cps=25}Kalonya gue bisa jadi gitu juga sih, tapi versi senyum-senyum sendiri.{/cps}"
+        "Teman disamping" "{cps=25}Ohh iya nih{/cps}"
+        "Teman disamping" "{cps=25}Aku lupa ada yang dikerjain dirumah nih..{/cps}"
+        mc "{cps=25}Ahahhahahha.. ok nih gapapa juga kok, lagi gabut juga gue{/cps}"
+        "Teman disamping" "{cps=25}Yaudah gue cabut dulu yaa.... Dah{/cps}"
+        mc "{cps=25}Ehh... Tunggu Bentar{/cps}"
+        "Teman disamping" "{cps=25}Kenapa lagi nih?{/cps}"
+        
+    label tipe_cowo2:
+        # show bg cty bench
+        "Teman disamping" "{cps=25}Waduh... cukup membagongkan juga ini orang satu{/cps}"
+        mc "{cps=25}Frekuensi musiknya, healingnya, gamenya, hobinya, makanannya.{/cps}"
+        mc "{cps=25}Tapi sebenarnya kagak masalah juga kalo cuman satu atau dua hal yang se-frekuensi{/cps}"
+        mc "{cps=25}Karena maksudku satu frekuensi itu biar ga banyak debat doang sih.{/cps}"
+        "Teman disamping" "{cps=25}Ohh, iya iya.{/cps}"
+        "Teman disamping" "{cps=25}Ada benernya juga yaa, soalnya kalo satu frekuensi bakalan lebih langgeng atau bisa jadi satu passion deh.{/cps}"
+        mc "{cps=25}Nahhh.... itu tuh maksud gue.{/cps}"
+        "Teman disamping" "{cps=25}Ohh iya nih{/cps}"
+        "Teman disamping" "{cps=25}Aku lupa ada yang dikerjain dirumah, nih..{/cps}"
+        mc "{cps=25}Ahahhahahha.. ok nih gapapa juga kok, lagi gabut juga gue{/cps}"
+        "Teman disamping" "{cps=25}Yaudah gue cabut dulu yaa.... Dah{/cps}"
+        mc "{cps=25}Ehh... Tunggu Bentar{/cps}"
+        "Teman disamping" "{cps=25}Kenapa lagi nih?{/cps}"
+
+    label tipe_cowo3:
+        # show bg cty bench
+        "Teman disamping" "{cps=25}Cukup simpel juga yaa...{/cps}"
+        mc "{cps=25}Iya dong, masa enggak?{/cps}"
+        "Teman disamping" "{cps=50}Ye{/cps}"
+        mc "{cps=25}Yaa..... begitulah, yang penting hidup itu dibawa hepi aja sih{/cps}"
+        "Teman disamping" "{cps=50}Ye{/cps}"
+        mc "{cps=25}Apaan dah, ngeselin tauu{/cps}"
+        mc "{cps=25}Iya deng, maap{/cps}"
+        "Teman disamping" "{cps=25}Ohh iya nih{/cps}"
+        "Teman disamping" "{cps=25}Aku lupa ada yang dikerjain dirumah, nih..{/cps}"
+        mc "{cps=25}Ahahhahahha.. ok nih gapapa juga kok, lagi gabut juga gue{/cps}"
+        "Teman disamping" "{cps=25}Yaudah gue cabut dulu yaa.... Dah{/cps}"
+        mc "{cps=25}Ehh... Tunggu Bentar{/cps}"
+        "Teman disamping" "{cps=25}Kenapa lagi nih?{/cps}"
 
     label kursi_umum3:
         # show bg cty bench
         mc "{cps=25}Mau kemanapun juga kita tetap berjalan sesuai kehendak tuhan kok. Jadi ya... hidup slowing down aja sih, udah The Best LAH.... walau dikerjain orang juga, jadi pengalaman lumayan juga {/cps}"
-        "Teman disamping" "{cps=25}Ohh gitu... Tapi [name], bukannya takdir bisa diubah kalo kita usaha? Kan kita belum coba juga tuh?{/cps}"
-        mc "{cps=25}Ya.... tetap aja sih, kamu ngubah takdir itu termasuk dalam perubahan yang udah ditakdirkan tuhan juga sih, aku kutip dari salah satu filsuf{/cps}"
+        "Teman disamping" "{cps=25}Iya sih.... masalahnya, gimana pun juga gue mau berusaha tetap gagal terus, serasa udah ditakdirkan buat gue gagal gituh{/cps}"
+        mc "{cps=25}Yaa... kalo menurut lo gitu gue juga setuju sih {/cps}"
+        mc "{cps=25}Kok kita rasanya dari dulu susah banget yaa buat ngejar nilai dia. Padahal dia sendiri malas belajar, kerjaannya cuman main hp doang terus tidur tapi nilainya tau tau diatas kita semua, serasa itu takdir dia yang buat dia jenius diantara satu sekolah kita.{/cps}"
         "Teman disamping" "{cps=25}Siapa namanya tuh?{/cps}"
         mc "Aduh.... lupa nih"
+        mc "Dia orangnya pendiam juga masalahnya"
         mc "Takdir untuk lupa sesuatu yaa...."
         "Teman disamping" "{cps=25}Yaudah gapapa juga sih{/cps}"
         "Teman disamping" "{cps=25}Ohh iya nih{/cps}"
@@ -279,7 +328,7 @@ label start:
         mc "{cps=25}Ahahhahahha.. ok nih gapapa juga kok, lagi gabut juga gue{/cps}"
         "Teman disamping" "{cps=25}Yaudah gue cabut dulu yaa.... Dah{/cps}"
         mc "{cps=25}Ehh... Tunggu Bentar{/cps}"
-        "Teman disamping" "{cps=25}Kenapa lagi ngab?{/cps}"
+        "Teman disamping" "{cps=25}Kenapa lagi nih?{/cps}"
 
     menu: 
         "Mau ngerjain PR Matematika bareng nggak? ":
@@ -292,6 +341,15 @@ label start:
             jump pulangSendiri_sendiri
     
     
+    label kerumahMcBareng:
+        # show bg mcHouse
+
+    label kerumahTemenBareng:
+        # show bg temenHouse
+
+    label pulangSendiri_sendiri:
+        # show bg mcHouse
+
     return
 
 #    STORY  L

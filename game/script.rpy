@@ -11,6 +11,7 @@ define slowdissolve = Dissolve(1.0)
 define sh = Character("", window_background=None)
 define mc = Character("[name]")
 define sr = Character("Sarah", color="#008cff")
+define pr = Character("Putri", color="#09ff00")
 
 screen gender():
     vbox:
@@ -239,13 +240,13 @@ label start:
 
     menu:
         "Mau ngerjain PR Matematika bareng nggak? ":
-            jump kerumahMcBareng
+            jump kerumahMcBareng1
         
         "Aku main kerumahmu bisa nggak? ":
-            jump kerumahTemenBareng
+            jump kerumahTemenBareng1
         
         "Aku mau pulang nih, ada yang gue kerjain dirumah ":
-            jump pulangSendiri_sendiri
+            jump pulangSendiri_sendiri1
 
     label kursi_umum2:
         # show bg cty bench
@@ -282,13 +283,13 @@ label start:
         
     menu: 
         "Mau ngerjain PR Matematika bareng nggak? ":
-            jump kerumahMcBareng
+            jump kerumahMcBareng2
         
         "Aku main kerumahmu bisa nggak? ":
-            jump kerumahTemenBareng
+            jump kerumahTemenBareng2
         
         "Aku mau pulang nih, ada yang gue kerjain dirumah ":
-            jump pulangSendiri_sendiri
+            jump pulangSendiri_sendiri2
     
     label tipe_cowo2:
         # show bg cty bench
@@ -308,13 +309,13 @@ label start:
 
     menu: 
         "Mau ngerjain PR Matematika bareng nggak? ":
-            jump kerumahMcBareng
+            jump kerumahMcBareng2
         
         "Aku main kerumahmu bisa nggak? ":
-            jump kerumahTemenBareng
+            jump kerumahTemenBareng2
         
         "Aku mau pulang nih, ada yang gue kerjain dirumah ":
-            jump pulangSendiri_sendiri
+            jump pulangSendiri_sendiri2
     
     label tipe_cowo3:
         # show bg cty bench
@@ -334,13 +335,13 @@ label start:
 
     menu: 
         "Mau ngerjain PR Matematika bareng nggak? ":
-            jump kerumahMcBareng
+            jump kerumahMcBareng2
         
         "Aku main kerumahmu bisa nggak? ":
-            jump kerumahTemenBareng
+            jump kerumahTemenBareng2
         
         "Aku mau pulang nih, ada yang gue kerjain dirumah ":
-            jump pulangSendiri_sendiri
+            jump pulangSendiri_sendiri2
     
     label kursi_umum3:
         # show bg cty bench
@@ -362,23 +363,76 @@ label start:
 
     menu: 
         "Mau ngerjain PR Matematika bareng nggak? ":
-            jump kerumahMcBareng
+            jump kerumahMcBareng3
         
         "Kita bicara sama Orang Tua kamu yuk, biar mereka ngertiin kamu ":
-            jump kerumahTemenBareng
+            jump kerumahTemenBareng3
         
         "Aku mau pulang nih, ada yang gue kerjain dirumah ":
-            jump pulangSendiri_sendiri
+            jump pulangSendiri_sendiri3
     
-    
-    label kerumahMcBareng:
+# ------------------------------------------------------------------
+#Bagian Kerumah MC Bareng
+# Bagian ini akan berisi alur utama yang dimana mc akan lupa nama temannya dan bertanya kemudian mereka bakalan kerumah si mc selagi mengerjakan PR Matimatikam bareng
+    label kerumahMcBareng1:
         # show bg mcHouse
+        mc "{cps=25} {/cps}"
+        pt "{cps=25} {/cps}"
 
-    label kerumahTemenBareng:
+
+    label kerumahMcBareng2:
+        # show bg mcHouse
+        mc "{cps=25} {/cps}"
+        pt "{cps=25} {/cps}"
+
+
+    label kerumahMcBareng3:
+        # show bg mcHouse
+        mc "{cps=25} {/cps}"
+        pt "{cps=25} {/cps}"
+
+
+#Bagian Kerumah Temen Bareng
+# Bagian ini berisi alur utama yg dimana mc bakalan main dengan teman disampingnya yaitu si putri
+    label kerumahTemenBareng1:
         # show bg temenHouse
+        mc "{cps=25} {/cps}"
+        pt "{cps=25} {/cps}"
 
-    label pulangSendiri_sendiri:
+
+    label kerumahTemenBareng2:
+        # show bg temenHouse
+        mc "{cps=25} {/cps}"
+        pt "{cps=25} {/cps}"
+
+
+#  KHUSUS label ini terdapat pembicaraan mc dengan teman yg duduk disampingnya, yaitu si putri. jadi, Khusus dibagian ini mereka gaakan main bareng
+    label kerumahTemenBareng3:
+        # show bg temenHouse
+        mc "{cps=25} {/cps}"
+        pt "{cps=25} {/cps}"
+
+
+#Bagian Pulang Sendiri-sendiri 
+# Bagian ini akan berisi alur utama yang dimana si mc dan temannya pulang kerumah masing masing dikarenakan ada urusan atau kesibukan mereka sendiri sendiri yang dimana nanti si mc bakal tetap ngerjain pr mtk nya
+    label pulangSendiri_sendiri1:
         # show bg mcHouse
+        mc "{cps=25} {/cps}"
+        pt "{cps=25} {/cps}"
+
+
+    label pulangSendiri_sendiri2:
+        # show bg mcHouse
+        mc "{cps=25} {/cps}"
+        pt "{cps=25} {/cps}"
+
+
+    label pulangSendiri_sendiri3:
+        # show bg mcHouse
+        mc "{cps=25} {/cps}"
+        pt "{cps=25} {/cps}"
+
+
 
     return
 

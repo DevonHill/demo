@@ -11,7 +11,7 @@ define slowdissolve = Dissolve(1.0)
 define sh = Character("", window_background=None)
 define mc = Character("[name]")
 define sr = Character("Sarah", color="#008cff")
-define pr = Character("Putri", color="#09ff00")
+define pt = Character("Putri", color="#09ff00")
 
 screen gender():
     vbox:
@@ -256,6 +256,7 @@ label start:
         "Teman disamping" "{cps=25}Tipe cowomu gimana?{/cps}"
         mc "Wahhh, kalo itu sih...."
 
+# Dari sini alur ceritanya bakalan dibagi 15, tapi alur utamanya nanti bakalan jadi 9 karena cuma ada percakapan flashback mengenai pilihan dibawah
     menu: 
         "Cowo yang good looking, terus punya penghasilan sendiri, perhatian, cool, setia, effort sudah pasti. terusss.... murah hati, sabar, taat ibadah, kagak pelit, cowo yang royal, dan yang pasti se-agama ":
             jump tipe_cowo1
@@ -283,13 +284,13 @@ label start:
         
     menu: 
         "Mau ngerjain PR Matematika bareng nggak? ":
-            jump kerumahMcBareng2
+            jump kerumahMcBareng21
         
         "Aku main kerumahmu bisa nggak? ":
-            jump kerumahTemenBareng2
+            jump kerumahTemenBareng21
         
         "Aku mau pulang nih, ada yang gue kerjain dirumah ":
-            jump pulangSendiri_sendiri2
+            jump pulangSendiri_sendiri21
     
     label tipe_cowo2:
         # show bg cty bench
@@ -309,13 +310,13 @@ label start:
 
     menu: 
         "Mau ngerjain PR Matematika bareng nggak? ":
-            jump kerumahMcBareng2
+            jump kerumahMcBareng22
         
         "Aku main kerumahmu bisa nggak? ":
-            jump kerumahTemenBareng2
+            jump kerumahTemenBareng22
         
         "Aku mau pulang nih, ada yang gue kerjain dirumah ":
-            jump pulangSendiri_sendiri2
+            jump pulangSendiri_sendiri22
     
     label tipe_cowo3:
         # show bg cty bench
@@ -335,13 +336,13 @@ label start:
 
     menu: 
         "Mau ngerjain PR Matematika bareng nggak? ":
-            jump kerumahMcBareng2
+            jump kerumahMcBareng23
         
         "Aku main kerumahmu bisa nggak? ":
-            jump kerumahTemenBareng2
+            jump kerumahTemenBareng23
         
         "Aku mau pulang nih, ada yang gue kerjain dirumah ":
-            jump pulangSendiri_sendiri2
+            jump pulangSendiri_sendiri23
     
     label kursi_umum3:
         # show bg cty bench
@@ -379,12 +380,20 @@ label start:
         mc "{cps=25} {/cps}"
         pt "{cps=25} {/cps}"
 
-
-    label kerumahMcBareng2:
+    label kerumahMcBareng21:
         # show bg mcHouse
         mc "{cps=25} {/cps}"
         pt "{cps=25} {/cps}"
 
+    label kerumahMcBareng22:
+        # show bg mcHouse
+        mc "{cps=25} {/cps}"
+        pt "{cps=25} {/cps}"
+
+    label kerumahMcBareng23:
+        # show bg mcHouse
+        mc "{cps=25} {/cps}"
+        pt "{cps=25} {/cps}"
 
     label kerumahMcBareng3:
         # show bg mcHouse
@@ -399,8 +408,17 @@ label start:
         mc "{cps=25} {/cps}"
         pt "{cps=25} {/cps}"
 
+    label kerumahTemenBareng21:
+        # show bg temenHouse
+        mc "{cps=25} {/cps}"
+        pt "{cps=25} {/cps}"
 
-    label kerumahTemenBareng2:
+    label kerumahTemenBareng22:
+        # show bg temenHouse
+        mc "{cps=25} {/cps}"
+        pt "{cps=25} {/cps}"
+
+    label kerumahTemenBareng23:
         # show bg temenHouse
         mc "{cps=25} {/cps}"
         pt "{cps=25} {/cps}"
@@ -420,12 +438,20 @@ label start:
         mc "{cps=25} {/cps}"
         pt "{cps=25} {/cps}"
 
-
-    label pulangSendiri_sendiri2:
+    label pulangSendiri_sendiri21:
         # show bg mcHouse
         mc "{cps=25} {/cps}"
         pt "{cps=25} {/cps}"
 
+    label pulangSendiri_sendiri22:
+        # show bg mcHouse
+        mc "{cps=25} {/cps}"
+        pt "{cps=25} {/cps}"
+
+    label pulangSendiri_sendiri23:
+        # show bg mcHouse
+        mc "{cps=25} {/cps}"
+        pt "{cps=25} {/cps}"
 
     label pulangSendiri_sendiri3:
         # show bg mcHouse

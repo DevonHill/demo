@@ -1,72 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While processing text tag {cps} in '{cps=25}Nahhh.... itu tuh maksud gue.{cps}'.:
-  File "game/script.rpy", line 291, in script
-    mc "{cps=25}Nahhh.... itu tuh maksud gue.{cps}"
-Exception: empty value supplied for tag 'cps'
+While running game code:
+  File "game/script.rpy", line 380, in script
+    pt "{cps=25} {/cps}"
+Exception: Sayer 'pt' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 291, in script
-    mc "{cps=25}Nahhh.... itu tuh maksud gue.{cps}"
-  File "X:\Tasir\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 930, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "X:\Tasir\RenPy\renpy-8.1.1-sdk\renpy\exports.py", line 1473, in say
-    who(what, *args, **kwargs)
-  File "X:\Tasir\RenPy\renpy-8.1.1-sdk\renpy\character.py", line 1352, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
-  File "X:\Tasir\RenPy\renpy-8.1.1-sdk\renpy\character.py", line 1003, in do_display
-    display_say(who,
-  File "X:\Tasir\RenPy\renpy-8.1.1-sdk\renpy\character.py", line 693, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
-  File "X:\Tasir\RenPy\renpy-8.1.1-sdk\renpy\ui.py", line 299, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "X:\Tasir\RenPy\renpy-8.1.1-sdk\renpy\display\core.py", line 3579, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "X:\Tasir\RenPy\renpy-8.1.1-sdk\renpy\display\core.py", line 4172, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "X:\Tasir\RenPy\renpy-8.1.1-sdk\renpy\display\core.py", line 2779, in draw_screen
-    surftree = renpy.display.render.render_screen(
-  File "render.pyx", line 492, in renpy.display.render.render_screen
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "X:\Tasir\RenPy\renpy-8.1.1-sdk\renpy\display\layout.py", line 886, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "X:\Tasir\RenPy\renpy-8.1.1-sdk\renpy\display\layout.py", line 886, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "X:\Tasir\RenPy\renpy-8.1.1-sdk\renpy\display\layout.py", line 886, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "X:\Tasir\RenPy\renpy-8.1.1-sdk\renpy\display\screen.py", line 731, in render
-    child = renpy.display.render.render(self.child, w, h, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "X:\Tasir\RenPy\renpy-8.1.1-sdk\renpy\display\layout.py", line 886, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "X:\Tasir\RenPy\renpy-8.1.1-sdk\renpy\display\layout.py", line 1336, in render
-    surf = render(child,
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "X:\Tasir\RenPy\renpy-8.1.1-sdk\renpy\display\layout.py", line 886, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "X:\Tasir\RenPy\renpy-8.1.1-sdk\renpy\text\text.py", line 2171, in render
-    virtual_layout = Layout(self, width, height, renders, drawable_res=False, size_only=True)
-  File "X:\Tasir\RenPy\renpy-8.1.1-sdk\renpy\text\text.py", line 629, in __init__
-    self.paragraphs = self.segment(text.tokens, style, renders, text)
-  File "X:\Tasir\RenPy\renpy-8.1.1-sdk\renpy\text\text.py", line 1262, in segment
-    raise Exception("empty value supplied for tag %r" % tag)
-Exception: empty value supplied for tag 'cps'
+  File "game/script.rpy", line 380, in script
+    pt "{cps=25} {/cps}"
+  File "X:\Tasir\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 890, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "X:\Tasir\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 783, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'pt' is not defined.
 
 Windows-10-10.0.17763 AMD64
 Ren'Py 8.1.1.23060707
 Demo 1.0
-Tue Nov  7 01:15:50 2023
+Sat Nov 11 20:04:45 2023

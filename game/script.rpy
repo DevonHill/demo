@@ -2,6 +2,8 @@
 
 # Deklarasikan gambar di bawah line ini, menggunakan pernyataan image.
 # cnth. image eileen happy = "eileen_happy.png"
+
+# Bagian Define / Deklarasi gambar dan character
 image bg cty = "images/cty.png"
 image logo text = Text("This is a text displayable.", size=30)
 image bg blck = "images/bg blck.png"
@@ -11,7 +13,8 @@ define slowdissolve = Dissolve(1.0)
 define sh = Character("", window_background=None)
 define mc = Character("[name]")
 define sr = Character("Sarah", color="#008cff")
-define pt = Character("Putri", color="#09ff00")
+define pt = Character("Putri", color="#4400ff")
+define pttm = Character("Teman disamping")
 
 screen gender():
     vbox:
@@ -23,9 +26,11 @@ screen gender():
 
 # Next job = 
 # 1. Fix bagian takdir, sekira terlihat berlebih dan tak Sberdaya *
-# 2. Kerjain bagian tipe cowok
-# 3. Kerjain bagian choice buat next story
+# 2. Kerjain bagian tipe cowok *
+# 3. Kerjain bagian choice buat next story yg 15 label (part 2)
 # 4. Fix cps sesuai suasana
+# 5. Pemisahan Part 
+# 6. Fixproblem kedap kedip tiap part
 
 screen gabut1():
     vbox:
@@ -65,7 +70,7 @@ screen find_home3():
         xalign 0.5 ypos 0.4
         text "aku telah menemukan tempat tinggal yang murah dan nyaman"
 
-# SCREEN BAB DAN JUDUL
+# SCREEN BAB DAN JUDUL L
 
 screen bab1_l():
     vbox:
@@ -82,10 +87,38 @@ screen part_1():
         xalign 0.5 ypos 0.3
         text "{size=+50}PART 1"
 
+screen part_2():
+    vbox:
+        xalign 0.5 ypos 0.3
+        text "{size=+50}PART 2"
+
 screen jdl_prt1_l():
     vbox:
         xalign 0.5 ypos 0.42
         text "{size=+20}Masa Perkenalan"
+
+screen jdl_prt1_p():
+    vbox:
+        xalign 0.5 ypos 0.42
+        text "{size=+20}Masa Perkenalan"
+
+screen jdl_prt2_p1():
+    vbox:
+        xalign 0.5 ypos 0.42
+        text "{size=+20}Kerumah Sendiri bawa Teman"
+
+screen jdl_prt2_p2():
+    vbox:
+        xalign 0.5 ypos 0.42
+        text "{size=+20}Ikut kerumah Teman"
+
+screen jdl_prt2_p3():
+    vbox:
+        xalign 0.5 ypos 0.42
+        text "{size=+20}Pulang Sendiri kerumah"
+
+
+
 # Deklarasikan karakter yang digunakan di game.
 define mc = Character("[name]")
 
@@ -150,7 +183,7 @@ label start:
         show screen prologue_text
         with dissolve
 
-        pause 1.0
+        sh " "
          
         hide bg blck
         hide screen bab1_l
@@ -179,9 +212,25 @@ label start:
         sh ""
         hide screen gabut3
 
-        #show my room l
-        with dissolve
+        with dissolve 
+
+        # -----------------------------------------------------------
         
+        show bg blck
+        show screen part_1
+        with dissolve
+
+        pause 1.0
+
+        show screen jdl_prt1_p
+        with dissolve
+
+        pause 1.0
+
+        hide bg blck
+        hide screen part_1
+        hide screen jdl_prt1_p
+
         "Teman disamping" "{cps=25}Apa kabar nih.. [name]? {/cps}"
         mc "{cps=25}Lumayan sih...{/cps}"
         mc "{cps=25}Rada bingung sama diri sendiri aja gue..{/cps}"
@@ -377,58 +426,145 @@ label start:
 # Bagian ini akan berisi alur utama yang dimana mc akan lupa nama temannya dan bertanya kemudian mereka bakalan kerumah si mc selagi mengerjakan PR Matimatikam bareng
     label kerumahMcBareng1:
         # show bg mcHouse
-        mc "{cps=25} {/cps}"
-        pt "{cps=25} {/cps}"
+        pttm "{cps=25}Wah boleh banget tuhh {/cps}"
+        mc "{cps=25}Ayo kalo gitu, kita langsung aja yaa...{/cps}"
+        pttm "{cps=25}Oke, tapi kamu jalan kaki?{/cps}"
+        mc "{cps=25}Boleh sih, tapi kalo mau cepet aku bisa nebeng sepeda kamu kan?{/cps}"
+        pttm "{cps=25}Yaudah nih.. sini naik{/cps}"
+        mc "{cps=25}Woke, injak gas jangan lupa yaa....{/cps}"
+        pttm "{cps=25}Kamu kira kita naik mobil napah{/cps}"
+        pttm "{cps=25}Kita naik sepeda deng{/cps}"
+        mc "{cps=25}Oke kak... kalo gitu langsung cus aja nih, lama bet{/cps}"
+        pttm "{cps=25}Iya deh iya{/cps}"
+
+        # dissolve screen setelah basa basi, terus dissolve buat part 2
 
     label kerumahMcBareng21:
         # show bg mcHouse
-        mc "{cps=25} {/cps}"
-        pt "{cps=25} {/cps}"
+        pttm "{cps=25}Bisa aja sih, sekalian liat-liat kalo ada cowok ganteng dijalan {/cps}"
+        mc "{cps=25}Kalo gitu, tanpa basa basi langsung aja yuk!{/cps}"
+        pttm "{cps=25}Oke, kamu jalan kaki aja yaa...{/cps}"
+        mc "{cps=25}Gampang.....{/cps}"
+        mc "{cps=25}Aku sering jogging juga disekitar sini tiap minggu{/cps}"
+        pttm "{cps=25}Ohh iya, jangan-jangan rumahmu dekat sini makanya kamu milih jalan aja{/cps}"
+        mc "{cps=25}Nggak juga deng{/cps}"
+        pttm "{cps=25}Yaudah nih malah entar lama disini, kita langsung cus aja{/cps}"
+        mc "{cps=25}Oke{/cps}"
+        
+        # dissolve screen setelah basa basi, terus dissolve buat part 2
+
 
     label kerumahMcBareng22:
         # show bg mcHouse
-        mc "{cps=25} {/cps}"
-        pt "{cps=25} {/cps}"
+        pttm "{cps=25}Bebas aja sih, kalo mau ikut sepedaku sini{/cps}"
+        mc "{cps=25}Oke, btw langsung aja nih? {/cps}"
+        pttm "{cps=25}Ya iyalah, entar kelamaan Kita disini{/cps}"
+        mc "{cps=25}Liat-liat ya kalo ada cowok yang vibenya mirip gue{/cps}"
+        pttm "{cps=25}Oke deh{/cps}"
+        mc "{cps=25}KITA TEROBOSSS!!!!!!!{/cps}"
+
+        # dissolve screen setelah basa basi, terus dissolve buat part 2
 
     label kerumahMcBareng23:
         # show bg mcHouse
-        mc "{cps=25} {/cps}"
-        pt "{cps=25} {/cps}"
+        pttm "{cps=25}Santai aja loh, lagian kita paling-paling ngerjain PR doang kan{/cps}"
+        mc "{cps=25}Iya, paling gitu doang sih {/cps}"
+        mc "{cps=25}Btw, kamu kenal nggak cowok yang kayak tipeku tadi?{/cps}"
+        pttm "{cps=25}Banyak cowo yang pernah kamu liat pake mata itu emangnya mereka kalo pengen pacaran gamau ceweknya hepi gituh?{/cps}"
+        mc "{cps=25}Hmmmm, iya juga sih{/cps}"
+        pttm "{cps=25}Berarti banyak banget yang bisa kamu pilih atuh{/cps}"
+        pttm "{cps=25}Yaudah nih, langsung aja naik sepedaku biar ga banyak bacot{/cps}"
+        mc "{cps=25}Dih, iyain deh{/cps}"
+
+        # dissolve screen setelah basa basi, terus dissolve buat part 2
 
     label kerumahMcBareng3:
         # show bg mcHouse
-        mc "{cps=25} {/cps}"
-        pt "{cps=25} {/cps}"
+        pttm "{cps=25}Boleh kok.... {/cps}"
+        pttm "{cps=25}Semoga kita dapat takdir nilai paling tinggi hehehe {/cps}"
+        mc "{cps=25}Yang dapat nilai tinggi mah aku sih kayaknya ahhahahahha {/cps}"
+        pttm "{cps=25}Daripada debat Siapa yang bakalan dapat nilai tertinggi di kelas nanti......{/cps}"
+        pttm "{cps=25}Mendingan Siapa yang paling baik dan rutin belajar yang bakalan paling tinggi nilainya nanti gimana? {/cps}"
+        mc "{cps=25}Hehe, boleh juga tuh{/cps}"
+        mc "{cps=25}Btw langsung aja yok, keburu dapat takdir hujan dijalan ahahahhahah{/cps}"
+        pttm "{cps=25}Kalo gitu sini naik Dibelakang{/cps}"
+        mc "{cps=25}Oke kakak yang baik hati{/cps}"
+        mc "{cps=25}Kayaknya takdir lagi berpihak baik denganku sekarang{/cps}"
+        pttm "{cps=25}Yaelah, masih bahas itu juga njir{/cps}"
+
+        # dissolve screen setelah basa basi, terus dissolve buat part 2
 
 
 #Bagian Kerumah Temen Bareng
 # Bagian ini berisi alur utama yg dimana mc bakalan main dengan teman disampingnya yaitu si putri
     label kerumahTemenBareng1:
         # show bg temenHouse
-        mc "{cps=25} {/cps}"
-        pt "{cps=25} {/cps}"
+        pttm "{cps=25}Boleh kok, jarang-jarang juga temenku yang mau main kerumahku {/cps}"
+        mc "{cps=25}Emangnya kenapa? {/cps}"
+        pttm "{cps=25}Gua termasuk Introvert mah orangnya, jadi ga punya banyak temen kek lu sih{/cps}"
+        mc "{cps=25}Ohh iya ya... lupa gue{/cps}"
+        pttm "{cps=25}Jadi gimana nih? jadi kan?{/cps}"
+        mc "{cps=25}Jelas dong...{/cps}"
+        pttm "{cps=25}Oke nih, kebetulan Rumahku agak jauh, jadi naik dibelakang Sepedaku aja [name]{/cps}"
+        mc "{cps=25}Ohh, ok kalo begitu{/cps}"
+        pttm "{cps=25}Aku pengen membalas terimakasih juga{/cps}"
+        pttm "{cps=25}Sini cepetan naik, entar malah lama{/cps}"
+        pttm "{cps=25}Kan banyak juga tuh orang bilang 'Time is Money' {/cps}"
+        mc "{cps=25}Waktu itu emas sih menurutku{/cps}"
+        pttm "{cps=25}Yahh.... kurang lebih kalo gitu{/cps}"
+        pttm "{cps=25}Btw udah siap?{/cps}"
+        mc "{cps=25}Siap salah!{/cps}"
+        pttm "{cps=25}Ahahhahahha....{/cps}"
+
+        # dissolve screen setelah basa basi, terus dissolve buat part 2
 
     label kerumahTemenBareng21:
         # show bg temenHouse
-        mc "{cps=25} {/cps}"
-        pt "{cps=25} {/cps}"
+        pttm "{cps=25}Bisa aja sih, sekalian liat-liat kalo ada cowok ganteng dijalan {/cps}"
+        mc "{cps=25}Kalo gitu, tanpa basa basi langsung aja ngab{/cps}"
+        pttm "{cps=25}Oke, kamu jalan kaki aja yaa...{/cps}"
+        mc "{cps=25}Gampang.....{/cps}"
+        mc "{cps=25}Aku sering jogging juga disekitar sini tiap minggu{/cps}"
+        pttm "{cps=25}Ohh iya, jangan-jangan rumahmu dekat sini makanya kamu milih jalan aja{/cps}"
+        mc "{cps=25}Nggak juga deng{/cps}"
+        pttm "{cps=25}Yaudah nih malah entar lama disini, kita langsung cus aja{/cps}"
+        mc "{cps=25}Oke{/cps}"
+        
+
+        # dissolve screen setelah basa basi, terus dissolve buat part 2
 
     label kerumahTemenBareng22:
         # show bg temenHouse
-        mc "{cps=25} {/cps}"
-        pt "{cps=25} {/cps}"
+        pttm "{cps=25}Bebas aja sih, kalo mau ikut sepedaku sini{/cps}"
+        mc "{cps=25}Oke, btw langsung aja nih? {/cps}"
+        pttm "{cps=25}Ya iyalah, entar kelamaan Kita disini{/cps}"
+        mc "{cps=25}Liat-liat ya kalo ada cowok yang vibenya mirip gue{/cps}"
+        pttm "{cps=25}Oke deh{/cps}"
+        mc "{cps=25}KITA TEROBOSSS!!!!!!!{/cps}"
+
+        # dissolve screen setelah basa basi, terus dissolve buat part 2
 
     label kerumahTemenBareng23:
         # show bg temenHouse
-        mc "{cps=25} {/cps}"
-        pt "{cps=25} {/cps}"
+        pttm "{cps=25}Santai aja loh, lagian kita paling-paling ngerjain PR doang kan{/cps}"
+        mc "{cps=25}Iya, paling gitu doang sih {/cps}"
+        mc "{cps=25}Btw, kamu kenal nggak cowok yang kayak tipeku tadi?{/cps}"
+        pttm "{cps=25}Banyak cowo yang pernah kamu liat pake mata itu emangnya mereka kalo pengen pacaran gamau ceweknya hepi gituh?{/cps}"
+        mc "{cps=25}Hmmmm, iya juga sih{/cps}"
+        pttm "{cps=25}Berarti banyak banget yang bisa kamu pilih atuh{/cps}"
+        pttm "{cps=25}Yaudah nih, langsung aja naik sepedaku biar ga banyak bacot{/cps}"
+        mc "{cps=25}Dih, iyain deh{/cps}"
+
+        # dissolve screen setelah basa basi, terus dissolve buat part 2
 
 
 #  KHUSUS label ini terdapat pembicaraan mc dengan teman yg duduk disampingnya, yaitu si putri. jadi, Khusus dibagian ini mereka gaakan main bareng
     label kerumahTemenBareng3:
         # show bg temenHouse
         mc "{cps=25} {/cps}"
-        pt "{cps=25} {/cps}"
+        pttm "{cps=25} {/cps}"
+
+        # dissolve screen setelah basa basi, terus dissolve buat part 2
 
 
 #Bagian Pulang Sendiri-sendiri 
@@ -436,27 +572,37 @@ label start:
     label pulangSendiri_sendiri1:
         # show bg mcHouse
         mc "{cps=25} {/cps}"
-        pt "{cps=25} {/cps}"
+        pttm "{cps=25} {/cps}"
+
+        # dissolve screen setelah basa basi, terus dissolve buat part 2
 
     label pulangSendiri_sendiri21:
         # show bg mcHouse
         mc "{cps=25} {/cps}"
-        pt "{cps=25} {/cps}"
+        pttm "{cps=25} {/cps}"
+
+        # dissolve screen setelah basa basi, terus dissolve buat part 2
 
     label pulangSendiri_sendiri22:
         # show bg mcHouse
         mc "{cps=25} {/cps}"
-        pt "{cps=25} {/cps}"
+        pttm "{cps=25} {/cps}"
+
+        # dissolve screen setelah basa basi, terus dissolve buat part 2
 
     label pulangSendiri_sendiri23:
         # show bg mcHouse
         mc "{cps=25} {/cps}"
-        pt "{cps=25} {/cps}"
+        pttm "{cps=25} {/cps}"
+
+        # dissolve screen setelah basa basi, terus dissolve buat part 2
 
     label pulangSendiri_sendiri3:
         # show bg mcHouse
         mc "{cps=25} {/cps}"
-        pt "{cps=25} {/cps}"
+        pttm "{cps=25} {/cps}"
+
+        # dissolve screen setelah basa basi, terus dissolve buat part 2
 
 
 

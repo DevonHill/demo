@@ -241,7 +241,7 @@ label start:
         "Mau ngerjain PR Matematika bareng nggak? ":
             jump kerumahMcBareng
         
-        "Kita bicara sama Orang Tua kamu yuk, biar mereka ngertiin kamu ":
+        "Aku main kerumahmu bisa nggak? ":
             jump kerumahTemenBareng
         
         "Aku mau pulang nih, ada yang gue kerjain dirumah ":
@@ -272,7 +272,7 @@ label start:
         mc "{cps=25}Tapi kalonya bisa dapet yang kaya gitu, auto ngamuk sendiri deh gua di kamar{/cps}"
         "Teman disamping" "{cps=25}Kalonya gue bisa jadi gitu juga sih, tapi versi senyum-senyum sendiri{/cps}"
         mc "{cps=25}Oalah, gitu....{/cps}"
-        "Teman disamping" "{cps=25}Kalonya gue bisa jadi gitu juga sih, tapi versi senyum-senyum sendiri.{/cps}"
+        "Teman disamping" "{cps=25}Sadar diri juga sih kalo mau nyari kelas berat kek gitu hehe{/cps}"
         "Teman disamping" "{cps=25}Ohh iya nih{/cps}"
         "Teman disamping" "{cps=25}Aku lupa ada yang dikerjain dirumah nih..{/cps}"
         mc "{cps=25}Ahahhahahha.. ok nih gapapa juga kok, lagi gabut juga gue{/cps}"
@@ -280,6 +280,16 @@ label start:
         mc "{cps=25}Ehh... Tunggu Bentar{/cps}"
         "Teman disamping" "{cps=25}Kenapa lagi nih?{/cps}"
         
+    menu: 
+        "Mau ngerjain PR Matematika bareng nggak? ":
+            jump kerumahMcBareng
+        
+        "Aku main kerumahmu bisa nggak? ":
+            jump kerumahTemenBareng
+        
+        "Aku mau pulang nih, ada yang gue kerjain dirumah ":
+            jump pulangSendiri_sendiri
+    
     label tipe_cowo2:
         # show bg cty bench
         "Teman disamping" "{cps=25}Waduh... cukup membagongkan juga ini orang satu{/cps}"
@@ -296,6 +306,16 @@ label start:
         mc "{cps=25}Ehh... Tunggu Bentar{/cps}"
         "Teman disamping" "{cps=25}Kenapa lagi nih?{/cps}"
 
+    menu: 
+        "Mau ngerjain PR Matematika bareng nggak? ":
+            jump kerumahMcBareng
+        
+        "Aku main kerumahmu bisa nggak? ":
+            jump kerumahTemenBareng
+        
+        "Aku mau pulang nih, ada yang gue kerjain dirumah ":
+            jump pulangSendiri_sendiri
+    
     label tipe_cowo3:
         # show bg cty bench
         "Teman disamping" "{cps=25}Cukup simpel juga yaa...{/cps}"
@@ -312,6 +332,16 @@ label start:
         mc "{cps=25}Ehh... Tunggu Bentar{/cps}"
         "Teman disamping" "{cps=25}Kenapa lagi nih?{/cps}"
 
+    menu: 
+        "Mau ngerjain PR Matematika bareng nggak? ":
+            jump kerumahMcBareng
+        
+        "Aku main kerumahmu bisa nggak? ":
+            jump kerumahTemenBareng
+        
+        "Aku mau pulang nih, ada yang gue kerjain dirumah ":
+            jump pulangSendiri_sendiri
+    
     label kursi_umum3:
         # show bg cty bench
         mc "{cps=25}Mau kemanapun juga kita tetap berjalan sesuai kehendak tuhan kok. Jadi ya... hidup slowing down aja sih, udah The Best LAH.... walau dikerjain orang juga, jadi pengalaman lumayan juga {/cps}"

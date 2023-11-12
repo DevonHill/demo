@@ -31,6 +31,7 @@ screen gender():
 # 4. Fix cps sesuai suasana
 # 5. Pemisahan Part 
 # 6. Fixproblem kedap kedip tiap part
+# 7. Edit percakapan seolah olah mc belum terlalu akrab dengan putri 
 
 screen gabut1():
     vbox:
@@ -195,6 +196,23 @@ label start:
         mc "{cps=35}Monoton yaa....{/cps}"
         mc "{cps=35}Jadi ini rasanya kesepian yaa....{/cps}"
 
+        # -----------------------------------------------------------
+        
+        show bg blck
+        show screen part_1
+        with dissolve
+
+        pause 1.0
+
+        show screen jdl_prt1_p
+        with dissolve
+
+        pause 1.0
+
+        hide bg blck
+        hide screen part_1
+        hide screen jdl_prt1_p
+        
         #show bg blck
         #with dissole    
         show screen gabut1
@@ -214,25 +232,12 @@ label start:
 
         with dissolve 
 
-        # -----------------------------------------------------------
-        
-        show bg blck
-        show screen part_1
-        with dissolve
-
-        pause 1.0
-
-        show screen jdl_prt1_p
-        with dissolve
-
-        pause 1.0
-
-        hide bg blck
-        hide screen part_1
-        hide screen jdl_prt1_p
-
         "Teman disamping" "{cps=25}Apa kabar nih.. [name]? {/cps}"
         mc "{cps=25}Lumayan sih...{/cps}"
+        "Teman disamping" "{cps=25}Udah lama nggak ketemu kamu nih...{/cps}"
+        mc "{cps=25}Perasaan aku masih gitu gitu aja kerjaannya, mungkin kamu yang jarang liat{/cps}"
+        "Teman disamping" "{cps=25}Mungkin........{/cps}"
+        "Teman disamping" "{cps=25}Btw kamu ngapain duduk sendiri disini kaya kurang kerjaan?{/cps}"
         mc "{cps=25}Rada bingung sama diri sendiri aja gue..{/cps}"
         "Teman disamping" "{cps=25}Oalah, ceritain dong{/cps}"
         "Teman disamping" "{cps=25}Spill dikit nggak ngaruh, hehe{/cps}"
@@ -291,7 +296,7 @@ label start:
         "Mau ngerjain PR Matematika bareng nggak? ":
             jump kerumahMcBareng1
         
-        "Aku main kerumahmu bisa nggak? ":
+        "Kita bicara sama Orang Tua kamu yuk, biar mereka ngertiin kamu ":
             jump kerumahTemenBareng1
         
         "Aku mau pulang nih, ada yang gue kerjain dirumah ":
@@ -415,7 +420,7 @@ label start:
         "Mau ngerjain PR Matematika bareng nggak? ":
             jump kerumahMcBareng3
         
-        "Kita bicara sama Orang Tua kamu yuk, biar mereka ngertiin kamu ":
+        "Aku main kerumahmu bisa nggak? ":
             jump kerumahTemenBareng3
         
         "Aku mau pulang nih, ada yang gue kerjain dirumah ":
@@ -498,23 +503,19 @@ label start:
 #Bagian Kerumah Temen Bareng
 # Bagian ini berisi alur utama yg dimana mc bakalan main dengan teman disampingnya yaitu si putri
     label kerumahTemenBareng1:
+#  KHUSUS label ini terdapat pembicaraan mc dengan ortu teman yg duduk disampingnya, yaitu si putri. jadi, Khusus dibagian ini mereka gaakan main bareng
+
         # show bg temenHouse
-        pttm "{cps=25}Boleh kok, jarang-jarang juga temenku yang mau main kerumahku {/cps}"
-        mc "{cps=25}Emangnya kenapa? {/cps}"
-        pttm "{cps=25}Gua termasuk Introvert mah orangnya, jadi ga punya banyak temen kek lu sih{/cps}"
-        mc "{cps=25}Ohh iya ya... lupa gue{/cps}"
-        pttm "{cps=25}Jadi gimana nih? jadi kan?{/cps}"
-        mc "{cps=25}Jelas dong...{/cps}"
-        pttm "{cps=25}Oke nih, kebetulan Rumahku agak jauh, jadi naik dibelakang Sepedaku aja [name]{/cps}"
-        mc "{cps=25}Ohh, ok kalo begitu{/cps}"
-        pttm "{cps=25}Aku pengen membalas terimakasih juga{/cps}"
-        pttm "{cps=25}Sini cepetan naik, entar malah lama{/cps}"
-        pttm "{cps=25}Kan banyak juga tuh orang bilang 'Time is Money' {/cps}"
-        mc "{cps=25}Waktu itu emas sih menurutku{/cps}"
-        pttm "{cps=25}Yahh.... kurang lebih kalo gitu{/cps}"
-        pttm "{cps=25}Btw udah siap?{/cps}"
-        mc "{cps=25}Siap salah!{/cps}"
-        pttm "{cps=25}Ahahhahahha....{/cps}"
+        pttm "{cps=25}Tapi...... kamu yakin? {/cps}"
+        mc "{cps=25}Yakin sih, udah pernah juga masalahnya ngehadapin kek gituan{/cps}"
+        pttm "{cps=25}Ohh, gitu.....{/cps}"
+        mc "{cps=25}Btw rumah kamu jauh nggak?{/cps}"
+        pttm "{cps=25}Lumayan juga sih, sekitar 2 km dari sini{/cps}"
+        mc "{cps=25}Kalo gitu aku boleh ikut dibelakangmu nggak?{/cps}"
+        pttm "{cps=25}Boleh banget kok, lagian aku kagak tega juga ngeliat temen yang pengen bantu aku tapi aku nggak support dia.{/cps}"
+        mc "{cps=25}Nah.. mending kita langsung aja kalo gitu kerumahmu nih, keburu lama{/cps}"
+        mc "{cps=25}Hati-hati yaa.....{/cps}"
+        pttm "{cps=25}Oke........{/cps}"
 
         # dissolve screen setelah basa basi, terus dissolve buat part 2
 
@@ -558,11 +559,25 @@ label start:
         # dissolve screen setelah basa basi, terus dissolve buat part 2
 
 
-#  KHUSUS label ini terdapat pembicaraan mc dengan teman yg duduk disampingnya, yaitu si putri. jadi, Khusus dibagian ini mereka gaakan main bareng
     label kerumahTemenBareng3:
         # show bg temenHouse
-        mc "{cps=25} {/cps}"
-        pttm "{cps=25} {/cps}"
+        pttm "{cps=25}Boleh kok, jarang-jarang juga temenku yang mau main kerumahku {/cps}"
+        mc "{cps=25}Emangnya kenapa? {/cps}"
+        pttm "{cps=25}Gua termasuk Introvert mah orangnya, jadi ga punya banyak temen kek lu sih{/cps}"
+        mc "{cps=25}Ohh iya ya... lupa gue{/cps}"
+        pttm "{cps=25}Jadi gimana nih? jadi kan?{/cps}"
+        mc "{cps=25}Jelas dong...{/cps}"
+        pttm "{cps=25}Oke nih, kebetulan Rumahku agak jauh, jadi naik dibelakang Sepedaku aja [name]{/cps}"
+        mc "{cps=25}Ohh, ok kalo begitu{/cps}"
+        pttm "{cps=25}Aku pengen membalas terimakasih juga{/cps}"
+        pttm "{cps=25}Sini cepetan naik, entar malah lama{/cps}"
+        pttm "{cps=25}Kan banyak juga tuh orang bilang 'Time is Money' {/cps}"
+        mc "{cps=25}Waktu itu emas sih menurutku{/cps}"
+        pttm "{cps=25}Yahh.... kurang lebih kalo gitu{/cps}"
+        pttm "{cps=25}Btw udah siap?{/cps}"
+        mc "{cps=25}Siap salah!{/cps}"
+        pttm "{cps=25}Ahahhahahha....{/cps}"
+
 
         # dissolve screen setelah basa basi, terus dissolve buat part 2
 

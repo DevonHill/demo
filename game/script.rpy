@@ -246,6 +246,7 @@ label start:
 # JANGAN LUPA MATIKAN / KOMENTAR BACKGROUND SEMENTARA SEBELUM COMMIT DAN PUSH KE GITHUB (jika gambar dari ilustrator belum rilis ngab :)
         # show bg jett
 # ---------------------------------------------------------------------------------------------------------------------
+
         "Teman disamping" "{cps=25}Apa kabar nih.. [name]? {/cps}"
         mc "{cps=25}Lumayan sih...{/cps}"
         "Teman disamping" "{cps=25}Udah lama nggak ketemu kamu nih...{/cps}"

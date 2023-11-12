@@ -8,6 +8,7 @@ image bg cty = "images/cty.png"
 image logo text = Text("This is a text displayable.", size=30)
 image bg blck = "images/bg blck.png"
 image prologue = "images/prologue.jpg"
+image bg jett = "images/jett.jpg"
 
 define slowdissolve = Dissolve(1.0)
 define sh = Character("", window_background=None)
@@ -29,8 +30,8 @@ screen gender():
 # 2. Kerjain bagian tipe cowok *
 # 3. Kerjain bagian choice buat next story yg 15 label (part 2)
 # 4. Fix cps sesuai suasana
-# 5. Pemisahan Part 
-# 6. Fixproblem kedap kedip tiap part
+# 5. Pemisahan Part  *
+# 6. Fixproblem kedap kedip tiap part *
 # 7. Edit percakapan seolah olah mc belum terlalu akrab dengan putri 
 
 screen gabut1():
@@ -169,7 +170,9 @@ label start:
             jump name_p
 
 
+
 #    STORY  P
+
 
 
     label enter_p:
@@ -184,19 +187,24 @@ label start:
         show screen prologue_text
         with dissolve
 
-        sh " "
+        pause 3.0
+        # sh " "
          
         hide bg blck
         hide screen bab1_l
         hide screen prologue_text
 
-        #show bg blck
+        # show bg blck
         mc "{cps=35}Ahh......{/cps}{cps=25} kota ini memang membosankan ya... {/cps}"
         mc "{cps=25}Mungkin Aku doang yang kerjaannya itu itu aja pas SMP dulu {/cps}"
         mc "{cps=35}Monoton yaa....{/cps}"
         mc "{cps=35}Jadi ini rasanya kesepian yaa....{/cps}"
 
-        # -----------------------------------------------------------
+        window hide
+        # ^^^^^^ #
+# Cara hide textbox renpy 
+        # ^^^^^^ #
+
         
         show bg blck
         show screen part_1
@@ -207,12 +215,14 @@ label start:
         show screen jdl_prt1_p
         with dissolve
 
-        pause 1.0
+        pause 2.5
 
         hide bg blck
         hide screen part_1
         hide screen jdl_prt1_p
         
+        # -----------------------------------------------------------
+
         #show bg blck
         #with dissole    
         show screen gabut1
@@ -232,6 +242,10 @@ label start:
 
         with dissolve 
 
+# ---------------------------------------------------------------------------------------------------------------------
+# JANGAN LUPA MATIKAN / KOMENTAR BACKGROUND SEMENTARA SEBELUM COMMIT DAN PUSH KE GITHUB (jika gambar dari ilustrator belum rilis ngab :)
+        # show bg jett
+# ---------------------------------------------------------------------------------------------------------------------
         "Teman disamping" "{cps=25}Apa kabar nih.. [name]? {/cps}"
         mc "{cps=25}Lumayan sih...{/cps}"
         "Teman disamping" "{cps=25}Udah lama nggak ketemu kamu nih...{/cps}"
@@ -299,7 +313,7 @@ label start:
         "Kita bicara sama Orang Tua kamu yuk, biar mereka ngertiin kamu ":
             jump kerumahTemenBareng1
         
-        "Aku mau pulang nih, ada yang gue kerjain dirumah ":
+        "Ga jadi deh, aku lupa ada juga yang gue kerjain dirumah":
             jump pulangSendiri_sendiri1
 
     label kursi_umum2:
@@ -343,7 +357,7 @@ label start:
         "Aku main kerumahmu bisa nggak? ":
             jump kerumahTemenBareng21
         
-        "Aku mau pulang nih, ada yang gue kerjain dirumah ":
+        "Ga jadi deh, aku lupa ada juga yang gue kerjain dirumah":
             jump pulangSendiri_sendiri21
     
     label tipe_cowo2:
@@ -369,7 +383,7 @@ label start:
         "Aku main kerumahmu bisa nggak? ":
             jump kerumahTemenBareng22
         
-        "Aku mau pulang nih, ada yang gue kerjain dirumah ":
+        "Ga jadi deh, aku lupa ada juga yang gue kerjain dirumah":
             jump pulangSendiri_sendiri22
     
     label tipe_cowo3:
@@ -395,7 +409,7 @@ label start:
         "Aku main kerumahmu bisa nggak? ":
             jump kerumahTemenBareng23
         
-        "Aku mau pulang nih, ada yang gue kerjain dirumah ":
+        "Ga jadi deh, aku lupa ada juga yang gue kerjain dirumah":
             jump pulangSendiri_sendiri23
     
     label kursi_umum3:
@@ -423,12 +437,12 @@ label start:
         "Aku main kerumahmu bisa nggak? ":
             jump kerumahTemenBareng3
         
-        "Aku mau pulang nih, ada yang gue kerjain dirumah ":
+        "Ga jadi deh, aku lupa ada juga yang gue kerjain dirumah ":
             jump pulangSendiri_sendiri3
     
 # ------------------------------------------------------------------
 #Bagian Kerumah MC Bareng
-# Bagian ini akan berisi alur utama yang dimana mc akan lupa nama temannya dan bertanya kemudian mereka bakalan kerumah si mc selagi mengerjakan PR Matimatikam bareng
+# Bagian ini akan berisi alur utama yang dimana mc akan lupa nama temannya dan bertanya kemudian mereka bakalan kerumah si mc selagi mengerjakan PR Matimatikam bareng. Dan untuk next part atau babnya nanti mereka bakalan sering ketemu karena temennya si mc atau putri udah tau rumah mc
     label kerumahMcBareng1:
         # show bg mcHouse
         pttm "{cps=25}Wah boleh banget tuhh {/cps}"
@@ -488,21 +502,22 @@ label start:
         pttm "{cps=25}Boleh kok.... {/cps}"
         pttm "{cps=25}Semoga kita dapat takdir nilai paling tinggi hehehe {/cps}"
         mc "{cps=25}Yang dapat nilai tinggi mah aku sih kayaknya ahhahahahha {/cps}"
-        pttm "{cps=25}Daripada debat Siapa yang bakalan dapat nilai tertinggi di kelas nanti......{/cps}"
+        pttm "{cps=25}Daripada debat Siapa yang bakalan dapat nilai tertinggi di Sekolah nanti......{/cps}"
         pttm "{cps=25}Mendingan Siapa yang paling baik dan rutin belajar yang bakalan paling tinggi nilainya nanti gimana? {/cps}"
         mc "{cps=25}Hehe, boleh juga tuh{/cps}"
         mc "{cps=25}Btw langsung aja yok, keburu dapat takdir hujan dijalan ahahahhahah{/cps}"
         pttm "{cps=25}Kalo gitu sini naik Dibelakang{/cps}"
         mc "{cps=25}Oke kakak yang baik hati{/cps}"
-        mc "{cps=25}Kayaknya takdir lagi berpihak baik denganku sekarang{/cps}"
+        mc "{cps=25}Kayaknya takdir sedang berpihak baik denganku sekarang{/cps}"
         pttm "{cps=25}Yaelah, masih bahas itu juga njir{/cps}"
 
         # dissolve screen setelah basa basi, terus dissolve buat part 2
 
 
 #Bagian Kerumah Temen Bareng
-# Bagian ini berisi alur utama yg dimana mc bakalan main dengan teman disampingnya yaitu si putri
+# Bagian ini berisi alur utama yg dimana mc bakalan main dengan teman disampingnya yaitu si putri. Dan untuk next  part atau bab nanti mereka bakalan sering ketemu karena mc sering main kerumahnya
     label kerumahTemenBareng1:
+
 #  KHUSUS label ini terdapat pembicaraan mc dengan ortu teman yg duduk disampingnya, yaitu si putri. jadi, Khusus dibagian ini mereka gaakan main bareng
 
         # show bg temenHouse
@@ -583,47 +598,62 @@ label start:
 
 
 #Bagian Pulang Sendiri-sendiri 
-# Bagian ini akan berisi alur utama yang dimana si mc dan temannya pulang kerumah masing masing dikarenakan ada urusan atau kesibukan mereka sendiri sendiri yang dimana nanti si mc bakal tetap ngerjain pr mtk nya
+# Bagian ini akan berisi alur utama yang dimana si mc dan temannya pulang kerumah masing masing dikarenakan ada urusan atau kesibukan mereka sendiri sendiri yang dimana nanti si mc bakal tetap ngerjain pr mtk nya. Dan untuk next bab atau part nanti, mereka bakalan ketemu lagi nggak sengaja karena lupa minta kontak, jadi akan ada perbedaan alur cerita di waktu yang sama tapi mereka akan berpisah sementara dengan saling mengucapkan nama diakhir
     label pulangSendiri_sendiri1:
         # show bg mcHouse
-        mc "{cps=25} {/cps}"
-        pttm "{cps=25} {/cps}"
+        pttm "{cps=25}Oalah, gituu........{/cps}"
+        pttm "{cps=25}Iya-iya, aku juga sih{/cps}"
+        mc "{cps=25}Dadah...!!{/cps}"
+        pttm "{cps=25}Dahhhh.....!!{/cps}"
 
         # dissolve screen setelah basa basi, terus dissolve buat part 2
 
     label pulangSendiri_sendiri21:
         # show bg mcHouse
-        mc "{cps=25} {/cps}"
-        pttm "{cps=25} {/cps}"
+        pttm "{cps=25}Oalah, gituu........{/cps}"
+        pttm "{cps=25}Iya-iya, aku juga sih{/cps}"
+        mc "{cps=25}Dadah...!!{/cps}"
+        pttm "{cps=25}Dahhhh.....!!{/cps}"
+
 
         # dissolve screen setelah basa basi, terus dissolve buat part 2
 
     label pulangSendiri_sendiri22:
         # show bg mcHouse
-        mc "{cps=25} {/cps}"
-        pttm "{cps=25} {/cps}"
+        pttm "{cps=25}Oalah, gituu........{/cps}"
+        pttm "{cps=25}Iya-iya, aku juga sih{/cps}"
+        mc "{cps=25}Dadah...!!{/cps}"
+        pttm "{cps=25}Dahhhh.....!!{/cps}"
+
 
         # dissolve screen setelah basa basi, terus dissolve buat part 2
 
     label pulangSendiri_sendiri23:
         # show bg mcHouse
-        mc "{cps=25} {/cps}"
-        pttm "{cps=25} {/cps}"
+        pttm "{cps=25}Oalah, gituu........{/cps}"
+        pttm "{cps=25}Iya-iya, aku juga sih{/cps}"
+        mc "{cps=25}Dadah...!!{/cps}"
+        pttm "{cps=25}Dahhhh.....!!{/cps}"
+
 
         # dissolve screen setelah basa basi, terus dissolve buat part 2
 
     label pulangSendiri_sendiri3:
         # show bg mcHouse
-        mc "{cps=25} {/cps}"
-        pttm "{cps=25} {/cps}"
+        pttm "{cps=25}Oalah, gituu........{/cps}"
+        pttm "{cps=25}Iya-iya, aku juga sih{/cps}"
+        mc "{cps=25}Dadah...!!{/cps}"
+        pttm "{cps=25}Dahhhh.....!!{/cps}"
 
         # dissolve screen setelah basa basi, terus dissolve buat part 2
 
 
-
     return
 
+
+
 #    STORY  L
+
 
 
     label enter_l:
@@ -638,11 +668,12 @@ label start:
         show screen prologue_text
         with dissolve
 
-        sh " "
+        pause 3.0
          
         hide bg blck
         hide screen bab1_l
         hide screen prologue_text
+
         
         #show bg cty
         mc "{cps=25}Jadi inikah kota tujuanku{/cps}"
@@ -677,6 +708,8 @@ label start:
     mc "{cps=25}apakah kau masih mengingatku{/cps}"
     " " "{cps=10}{i}{color=#008cff}{size=+20}SARAH{/color}{/size}{size=+20}!{/i}{/cps}{/size}"
 
+    window hide
+
     show bg blck
     show screen part_1
     with dissolve
@@ -686,7 +719,8 @@ label start:
     show screen jdl_prt1_l
     with dissolve
 
-    " " " "   
+    pause 2.5
+
     hide bg blck
     hide screen part_1
     hide screen jdl_prt1_l

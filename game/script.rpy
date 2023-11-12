@@ -32,7 +32,7 @@ screen gender():
 # 4. Fix cps sesuai suasana
 # 5. Pemisahan Part  *
 # 6. Fixproblem kedap kedip tiap part *
-# 7. Edit percakapan seolah olah mc belum terlalu akrab dengan putri 
+# 7. Edit percakapan seolah olah mc belum terlalu akrab dengan putri
 
 screen gabut1():
     vbox:
@@ -195,6 +195,7 @@ label start:
         hide screen prologue_text
 
         # show bg blck
+        with slowdissolve
         mc "{cps=35}Ahh......{/cps}{cps=25} kota ini memang membosankan ya... {/cps}"
         mc "{cps=25}Mungkin Aku doang yang kerjaannya itu itu aja pas SMP dulu {/cps}"
         mc "{cps=35}Monoton yaa....{/cps}"
@@ -224,7 +225,8 @@ label start:
         # -----------------------------------------------------------
 
         #show bg blck
-        #with dissole    
+        with slowdissolve
+
         show screen gabut1
         with dissolve
         sh ""
@@ -240,17 +242,18 @@ label start:
         sh ""
         hide screen gabut3
 
-        with dissolve 
+        with dissolve
 
 # ---------------------------------------------------------------------------------------------------------------------
 # JANGAN LUPA MATIKAN / KOMENTAR BACKGROUND SEMENTARA SEBELUM COMMIT DAN PUSH KE GITHUB (jika gambar dari ilustrator belum rilis ngab :)
-        # show bg jett
+        show bg jett
+        with slowdissolve
 # ---------------------------------------------------------------------------------------------------------------------
 
         "Teman disamping" "{cps=25}Apa kabar nih.. [name]? {/cps}"
         mc "{cps=25}Lumayan sih...{/cps}"
         "Teman disamping" "{cps=25}Udah lama nggak ketemu kamu nih...{/cps}"
-        mc "{cps=25}Perasaan aku masih gitu gitu aja kerjaannya, mungkin kamu yang jarang liat{/cps}"
+        mc "{cps=25}Perasaan aku masih gitu gitu aja dah kerjaannya, mungkin kamu yang jarang liat{/cps}"
         "Teman disamping" "{cps=25}Mungkin........{/cps}"
         "Teman disamping" "{cps=25}Btw kamu ngapain duduk sendiri disini kaya kurang kerjaan?{/cps}"
         mc "{cps=25}Rada bingung sama diri sendiri aja gue..{/cps}"
@@ -275,14 +278,15 @@ label start:
     label kursi_umum1:
         # show bg cty bench
         mc "{cps=25}Kan ada juga tuh pepatah bilang kalo kerasnya usaha lo akan membuahkan hasil, tapi hanya waktu yang menjawabnya. {/cps}"
-        "Teman disamping" "{cps=25}Kata-kata hari ini dari teman kocak si [name] {/cps}{cps=25}"
-        "Teman disamping" "{cps=35}AnJay...{/cps}"
+        "Teman disamping" "{cps=15}Wahhh...{/cps}"
+        "Teman disamping" "{cps=25}Kata-kata hari ini Keren juga ya... [name] {/cps}{cps=25}"
+        mc "{cps=45}Yoi{/cps}"
         "Teman disamping" "{cps=25}Tapi ada benernya juga lu, gua jadi merasa lebih semangat dari kota bosan ini. {/cps}"
         "Teman disamping" "{cps=25}Tapi juga gue penasaran satu hal deh...{/cps}"
         "Teman disamping" "{cps=25}Ehh dua deh...{/cps}"
         "Teman disamping" "{cps=25}Sebenarnya...{/cps}"
         "Teman disamping" "{cps=25}Aku masih bingung gimana cara dapetin beasiswa, terus..... aku juga gatau mau milih jurusan kuliah apa nanti pas sudah lulus SMA nih [name]{/cps}"
-        mc "{cps=15}Gini-gini{/cps}"
+        mc "{cps=20}Gini-gini{/cps}"
         mc "{cps=30}Sebenarnya nyari beasiswa itu sih penting, tapi hal yang lebih penting lagi masih ada{/cps}"
         "Teman disamping" "{cps=25}Apa lagi sih [name], bikin penasaran aja..?{/cps}"
         mc "{cps=25}Nah, sebenarnya lu punya pilihan dalam hidup ini. {/cps}"
@@ -677,6 +681,7 @@ label start:
 
         
         #show bg cty
+        with slowdissolve
         mc "{cps=25}Jadi inikah kota tujuanku{/cps}"
         
         mc "{cps=15}Menarik...{/cps}"
@@ -727,7 +732,7 @@ label start:
     hide screen jdl_prt1_l
     
     #show bg schl
-    #with dissolve
+    with slowdissolve
     mc "Jadi ini sekolahnya?"
     mc "Berapa lama aku pergi sehingga sekolah ini terlihat berbeda"
     mc "Terakhir kali aku di kota ini waktu aku masih kecil"

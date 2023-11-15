@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 244: expected statement.
-    renpy.transition(Dissolve(0.5))
-                                   ^
+File "game/script.rpy", line 198: expected end of line
+    play music "audio/angin-sepoi.ogg" volume 50% fadein 1.0
+                                                         ^
 
 Ren'Py Version: Ren'Py 8.1.1.23060707
-Mon Nov 13 00:42:49 2023
+Thu Nov 16 04:05:20 2023

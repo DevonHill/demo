@@ -1,22 +1,51 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 380, in script
-    pt "{cps=25} {/cps}"
-Exception: Sayer 'pt' is not defined.
+  File "game/script.rpy", line 258, in script
+    "Teman disamping" "{cps=25}Apa kabar nih.. [name]? {/cps}"
+  File "renpy/common/00library.rpy", line 321, in say
+    who(what, interact=interact, *args, **kwargs)
+OSError: Couldn't find file 'audo/16A6.ogg'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 380, in script
-    pt "{cps=25} {/cps}"
-  File "X:\Tasir\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 890, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "X:\Tasir\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 783, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'pt' is not defined.
+  File "game/script.rpy", line 258, in script
+    "Teman disamping" "{cps=25}Apa kabar nih.. [name]? {/cps}"
+  File "X:\Tasir\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 930, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "X:\Tasir\RenPy\renpy-8.1.1-sdk\renpy\exports.py", line 1471, in say
+    renpy.store.say(who, what, *args, **kwargs)
+  File "renpy/common/00library.rpy", line 321, in say
+    who(what, interact=interact, *args, **kwargs)
+  File "X:\Tasir\RenPy\renpy-8.1.1-sdk\renpy\character.py", line 1352, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "X:\Tasir\RenPy\renpy-8.1.1-sdk\renpy\character.py", line 1003, in do_display
+    display_say(who,
+  File "X:\Tasir\RenPy\renpy-8.1.1-sdk\renpy\character.py", line 693, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "X:\Tasir\RenPy\renpy-8.1.1-sdk\renpy\ui.py", line 299, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "X:\Tasir\RenPy\renpy-8.1.1-sdk\renpy\display\core.py", line 3579, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "X:\Tasir\RenPy\renpy-8.1.1-sdk\renpy\display\core.py", line 4376, in interact_core
+    renpy.audio.audio.periodic()
+  File "X:\Tasir\RenPy\renpy-8.1.1-sdk\renpy\audio\audio.py", line 1222, in periodic
+    raise_(exc[0], exc[1], exc[2])
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 444, in raise_
+  File "X:\Tasir\RenPy\renpy-8.1.1-sdk\renpy\audio\audio.py", line 1200, in periodic_thread_main
+    periodic_pass()
+  File "X:\Tasir\RenPy\renpy-8.1.1-sdk\renpy\audio\audio.py", line 1142, in periodic_pass
+    c.periodic()
+  File "X:\Tasir\RenPy\renpy-8.1.1-sdk\renpy\audio\audio.py", line 534, in periodic
+    topf = load(filename)
+  File "X:\Tasir\RenPy\renpy-8.1.1-sdk\renpy\audio\audio.py", line 72, in load
+    rv = renpy.loader.load(fn, directory="audio")
+  File "X:\Tasir\RenPy\renpy-8.1.1-sdk\renpy\loader.py", line 833, in load
+    raise IOError("Couldn't find file '%s'." % name)
+OSError: Couldn't find file 'audo/16A6.ogg'.
 
 Windows-10-10.0.17763 AMD64
 Ren'Py 8.1.1.23060707
 Demo 1.0
-Sat Nov 11 20:04:45 2023
+Thu Nov 16 03:58:01 2023

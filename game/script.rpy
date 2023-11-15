@@ -84,37 +84,37 @@ screen prologue_text():
         xalign 0.5 ypos 0.42
         text "{size=+20}P r o l o g u e"
 
-screen part_1():
+screen chapter_1():
     vbox:
         xalign 0.5 ypos 0.3
-        text "{size=+50}PART 1"
+        text "{size=+50}CHAPTER 1"
 
-screen part_2():
+screen chapter_2():
     vbox:
         xalign 0.5 ypos 0.3
-        text "{size=+50}PART 2"
+        text "{size=+50}CHAPTER 2"
 
-screen jdl_prt1_l():
+screen jdl_chpt1_l():
     vbox:
         xalign 0.5 ypos 0.42
         text "{size=+20}Masa Perkenalan"
 
-screen jdl_prt1_p():
+screen jdl_chpt1_p():
     vbox:
         xalign 0.5 ypos 0.42
         text "{size=+20}Masa Perkenalan"
 
-screen jdl_prt2_p1():
+screen jdl_chpt2_p1():
     vbox:
         xalign 0.5 ypos 0.42
         text "{size=+20}Kerumah Sendiri bawa Teman"
 
-screen jdl_prt2_p2():
+screen jdl_chpt2_p2():
     vbox:
         xalign 0.5 ypos 0.42
         text "{size=+20}Ikut kerumah Teman"
 
-screen jdl_prt2_p3():
+screen jdl_chpt2_p3():
     vbox:
         xalign 0.5 ypos 0.42
         text "{size=+20}Pulang Sendiri kerumah"
@@ -187,19 +187,21 @@ label start:
         show screen prologue_text
         with dissolve
 
-        pause 3.0
-        # sh " "
+        window hide
+        sh ""
          
         hide bg blck
         hide screen bab1_l
         hide screen prologue_text
 
         # show bg blck
+        play music "audio/angin-sepoi.ogg" volume 20 fadein 1.0
         with slowdissolve
         mc "{cps=35}Ahh......{/cps}{cps=25} kota ini memang membosankan ya... {/cps}"
         mc "{cps=25}Mungkin Aku doang yang kerjaannya itu itu aja pas SMP dulu {/cps}"
         mc "{cps=35}Monoton yaa....{/cps}"
-        mc "{cps=35}Jadi ini rasanya kesepian yaa....{/cps}"
+        mc "{cps=35}Jadi ini rasanya kesepian ya....{/cps}"
+        stop music fadeout 2.3
 
         window hide
         # ^^^^^^ #
@@ -208,19 +210,20 @@ label start:
 
         
         show bg blck
-        show screen part_1
+        show screen chapter_1
         with dissolve
 
         pause 1.0
 
-        show screen jdl_prt1_p
+        show screen jdl_chpt1_p
         with dissolve
 
-        pause 2.5
+        window hide
+        sh ""
 
         hide bg blck
-        hide screen part_1
-        hide screen jdl_prt1_p
+        hide screen chapter_1
+        hide screen jdl_chpt1_p
         
         # -----------------------------------------------------------
 
@@ -249,6 +252,8 @@ label start:
         show bg jett
         with slowdissolve
 # ---------------------------------------------------------------------------------------------------------------------
+# Musik sementara (bajakan)
+        play music "audio/16A6.ogg" loop
 
         "Teman disamping" "{cps=25}Apa kabar nih.. [name]? {/cps}"
         mc "{cps=25}Lumayan sih...{/cps}"
@@ -281,7 +286,7 @@ label start:
         "Teman disamping" "{cps=15}Wahhh...{/cps}"
         "Teman disamping" "{cps=25}Kata-kata hari ini Keren juga ya... [name] {/cps}{cps=25}"
         mc "{cps=45}Yoi{/cps}"
-        "Teman disamping" "{cps=25}Tapi ada benernya juga lu, gua jadi merasa lebih semangat dari kota bosan ini. {/cps}"
+        "Teman disamping" "{cps=25}Tapi ada benernya juga lu, gua jadi merasa lebih semangat dari kota yang bosan ini. {/cps}"
         "Teman disamping" "{cps=25}Tapi juga gue penasaran satu hal deh...{/cps}"
         "Teman disamping" "{cps=25}Ehh dua deh...{/cps}"
         "Teman disamping" "{cps=25}Sebenarnya...{/cps}"
@@ -523,7 +528,7 @@ label start:
 # Bagian ini berisi alur utama yg dimana mc bakalan main dengan teman disampingnya yaitu si putri. Dan untuk next  part atau bab nanti mereka bakalan sering ketemu karena mc sering main kerumahnya
     label kerumahTemenBareng1:
 
-#  KHUSUS label ini terdapat pembicaraan mc dengan ortu teman yg duduk disampingnya, yaitu si putri. jadi, Khusus dibagian ini mereka gaakan main bareng
+#  KHUSUS label ini terdapat pembicaraan mc dengan ortu teman yg duduk disampingnya, yaitu si putri. jadi, Khusus dibagian ini mereka gaakan main bareng. Serta, Putri bakalan didukung untuk memilih jalan hidupnya nanti saat lulus
 
         # show bg temenHouse
         pttm "{cps=25}Tapi...... kamu yakin? {/cps}"
@@ -673,7 +678,8 @@ label start:
         show screen prologue_text
         with dissolve
 
-        pause 3.0
+        window hide
+        sh ""
          
         hide bg blck
         hide screen bab1_l
@@ -717,19 +723,20 @@ label start:
     window hide
 
     show bg blck
-    show screen part_1
+    show screen chapter_1
     with dissolve
 
     pause 1.0
 
-    show screen jdl_prt1_l
+    show screen jdl_chpt1_l
     with dissolve
 
-    pause 2.5
+    window hide
+    sh ""
 
     hide bg blck
-    hide screen part_1
-    hide screen jdl_prt1_l
+    hide screen chapter_1
+    hide screen jdl_chpt1_l
     
     #show bg schl
     with slowdissolve

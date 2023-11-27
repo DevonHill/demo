@@ -28,7 +28,7 @@ screen gender():
 # Next job = 
 # 1. Fix bagian takdir, sekira terlihat berlebih dan tak Sberdaya *
 # 2. Kerjain bagian tipe cowok *
-# 3. Kerjain bagian choice buat next story yg 15 label (part 2)
+# 3. Kerjain bagian choice buat next story yg 15 label (chapter 2)
 # 4. Fix cps sesuai suasana
 # 5. Pemisahan Part  *
 # 6. Fixproblem kedap kedip tiap part *
@@ -195,12 +195,12 @@ label start:
         hide screen prologue_text
 
         # show bg blck
-        play music "audio/angin-sepoi.ogg" volume 20 fadein 1.0
+        play music "audio/angin-sepoi.ogg" volume 25 fadein 1.0
         with slowdissolve
         mc "{cps=35}Ahh......{/cps}{cps=25} kota ini memang membosankan ya... {/cps}"
         mc "{cps=25}Mungkin Aku doang yang kerjaannya itu itu aja pas SMP dulu {/cps}"
-        mc "{cps=35}Monoton yaa....{/cps}"
-        mc "{cps=35}Jadi ini rasanya kesepian ya....{/cps}"
+        mc "{cps=20}Monoton yaa....{/cps}"
+        mc "{cps=13}Jadi inikah hampa tanpa sepi? {/cps}"
         stop music fadeout 2.3
 
         window hide

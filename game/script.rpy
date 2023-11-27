@@ -1,7 +1,9 @@
-﻿# Kamu dapat taruh script game mu di file ini.
+﻿# Bagian catatan
+# Bab, Chapter, Part = Pergantian bab dan chapter ditampilkan, dan hanya part yang tidak diketahui player, kecuali membaca komentar pemisahan part di kodingan, atau menalar sendiri tiap perbedaan garis besar alur cerita 
+# Selama belum ada gambar oficial, project ini bisa memakai gambar bajakan dulu
+# Sprites karakter = nanti, gambar karakter dipisah tiap emosi yg digunakan, kemudian akan ada emosi dalam pikiran yang ditampilkan ke player sebagai sprites tambahan pada scene tertentu 
+# Kalau sudah tahap launch game, ada baiknya dibuat video intro game diawal alur cerita. Serta endingnya juga 
 
-# Deklarasikan gambar di bawah line ini, menggunakan pernyataan image.
-# cnth. image eileen happy = "eileen_happy.png"
 
 # Bagian Define / Deklarasi gambar dan character
 image bg cty = "images/cty.png"
@@ -13,6 +15,7 @@ image bg jett = "images/jett.jpg"
 define slowdissolve = Dissolve(1.0)
 define sh = Character("", window_background=None)
 define mc = Character("[name]")
+define dmc = Character("dalam pikiran [name]")
 define sr = Character("Sarah", color="#008cff")
 define pt = Character("Putri", color="#4400ff")
 define pttm = Character("Teman disamping")
@@ -32,7 +35,7 @@ screen gender():
 # 4. Fix cps sesuai suasana
 # 5. Pemisahan Part  *
 # 6. Fixproblem kedap kedip tiap part *
-# 7. Edit percakapan seolah olah mc belum terlalu akrab dengan putri
+# 7. Edit percakapan seolah olah mc belum terlalu akrab dengan putri *
 
 screen gabut1():
     vbox:
@@ -195,12 +198,12 @@ label start:
         hide screen prologue_text
 
         # show bg blck
-        play music "audio/angin-sepoi.ogg" volume 25 fadein 1.0
+        play music "audio/angin-sepoi.ogg" volume 5 fadein 1.0
         with slowdissolve
         mc "{cps=35}Ahh......{/cps}{cps=25} kota ini memang membosankan ya... {/cps}"
         mc "{cps=25}Mungkin Aku doang yang kerjaannya itu itu aja pas SMP dulu {/cps}"
-        mc "{cps=20}Monoton yaa....{/cps}"
-        mc "{cps=13}Jadi inikah hampa tanpa sepi? {/cps}"
+        mc "{cps=20}Sepertinya ini sebuah tanda{/cps}"
+        mc "{cps=13}Jadi inikah kehampaan tanpa sepi? {/cps}"
         stop music fadeout 2.3
 
         window hide
@@ -253,17 +256,28 @@ label start:
         with slowdissolve
 # ---------------------------------------------------------------------------------------------------------------------
 # Musik sementara (bajakan)
-        play music "audio/16A6.ogg" loop
+        play music "audio/16A6.ogg" volume 1 loop
 
-        "Teman disamping" "{cps=25}Apa kabar nih.. [name]? {/cps}"
+        "Teman disamping" "{cps=25}Apa kabar nih.. ? {/cps}"
         mc "{cps=25}Lumayan sih...{/cps}"
         "Teman disamping" "{cps=25}Udah lama nggak ketemu kamu nih...{/cps}"
         mc "{cps=25}Perasaan aku masih gitu gitu aja dah kerjaannya, mungkin kamu yang jarang liat{/cps}"
         "Teman disamping" "{cps=25}Mungkin........{/cps}"
         "Teman disamping" "{cps=25}Btw kamu ngapain duduk sendiri disini kaya kurang kerjaan?{/cps}"
+        mc "{cps=25}Gabut doang sih...{/cps}"
+        "Teman disamping" "{cps=25}Oalah...{/cps}"
+        "Teman disamping" "{cps=25}Oh iya, nama kamu bukannya [name] ya..?{/cps}"
+        mc "{cps=25}Ga salah kok...{/cps}"
+        "Teman disamping" "{cps=25}Ga salah lagi yaa...?{/cps}"
+        mc "{cps=25}Ahahahaha{/cps}"
+        "Teman disamping" "{cps=25}Ada apa sih sebenarnya? Muka mu kok kelihatan pucat gitu?{/cps}"
+        mc "{cps=25}Habis Frustasi aja sih, gaada hal lain kayak galau atau apa gitu sih{/cps}"
+        dmc "{cps=25}Padahal gue habis Galau berat lah ASTAGAAA........{/cps}"
         mc "{cps=25}Rada bingung sama diri sendiri aja gue..{/cps}"
         "Teman disamping" "{cps=25}Oalah, ceritain dong{/cps}"
         "Teman disamping" "{cps=25}Spill dikit nggak ngaruh, hehe{/cps}"
+        dmc "{cps=25}CkckckCk waduhh... dia emang temen dekat gue dulu sih.., tapi kalo udah kek gini beda cerita lah anjir. mending gw nyerah aja lah{/cps}"
+        mc "{cps=40}Ehmm{/cps}"
         mc "{cps=25}Sebenarnya...{/cps}"
         mc "{cps=25}Memang banyak sih yang coba deketin Aku dulu, tapi entah kenapa Aku ngerasa mereka itu bukan tipeku Tau.....{/cps}"
         "Teman disamping" "{cps=25}Kalo Aku bodo amat masalah percintaan sih, kamu aja yang mikirin banget. Masalahnya mau cari rangking dikelas mah aku, terus tinggal kuliah deh kalo dapat beasiswa {/cps}"

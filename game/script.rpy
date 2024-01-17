@@ -17,7 +17,7 @@ image bg temenHouse = "images/temenHouse.jpg"
 define slowdissolve = Dissolve(1.0)
 define sh = Character("", window_background=None)
 define mc = Character("[name]")
-define mcd = Character("[name]", color="#65899e")
+define mcd = Character("[name]", what_color="#65899e", who_color="#65899e")
 define sr = Character("Sarah", color="#008cff")
 define pt = Character("Putri", color="#4400ff")
 define pttm = Character("Teman disamping")
@@ -502,7 +502,7 @@ label start:
 
         show bg mcHouse
         with slowdissolve
-        # play music "audio/kehabisan-musik.mp3" fadein 1.5
+        play music "audio/musik-normal.ogg" fadein 1.5
         mc "{cps=35}Saya pulang!!{/cps}"
         pttm "{cps=35}Wahhhh! rumahmu bagus juga yaa..{/cps}"
         anon "{cps=35}Ada siapa itu?? {/cps}"
@@ -514,16 +514,16 @@ label start:
         pttm "{cps=35}Waduh jadi ngerepotin nih Tante{/cps}"
         mc "{cps=35}Gapapa, udah kebiasaan juga kalo ada tamu{/cps}"
         pttm "{cps=35}Ohh gitu yaa{/cps}"
-        mcd "{cps=35}{i}{color=#65899e}('Kami ngerjain PR nanti dimana yaa?'){/i}{/color}{/cps}"
-        mcd "{cps=35}{i}{color=#65899e}('Sepertinya aku akan tanya dia'){/i}{/color}{/cps}"
+        mcd "{cps=35}('Kami ngerjain PR nanti dimana yaa?')"
+        mcd "{cps=35}('Sepertinya aku akan tanya dia')"
         mc "{cps=35}Ohh iya nih, kita ngerjainnya dimana nih?{/cps}"
         pttm "{cps=35}Hmmm, disini aja deh{/cps}"
         mc "{cps=35}Oke deh{/cps}"
         ibumc"{cps=35}Ini tehnya diminum dulu{/cps}"
         pttm "{cps=35}Ohh, iya Tante{/cps}"
         ibumc"{cps=35}Ohh iya, namamu siapa ya..?{/cps}"
-        mcd "{cps=35}{i}{color=#65899e}('!!'){/i}{/color}{/cps}"
-        mcd "{cps=35}{i}{color=#65899e}('Aku lupa juga nanyain nama dia ternyata dari tadi'){/i}{/color}{/cps}"
+        mcd "{cps=35}('!!')"
+        mcd "{cps=35}('Aku lupa juga nanyain nama dia ternyata dari tadi')"
         pttm "{cps=35}Nama saya Putri Tante{/cps}"
         ibumc"{cps=35}Oalah...{/cps}"
         mc "{cps=35}Baru ingat aku{/cps}"
@@ -553,7 +553,7 @@ label start:
         mc "{cps=35}Ahhahahhaha{/cps}"
         stop music fadeout 1.0
         
-        # play music "audio/musikpiano-santai.mp3" fadein 0.5
+        play music "audio/musikpiano-santai.ogg" fadein 0.5
         show bg blck
         with dissolve
         sh "{cps=35}Kami pun mulai mengerjakan PR Matematika bersama-sama{/cps}"
@@ -562,7 +562,6 @@ label start:
         sh "{cps=35}Dalam sisa waktu yang kami habiskan sebelum hari menjelang malam{/cps}"
         sh "{cps=35}Tanpa kami sadari waktu pun berlalu setelah kami berbicara tentang Jurusan kuliah{/cps}"
         hide bg blck
-        # stop music fadeout 0.5
 
         show bg mcHouse
         with dissolve
@@ -574,12 +573,13 @@ label start:
         pt "{cps=35}Kalo gitu aku Pamit yaa{/cps}"
         mc "{cps=35}Oke Put{/cps}"
         ibumc"{cps=35}Jangan lupa mampir lagi yaa Putri{/cps}"
-        mcd "{cps=35}{i}{color=#65899e}Ehh! kaget..., tiba-tiba aja ada Ibu disini{/i}{/color}{/cps}"
+        mcd "{cps=35}Ehh! kaget..., tiba-tiba aja ada Ibu disini"
         pt "{cps=35}Iya Tante{/cps}"
         mc "{cps=35}Dadah Put....{/cps}"
         pt "{cps=35}Dadah [name]....{/cps}"
-        mcd "{cps=35}{i}{color=#65899e}Akhirnya PR Mtk selesai juga, tinggal kerjain yang lain aja deh terus tidur{/i}{/color}{/cps}"
+        mcd "{cps=35}Akhirnya PR Mtk selesai juga, tinggal kerjain yang lain aja deh terus tidur"
         hide bg mcHouse        
+        stop music fadeout 0.5
         # buat screen untuk kelanjutan di esok harinya
 
 
@@ -592,7 +592,7 @@ label start:
         mc "{cps=25}Aku sering jogging juga disekitar sini tiap minggu{/cps}"
         pttm "{cps=25}Ohh iya, jangan-jangan rumahmu dekat sini makanya kamu milih jalan aja{/cps}"
         mc "{cps=25}Nggak juga deng{/cps}"
-        pttm "{cps=25}Yaudah nih malah entar lama disini, kita langsung cus aja{/cps}"
+        pttm "{cps=25}Yaudah nih malah entar lama disini, kita langsung jalan aja{/cps}"
         mc "{cps=25}Oke{/cps}"
         
         hide bg jett
@@ -610,48 +610,59 @@ label start:
 
         show bg mcHouse
         with slowdissolve
-        # play music "audio/kehabisan-musik.mp3" fadein 1.5
-        mc "{cps=35}Saya pulang!!{/cps}"
-        pttm "{cps=35}Wahhhh! rumahmu bagus juga yaa..{/cps}"
+        play music "audio/musik-normal.ogg" fadein 1.5
+        mc "{cps=35}Sa.. sa..ya pulangggg!!{/cps}"
+        pttm "{cps=35}Kamu kelelahan yaa habis jogging?{/cps}"
+        mc "{cps=35}Hhhuuhh... lumayan sih...{/cps}"
+        play sound "audio/bell-ding.ogg"
         anon "{cps=35}Ada siapa itu?? {/cps}"
         mc "{cps=35}Ohh, ini [name] bawa teman kerumah bu{/cps}"
         ibumc"{cps=35}Ohh gitu{/cps}"
-        ibumc"{cps=35}Bawa temanmu duduk dulu tuh [name]{/cps}"
+        ibumc"{cps=35}[name] sama temenmu dibawa istirahat dulu tuh{/cps}"
         mc "{cps=35}Iya bu{/cps}"
         ibumc"{cps=35}Kalo gitu Ibu buatkan teh dulu ya..{/cps}"
         pttm "{cps=35}Waduh jadi ngerepotin nih Tante{/cps}"
         mc "{cps=35}Gapapa, udah kebiasaan juga kalo ada tamu{/cps}"
         pttm "{cps=35}Ohh gitu yaa{/cps}"
-        mcd "{cps=35}{i}{color=#65899e}('Kami ngerjain PR nanti dimana yaa?'){/i}{/color}{/cps}"
-        mcd "{cps=35}{i}{color=#65899e}('Sepertinya aku akan tanya dia'){/i}{/color}{/cps}"
-        mc "{cps=35}Ohh iya nih, kita ngerjainnya dimana nih?{/cps}"
-        pttm "{cps=35}Hmmm, disini aja deh{/cps}"
-        mc "{cps=35}Oke deh{/cps}"
-        ibumc"{cps=35}Ini tehnya diminum dulu{/cps}"
-        pttm "{cps=35}Ohh, iya Tante{/cps}"
+        mcd "{cps=35}('Kami ngerjain PR nanti dimana yaa?')"
+        mcd "{cps=35}('Sepertinya aku akan istirahat dulu sebentar')"
+        mc "{cps=35}Kayaknya kamu cepat sekali tadi, jadi kelelahan aku ngejarnya{/cps}"
+        pttm "{cps=35}Ahhahahhaha, kasian deh lu...{/cps}"
+        mcd "{cps=35}('Phewww, emang rada ngeselin sih.'){/cps}"
+        mcd "{cps=35}('Tapi kalo dipikir lagi jikalau dia duluan didepan pasti kelewatan hahaha'){/cps}"
+        " " "{cps=35}Aku pun akhirnya lebih tenang sekarang dengan sedikit tersenyum membayangkan dia terlalu jauh didepan{/cps}"
+        " " "{cps=35}Dengan tenangnya Ibuku tiba-tiba datang mengagetkan kami{/cps}"
+        ibumc"{cps=35}NAHHHH!!, ini tehnya diminum dulu{/cps}"
+        pttm "{cps=35}Ehh iya Tante{/cps}"
+        mcd "{cps=35}('Widihh, cepet banget dah bikin kaget aja...'){/cps}"
         ibumc"{cps=35}Ohh iya, namamu siapa ya..?{/cps}"
-        mcd "{cps=35}{i}{color=#65899e}('!!'){/i}{/color}{/cps}"
-        mcd "{cps=35}{i}{color=#65899e}('Aku lupa juga nanyain nama dia ternyata dari tadi'){/i}{/color}{/cps}"
+        mcd "{cps=35}('!!')"
+        mcd "{cps=35}('Aku lupa juga nanyain nama dia ternyata dari tadi')"
         pttm "{cps=35}Nama saya Putri Tante{/cps}"
         ibumc"{cps=35}Oalah...{/cps}"
+        ibumc"{cps=35}Kalo gitu ibu ke kamar dulu yaa [name]{/cps}"
+        mc "{cps=35}Oke Bu...{/cps}"
+        " " "{cps=35}Ibuku pun langsung pergi ke kamar, dan kami tinggal berdua{/cps}"
         mc "{cps=35}Baru ingat aku{/cps}"
         pt "{cps=35}Kenapa tuh?{/cps}"
         mc "{cps=35}Dari tadi belum nanya nama kamu nih Put{/cps}"
         pt "{cps=35}Nahh, betul juga tuh{/cps}"
-        mc "{cps=35}Ayo buka buku Put{/cps}"
-        pt "{cps=35}Siap{/cps}"
-        ibumc"{cps=35}Kalo gitu ibu ke kamar dulu yaa [name]{/cps}"
-        ibumc"{cps=35}Yang semangat ngerjainnya{/cps}"
-        mc "{cps=35}Oke Bu...{/cps}"
-        " " "{cps=35}Ibuku pun langsung pergi ke kamar, dan kami tinggal berdua {/cps}"
+        mc "{cps=35}Kok bisa ya...?{/cps}"
+        pt "{cps=35}Gatau dah.. kamu kepikiran yang itu mulu sih, makanya sampai lupa nanyain nama{/cps}"
+        mc "{cps=35}Lah... yang mana sih?{/cps}"
+        pt "{cps=35}Kamu nanya..?{/cps}"
+        mc "{cps=35}Ohh iya ada yang kutanya nich{/cps}"
+        pt "{cps=35}Apaan tuch..?{/cps}"
+        mc "{cps=35}Daritadi kita belum buka buku PR yaa..?{/cps}"
+        pt "{cps=35}Ohh iya nih{/cps}"
         pt "{cps=35}Btw kita kan beda sekolah{/cps}"
         mc "{cps=35}Ehh, bener juga tuh{/cps}"
         pt "{cps=35}Yang pasti beda PR kan{/cps}"
         mc "{cps=35}Iya sih....{/cps}"
         mc "{cps=35}Tapi kayaknya kita satu materi{/cps}"
         pt "{cps=35}Hmmmm, Aku sih punya PR di Buku LKS yang ini{/cps}"
-        mc "{cps=35}Wahhh.... kalo aku di buku catatan sih, dikasih gurunya langsung soal{/cps}"
-        mc "{cps=35}Tapi karena Jam pelajarannya habis soal yang ini jadi PR{/cps}"
+        mc "{cps=35}Wahhh.... kalo aku di buku catatan sih, gurunya tiba-tiba ngasih soal{/cps}"
+        mc "{cps=35}Tapi karena Jam pelajarannya habis soal yang ini jadi PR waktu itu Put{/cps}"
         pt "{cps=35}Ohh gitu yaa....{/cps}"
         mc "{cps=35}Ehh bentar{/cps}"
         pt "{cps=35}!!{/cps}"
@@ -663,14 +674,13 @@ label start:
         
         show bg blck
         with dissolve
-        # play music "audio/musikpiano-santai.mp3" fadein 0.5
+        play music "audio/musikpiano-santai.ogg" fadein 0.5
         sh "{cps=35}Kami pun mulai mengerjakan PR Matematika bersama-sama{/cps}"
         sh "{cps=35}Dengan saling bertanya satu sama lain ketika kebingungan{/cps}"
         sh "{cps=35}Kami pun selesai mengerjakan dalam waktu yang cukup singkat{/cps}"
         sh "{cps=35}Dalam sisa waktu yang kami habiskan sebelum hari menjelang malam{/cps}"
         sh "{cps=35}Tanpa kami sadari waktu pun berlalu setelah kami berbicara tentang Jurusan kuliah{/cps}"
         hide bg blck
-        # stop music fadeout 0.5
 
         show bg mcHouse
         with dissolve
@@ -682,13 +692,14 @@ label start:
         pt "{cps=35}Kalo gitu aku Pamit yaa{/cps}"
         mc "{cps=35}Oke Put{/cps}"
         ibumc"{cps=35}Jangan lupa mampir lagi yaa Putri{/cps}"
-        mcd "{cps=35}{i}{color=#65899e}Ehh! kaget..., tiba-tiba aja ada Ibu disini{/i}{/color}{/cps}"
+        mcd "{cps=35}Ehh! kaget..., tiba-tiba aja ada Ibu disini"
         pt "{cps=35}Iya Tante{/cps}"
         mc "{cps=35}Dadah Put....{/cps}"
         pt "{cps=35}Dadah [name]....{/cps}"
-        mcd "{cps=35}{i}{color=#65899e}Akhirnya PR Mtk selesai juga, tinggal kerjain yang lain aja deh terus tidur{/i}{/color}{/cps}"
+        mcd "{cps=35}Akhirnya PR Mtk selesai juga, tinggal kerjain yang lain aja deh terus tidur"
         hide bg mcHouse        
         # buat screen untuk kelanjutan di esok harinya
+        stop music fadeout 0.5
 
 
 
@@ -715,7 +726,7 @@ label start:
 
         show bg mcHouse
         with slowdissolve
-        # play music "audio/kehabisan-musik.mp3" fadein 1.5
+        play music "audio/musik-normal.ogg" fadein 1.5
         mc "{cps=35}Saya pulang!!{/cps}"
         pttm "{cps=35}Wahhhh! rumahmu bagus juga yaa..{/cps}"
         anon "{cps=35}Ada siapa itu?? {/cps}"
@@ -727,16 +738,16 @@ label start:
         pttm "{cps=35}Waduh jadi ngerepotin nih Tante{/cps}"
         mc "{cps=35}Gapapa, udah kebiasaan juga kalo ada tamu{/cps}"
         pttm "{cps=35}Ohh gitu yaa{/cps}"
-        mcd "{cps=35}{i}{color=#65899e}('Kami ngerjain PR nanti dimana yaa?'){/i}{/color}{/cps}"
-        mcd "{cps=35}{i}{color=#65899e}('Sepertinya aku akan tanya dia'){/i}{/color}{/cps}"
+        mcd "{cps=35}('Kami ngerjain PR nanti dimana yaa?')"
+        mcd "{cps=35}('Sepertinya aku akan tanya dia')"
         mc "{cps=35}Ohh iya nih, kita ngerjainnya dimana nih?{/cps}"
         pttm "{cps=35}Hmmm, disini aja deh{/cps}"
         mc "{cps=35}Oke deh{/cps}"
         ibumc"{cps=35}Ini tehnya diminum dulu{/cps}"
         pttm "{cps=35}Ohh, iya Tante{/cps}"
         ibumc"{cps=35}Ohh iya, namamu siapa ya..?{/cps}"
-        mcd "{cps=35}{i}{color=#65899e}('!!'){/i}{/color}{/cps}"
-        mcd "{cps=35}{i}{color=#65899e}('Aku lupa juga nanyain nama dia ternyata dari tadi'){/i}{/color}{/cps}"
+        mcd "{cps=35}('!!')"
+        mcd "{cps=35}('Aku lupa juga nanyain nama dia ternyata dari tadi')"
         pttm "{cps=35}Nama saya Putri Tante{/cps}"
         ibumc"{cps=35}Oalah...{/cps}"
         mc "{cps=35}Baru ingat aku{/cps}"
@@ -766,7 +777,7 @@ label start:
         mc "{cps=35}Ahhahahhaha{/cps}"
         stop music fadeout 1.0
         
-        # play music "audio/musikpiano-santai.mp3" fadein 0.5
+        play music "audio/musikpiano-santai.ogg" fadein 0.5
         show bg blck
         with dissolve
         sh "{cps=35}Kami pun mulai mengerjakan PR Matematika bersama-sama{/cps}"
@@ -775,7 +786,6 @@ label start:
         sh "{cps=35}Dalam sisa waktu yang kami habiskan sebelum hari menjelang malam{/cps}"
         sh "{cps=35}Tanpa kami sadari waktu pun berlalu setelah kami berbicara tentang Jurusan kuliah{/cps}"
         hide bg blck
-        # stop music fadeout 0.5
 
         show bg mcHouse
         with dissolve
@@ -787,13 +797,14 @@ label start:
         pt "{cps=35}Kalo gitu aku Pamit yaa{/cps}"
         mc "{cps=35}Oke Put{/cps}"
         ibumc"{cps=35}Jangan lupa mampir lagi yaa Putri{/cps}"
-        mcd "{cps=35}{i}{color=#65899e}Ehh! kaget..., tiba-tiba aja ada Ibu disini{/i}{/color}{/cps}"
+        mcd "{cps=35}Ehh! kaget..., tiba-tiba aja ada Ibu disini"
         pt "{cps=35}Iya Tante{/cps}"
         mc "{cps=35}Dadah Put....{/cps}"
         pt "{cps=35}Dadah [name]....{/cps}"
-        mcd "{cps=35}{i}{color=#65899e}Akhirnya PR Mtk selesai juga, tinggal kerjain yang lain aja deh terus tidur{/i}{/color}{/cps}"
+        mcd "{cps=35}Akhirnya PR Mtk selesai juga, tinggal kerjain yang lain aja deh terus tidur"
         hide bg mcHouse        
         # buat screen untuk kelanjutan di esok harinya
+        stop music fadeout 0.5
 
 
 
@@ -824,7 +835,7 @@ label start:
 
         show bg mcHouse
         with slowdissolve
-        # play music "audio/kehabisan-musik.mp3" fadein 1.5
+        play music "audio/musik-normal.ogg" fadein 1.5
         mc "{cps=35}Saya pulang!!{/cps}"
         pttm "{cps=35}Wahhhh! rumahmu bagus juga yaa..{/cps}"
         anon "{cps=35}Ada siapa itu?? {/cps}"
@@ -836,16 +847,16 @@ label start:
         pttm "{cps=35}Waduh jadi ngerepotin nih Tante{/cps}"
         mc "{cps=35}Gapapa, udah kebiasaan juga kalo ada tamu{/cps}"
         pttm "{cps=35}Ohh gitu yaa{/cps}"
-        mcd "{cps=35}{i}{color=#65899e}('Kami ngerjain PR nanti dimana yaa?'){/i}{/color}{/cps}"
-        mcd "{cps=35}{i}{color=#65899e}('Sepertinya aku akan tanya dia'){/i}{/color}{/cps}"
+        mcd "{cps=35}('Kami ngerjain PR nanti dimana yaa?')"
+        mcd "{cps=35}('Sepertinya aku akan tanya dia')"
         mc "{cps=35}Ohh iya nih, kita ngerjainnya dimana nih?{/cps}"
         pttm "{cps=35}Hmmm, disini aja deh{/cps}"
         mc "{cps=35}Oke deh{/cps}"
         ibumc"{cps=35}Ini tehnya diminum dulu{/cps}"
         pttm "{cps=35}Ohh, iya Tante{/cps}"
         ibumc"{cps=35}Ohh iya, namamu siapa ya..?{/cps}"
-        mcd "{cps=35}{i}{color=#65899e}('!!'){/i}{/color}{/cps}"
-        mcd "{cps=35}{i}{color=#65899e}('Aku lupa juga nanyain nama dia ternyata dari tadi'){/i}{/color}{/cps}"
+        mcd "{cps=35}('!!')"
+        mcd "{cps=35}('Aku lupa juga nanyain nama dia ternyata dari tadi')"
         pttm "{cps=35}Nama saya Putri Tante{/cps}"
         ibumc"{cps=35}Oalah...{/cps}"
         mc "{cps=35}Baru ingat aku{/cps}"
@@ -875,7 +886,7 @@ label start:
         mc "{cps=35}Ahhahahhaha{/cps}"
         stop music fadeout 1.0
         
-        # play music "audio/musikpiano-santai.mp3" fadein 0.5
+        play music "audio/musikpiano-santai.ogg" fadein 0.5
         show bg blck
         with dissolve
         sh "{cps=35}Kami pun mulai mengerjakan PR Matematika bersama-sama{/cps}"
@@ -884,7 +895,6 @@ label start:
         sh "{cps=35}Dalam sisa waktu yang kami habiskan sebelum hari menjelang malam{/cps}"
         sh "{cps=35}Tanpa kami sadari waktu pun berlalu setelah kami berbicara tentang Jurusan kuliah{/cps}"
         hide bg blck
-        # stop music fadeout 0.5
 
         show bg mcHouse
         with dissolve
@@ -896,13 +906,14 @@ label start:
         pt "{cps=35}Kalo gitu aku Pamit yaa{/cps}"
         mc "{cps=35}Oke Put{/cps}"
         ibumc"{cps=35}Jangan lupa mampir lagi yaa Putri{/cps}"
-        mcd "{cps=35}{i}{color=#65899e}Ehh! kaget..., tiba-tiba aja ada Ibu disini{/i}{/color}{/cps}"
+        mcd "{cps=35}Ehh! kaget..., tiba-tiba aja ada Ibu disini"
         pt "{cps=35}Iya Tante{/cps}"
         mc "{cps=35}Dadah Put....{/cps}"
         pt "{cps=35}Dadah [name]....{/cps}"
-        mcd "{cps=35}{i}{color=#65899e}Akhirnya PR Mtk selesai juga, tinggal kerjain yang lain aja deh terus tidur{/i}{/color}{/cps}"
+        mcd "{cps=35}Akhirnya PR Mtk selesai juga, tinggal kerjain yang lain aja deh terus tidur"
         hide bg mcHouse
         # buat screen untuk kelanjutan di esok harinya
+        stop music fadeout 0.5
 
 
 
@@ -935,7 +946,7 @@ label start:
 
         show bg mcHouse
         with slowdissolve
-        # play music "audio/kehabisan-musik.mp3" fadein 1.5
+        play music "audio/musik-normal.ogg" fadein 1.5
         mc "{cps=35}Saya pulang!!{/cps}"
         pttm "{cps=35}Wahhhh! rumahmu bagus juga yaa..{/cps}"
         anon "{cps=35}Ada siapa itu?? {/cps}"
@@ -947,16 +958,16 @@ label start:
         pttm "{cps=35}Waduh jadi ngerepotin nih Tante{/cps}"
         mc "{cps=35}Gapapa, udah kebiasaan juga kalo ada tamu{/cps}"
         pttm "{cps=35}Ohh gitu yaa{/cps}"
-        mcd "{cps=35}{i}{color=#65899e}('Kami ngerjain PR nanti dimana yaa?'){/i}{/color}{/cps}"
-        mcd "{cps=35}{i}{color=#65899e}('Sepertinya aku akan tanya dia'){/i}{/color}{/cps}"
+        mcd "{cps=35}('Kami ngerjain PR nanti dimana yaa?')"
+        mcd "{cps=35}('Sepertinya aku akan tanya dia')"
         mc "{cps=35}Ohh iya nih, kita ngerjainnya dimana nih?{/cps}"
         pttm "{cps=35}Hmmm, disini aja deh{/cps}"
         mc "{cps=35}Oke deh{/cps}"
         ibumc"{cps=35}Ini tehnya diminum dulu{/cps}"
         pttm "{cps=35}Ohh, iya Tante{/cps}"
         ibumc"{cps=35}Ohh iya, namamu siapa ya..?{/cps}"
-        mcd "{cps=35}{i}{color=#65899e}('!!'){/i}{/color}{/cps}"
-        mcd "{cps=35}{i}{color=#65899e}('Aku lupa juga nanyain nama dia ternyata dari tadi'){/i}{/color}{/cps}"
+        mcd "{cps=35}('!!')"
+        mcd "{cps=35}('Aku lupa juga nanyain nama dia ternyata dari tadi')"
         pttm "{cps=35}Nama saya Putri Tante{/cps}"
         ibumc"{cps=35}Oalah...{/cps}"
         mc "{cps=35}Baru ingat aku{/cps}"
@@ -986,7 +997,7 @@ label start:
         mc "{cps=35}Ahhahahhaha{/cps}"
         stop music fadeout 1.0
         
-        # play music "audio/musikpiano-santai.mp3" fadein 0.5
+        play music "audio/musikpiano-santai.ogg" fadein 0.5
         show bg blck
         with dissolve
         sh "{cps=35}Kami pun mulai mengerjakan PR Matematika bersama-sama{/cps}"
@@ -995,7 +1006,6 @@ label start:
         sh "{cps=35}Dalam sisa waktu yang kami habiskan sebelum hari menjelang malam{/cps}"
         sh "{cps=35}Tanpa kami sadari waktu pun berlalu setelah kami berbicara tentang Jurusan kuliah{/cps}"
         hide bg blck
-        # stop music fadeout 0.5
 
         show bg mcHouse
         with dissolve
@@ -1007,12 +1017,13 @@ label start:
         pt "{cps=35}Kalo gitu aku Pamit yaa{/cps}"
         mc "{cps=35}Oke Put{/cps}"
         ibumc"{cps=35}Jangan lupa mampir lagi yaa Putri{/cps}"
-        mcd "{cps=35}{i}{color=#65899e}Ehh! kaget..., tiba-tiba aja ada Ibu disini{/i}{/color}{/cps}"
+        mcd "{cps=35}Ehh! kaget..., tiba-tiba aja ada Ibu disini"
         pt "{cps=35}Iya Tante{/cps}"
         mc "{cps=35}Dadah Put....{/cps}"
         pt "{cps=35}Dadah [name]....{/cps}"
-        mcd "{cps=35}{i}{color=#65899e}Akhirnya PR Mtk selesai juga, tinggal kerjain yang lain aja deh terus tidur{/i}{/color}{/cps}"
+        mcd "{cps=35}Akhirnya PR Mtk selesai juga, tinggal kerjain yang lain aja deh terus tidur"
         hide bg mcHouse
+        stop music fadeout 0.5
         # buat screen untuk kelanjutan di esok harinya
 
 

@@ -2,9 +2,18 @@
 errors listed below, and try again.
 
 
+<<<<<<< HEAD
 File "game/script.rpy", line 98: expected menuitem
     xalign 0.5 ypos 0.3
     ^
 
 Ren'Py Version: Ren'Py 8.1.1.23060707
 Mon Oct 23 11:10:48 2023
+=======
+File "game/script.rpy", line 840: expected statement.
+    music stop
+              ^
+
+Ren'Py Version: Ren'Py 8.1.1.23060707
+Wed Jan 17 14:58:31 2024
+>>>>>>> df088634e233c19636aa82db140238de24beb970

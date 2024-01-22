@@ -1,0 +1,37 @@
+Note : Setiap alur yang dipilih pemain pada akhirnya menunjukan sebuah pilihan apakah ingin berubah pola pikir mereka, ataupun bisa juga hanyalah sudut pandang mereka. Ada juga yg akan menggabungkan beberapa pola pikir tetapi bisa disebut sebuah alterigo
+Jika ada Urutan alur seperti 21, 23, 33 angka pertama menunjukan alur utama, angka kedua menunjukan alur sampingan atau alur yang dipilih player setelah alur utama
+
+Alur 1 =
+	menceritakan bagaimana pola pikir seorang pejuang / pekerja keras dan pantang menyerah,
+	serta selalu optimis dalam segala haldalam halnya rezeki, mereka akan berusaha mencari sebisa 			mungkin atau semaksimal mungkin karena Semakin besar Usaha maka semakin besar juga hasil 			seperti rumus fisika.
+
+Alur 2 = 
+	menceritakan bagaimana pola pikir seorang pecundang yang hanya berpikir seolah olah semua itu 
+	Mudah sekali dilakukan tanpa mengetahui proses atau sakitnya pekerjaan itu seperti apa 			(menganggap remeh semua hal) dalam halnya rezeki mereka mungkin berkata rezeki gak akan 			kemana, oleh karena itu mereka suka nyantai dan menunggu
+
+Alur 3 = 
+	menceritakan bagaimana pola pikir seseorang yang bersera diri kepada takdir dan selalu mengharap
+	banyak hal tanpa berusaha lebih dari orang orang pada umumnya (Hidup seadanya) bisa dibilang 			seperti dalam halnya rezeki sudah ada yg ngatur (bekerja atau melakukan suatu hal dengan normal 			atau biasa)
+
+Alur KerumahMcBareng 1 =
+	mengerjakan pr mtk bareng yg menunjukan sifat ambisius dan kerja sama yang cukup baik
+	(PR Mtknya selesai lebih cepat sebelum waktu menjelang malam)
+
+Alur KerumahMcBareng 21, 22, 23 =
+	Hanya menceritakan sekilas hal tentang tipe cowo dikemudian hari atau didalam pembicaraan, tetapi 	tetap saja keinginan hidup masih tidak punya tujuan, karena hanya masih ingin hidup di zona 			nyaman (PR mtk nya tidak selesai karena banyak bacod) 
+
+Alur KerumahMcBareng 3 =
+	Pembicaraan Mengenai takdir hingga mc dan putri bosan dengan hal itu (sampai akhir chapter 1)
+	akan tetapi pemikiran mereka standar orang-orang biasanya atau bisa dibilang mengikuti mayoritas 	setempat (PR mtknya selesai tepat saat waktu habis atau saat si putri mo pulang)
+
+Alur KerumahTemenBareng 1 =
+	Membicarakan mengenai Masa depan Putri yang bergantung kepada pilihan player terhadap situasi 		pembicaraan nanti	
+
+Alur KerumahTemenBareng 21, 22, 23 =
+	Hanya menceritakan sekilas hal tentang tipe cowo dikemudian hari atau didalam pembicaraan, tetapi 	tetap saja keinginan hidup masih tidak punya tujuan, karena hanya masih ingin hidup di zona 			nyaman (Hanya main-main di rumah Putri) 
+
+Alur KerumahTemenBareng 3 =
+	Pembicaraan Mengenai takdir hingga mc dan putri bosan dengan hal itu (sampai akhir chapter 1)
+	akan tetapi pemikiran mereka standar orang-orang biasanya atau bisa dibilang mengikuti mayoritas 		setempat (Hanya main main di rumah Putri)
+
+	

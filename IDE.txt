@@ -1,0 +1,5 @@
+1. MC Bangun tengah malam jam 3 an dan memilih untuk bangun atau terus tidur (cewe dirumah, cowo keluar)
+
+2. Pembuatan tanggal, hari dan bulan pada game agar cerita lebih nyambung dengan situasi
+
+3. Alur cerita tetap multiple ending tapi pada saat tertentu dibuat games untuk player memilih kembali opsinya setelah tahu apa yang terjadi setelah memilih choice agar tidak kebanyakan alur. Untuk opsinya tergantung alur cerita, misalkan pertanyaan soal sekolah ada pilihan jawaban benar, jawaban salah yg hampir benar, dan jawaban nalar satu atau dua yg jadi satu jalur. opsi yg lain seperti pilihan penentuan kondisi penting diberikan 2 kali atau 3 kali choice, sedangkan untuk pemilihan alur cerita langsung bercabang seperti pada choice pertama dan kedua pada alur P.

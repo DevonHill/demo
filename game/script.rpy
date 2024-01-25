@@ -496,11 +496,11 @@ label start:
         show bg blck
         with dissolve
         play music "audio/musikpiano-santai" fadein 0.5
-        sh "{cps=35}Di perjalanan kami berdua terdiam entah kenapa{/cps}"
-        sh "{cps=35}Menurutku mungkin karena dia sedang memikirkan apa yang telah kami bicarakan tadi{/cps}"
-        sh "{cps=35}Setelah beberapa waktu sampai sekarang, perjalanan kami dari tempat duduk umum pun berakhir {/cps}"
+        sh "{cps=17}Di perjalanan kami berdua terdiam entah kenapa{/cps}"
+        sh "{cps=17}Menurutku mungkin karena dia sedang memikirkan apa yang telah kami bicarakan tadi{/cps}"
+        sh "{cps=17}Setelah beberapa waktu sampai sekarang, perjalanan kami dari tempat duduk umum pun berakhir {/cps}"
         sh "{cps=25}Kami berdua pun sampai di rumahku {/cps}"
-        sh "{cps=35}kemudian kami langsung masuk ke ruang tamu, karena kelihatan tidak ada orang di rumah{/cps}"
+        sh "{cps=17}kemudian kami langsung masuk ke ruang tamu, karena kelihatan tidak ada orang di rumah{/cps}"
         hide bg blck
         stop music
 
@@ -561,11 +561,11 @@ label start:
         play music "audio/musikpiano-santai.ogg" fadein 0.5 loop
         show bg blck
         with dissolve
-        sh "{cps=35}Kami pun mulai mengerjakan PR Matematika bersama-sama{/cps}"
-        sh "{cps=35}Dengan saling bertanya satu sama lain ketika kebingungan{/cps}"
-        sh "{cps=35}Kami pun selesai mengerjakan dalam waktu yang cukup singkat{/cps}"
-        sh "{cps=35}Dalam sisa waktu yang kami habiskan sebelum hari menjelang malam{/cps}"
-        sh "{cps=35}Tanpa kami sadari waktu pun berlalu setelah kami berbicara tentang Jurusan kuliah{/cps}"
+        sh "{cps=17}Kami pun mulai mengerjakan PR Matematika bersama-sama{/cps}"
+        sh "{cps=17}Dengan saling bertanya satu sama lain ketika kebingungan{/cps}"
+        sh "{cps=17}Kami pun selesai mengerjakan dalam waktu yang cukup singkat{/cps}"
+        sh "{cps=17}Dalam sisa waktu yang kami habiskan sebelum hari menjelang malam{/cps}"
+        sh "{cps=17}Tanpa kami sadari waktu pun berlalu setelah kami berbicara tentang Jurusan kuliah{/cps}"
         hide bg blck
 
         show bg mcHouse
@@ -606,12 +606,12 @@ label start:
         show bg blck
         with dissolve
         play music "audio/musik-normal.ogg" fadein 1.5 loop
-        sh "{cps=35}Di perjalanan kami berdua terdiam entah kenapa{/cps}"
-        sh "{cps=35}Menurutku mungkin karena fokus kami terahlihkan melihat orang-orang di jalan pulang{/cps}"
-        sh "{cps=35}Apalagi nafasku yang sedang terengah-engah saat lari{/cps}"
-        sh "{cps=35}Setelah beberapa waktu sampai sekarang, perjalanan kami dari tempat duduk umum pun berakhir {/cps}"
+        sh "{cps=17}Di perjalanan kami berdua terdiam entah kenapa{/cps}"
+        sh "{cps=17}Menurutku mungkin karena fokus kami terahlihkan melihat orang-orang di jalan pulang{/cps}"
+        sh "{cps=17}Apalagi nafasku yang sedang terengah-engah saat lari{/cps}"
+        sh "{cps=17}Setelah beberapa waktu sampai sekarang, perjalanan kami dari tempat duduk umum pun berakhir {/cps}"
         sh "{cps=25}Kami berdua pun sampai di rumahku {/cps}"
-        sh "{cps=35}kemudian kami langsung masuk ke ruang tamu, karena kelihatan tidak ada orang di rumah{/cps}"
+        sh "{cps=17}kemudian kami langsung masuk ke ruang tamu, karena kelihatan tidak ada orang di rumah{/cps}"
         hide bg blck
         stop music
 
@@ -682,11 +682,11 @@ label start:
         show bg blck
         with dissolve
         play music "audio/musikpiano-santai.ogg" fadein 0.5 loop
-        sh "{cps=35}Kami pun mulai mengerjakan PR Matematika bersama-sama{/cps}"
-        sh "{cps=35}Dengan saling bertanya satu sama lain ketika kebingungan{/cps}"
-        sh "{cps=35}Kami pun mengerjakannya dengan penuh bahagia dan canda tawa{/cps}"
-        sh "{cps=35}Sampai kami lupa akan apa yang membatasi kami{/cps}"
-        sh "{cps=35}Yaitu waktu yang sudah menunjukan pukul 18.00{/cps}"
+        sh "{cps=17}Kami pun mulai mengerjakan PR Matematika bersama-sama{/cps}"
+        sh "{cps=17}Dengan saling bertanya satu sama lain ketika kebingungan{/cps}"
+        sh "{cps=17}Kami pun mengerjakannya dengan penuh bahagia dan canda tawa{/cps}"
+        sh "{cps=17}Sampai kami lupa akan apa yang membatasi kami{/cps}"
+        sh "{cps=17}Yaitu waktu yang sudah menunjukan pukul 18.00{/cps}"
         hide bg blck
 
         show bg mcHouse
@@ -730,11 +730,11 @@ label start:
         show bg blck
         with dissolve
         play music "audio/musik-normal.ogg" fadein 1.5 loop
-        sh "{cps=35}Di perjalanan kami berdua terdiam entah kenapa{/cps}"
-        sh "{cps=35}Menurutku mungkin karena fokus kami terahlihkan melihat orang-orang di jalan pulang{/cps}"
-        sh "{cps=35}Setelah beberapa waktu sampai sekarang, perjalanan kami dari tempat duduk umum pun berakhir {/cps}"
+        sh "{cps=17}Di perjalanan kami berdua terdiam entah kenapa{/cps}"
+        sh "{cps=17}Menurutku mungkin karena fokus kami terahlihkan melihat orang-orang di jalan pulang{/cps}"
+        sh "{cps=17}Setelah beberapa waktu sampai sekarang, perjalanan kami dari tempat duduk umum pun berakhir {/cps}"
         sh "{cps=25}Kami berdua pun sampai di rumahku {/cps}"
-        sh "{cps=35}kemudian kami langsung masuk ke ruang tamu, karena kelihatan tidak ada orang di rumah{/cps}"
+        sh "{cps=17}kemudian kami langsung masuk ke ruang tamu, karena kelihatan tidak ada orang di rumah{/cps}"
         hide bg blck
         stop music
 
@@ -804,11 +804,11 @@ label start:
         show bg blck
         with dissolve
         play music "audio/musikpiano-santai.ogg" fadein 0.5 loop
-        sh "{cps=35}Kami pun mulai mengerjakan PR Matematika bersama-sama{/cps}"
-        sh "{cps=35}Dengan saling bertanya satu sama lain ketika kebingungan{/cps}"
-        sh "{cps=35}Kami pun mengerjakannya dengan penuh bahagia dan canda tawa{/cps}"
-        sh "{cps=35}Sampai kami lupa akan apa yang membatasi kami{/cps}"
-        sh "{cps=35}Yaitu waktu yang sudah menunjukan pukul 18.00{/cps}"
+        sh "{cps=17}Kami pun mulai mengerjakan PR Matematika bersama-sama{/cps}"
+        sh "{cps=17}Dengan saling bertanya satu sama lain ketika kebingungan{/cps}"
+        sh "{cps=17}Kami pun mengerjakannya dengan penuh bahagia dan canda tawa{/cps}"
+        sh "{cps=17}Sampai kami lupa akan apa yang membatasi kami{/cps}"
+        sh "{cps=17}Yaitu waktu yang sudah menunjukan pukul 18.00{/cps}"
         hide bg blck
 
         show bg mcHouse
@@ -853,11 +853,11 @@ label start:
         show bg blck
         with dissolve
         play music "audio/musik-normal.ogg" fadein 1.5 loop
-        sh "{cps=35}Di perjalanan kami berdua terdiam entah kenapa{/cps}"
-        sh "{cps=35}Menurutku mungkin karena fokus kami terahlihkan melihat orang-orang di jalan pulang{/cps}"
-        sh "{cps=35}Setelah beberapa waktu sampai sekarang, perjalanan kami dari tempat duduk umum pun berakhir {/cps}"
+        sh "{cps=17}Di perjalanan kami berdua terdiam entah kenapa{/cps}"
+        sh "{cps=17}Menurutku mungkin karena fokus kami terahlihkan melihat orang-orang di jalan pulang{/cps}"
+        sh "{cps=17}Setelah beberapa waktu sampai sekarang, perjalanan kami dari tempat duduk umum pun berakhir {/cps}"
         sh "{cps=25}Kami berdua pun sampai di rumahku {/cps}"
-        sh "{cps=35}kemudian kami langsung masuk ke ruang tamu, karena kelihatan tidak ada orang di rumah{/cps}"
+        sh "{cps=17}kemudian kami langsung masuk ke ruang tamu, karena kelihatan tidak ada orang di rumah{/cps}"
         hide bg blck
 
         show bg mcHouse
@@ -926,11 +926,11 @@ label start:
         show bg blck
         with dissolve
         play music "audio/musikpiano-santai.ogg" fadein 0.5 loop
-        sh "{cps=35}Kami pun mulai mengerjakan PR Matematika bersama-sama{/cps}"
-        sh "{cps=35}Dengan saling bertanya satu sama lain ketika kebingungan{/cps}"
-        sh "{cps=35}Kami pun mengerjakannya dengan sederhana dan sedikit bercanda{/cps}"
-        sh "{cps=35}Akhirnya pun tugas kami selesai{/cps}"
-        sh "{cps=35}Akan tetapi, ternyata tiba-tiba Ibuku datang dan bertanya {/cps}"
+        sh "{cps=17}Kami pun mulai mengerjakan PR Matematika bersama-sama{/cps}"
+        sh "{cps=17}Dengan saling bertanya satu sama lain ketika kebingungan{/cps}"
+        sh "{cps=17}Kami pun mengerjakannya dengan sederhana dan sedikit bercanda{/cps}"
+        sh "{cps=17}Akhirnya pun tugas kami selesai{/cps}"
+        sh "{cps=17}Akan tetapi, ternyata tiba-tiba Ibuku datang dan bertanya {/cps}"
         hide bg blck
 
         show bg mcHouse
@@ -978,10 +978,10 @@ label start:
         show bg blck
         with dissolve
         play music "audio/musik-normal.ogg" fadein 1.5 loop
-        sh "{cps=35}Di perjalanan kami berdua terdiam entah kenapa{/cps}"
-        sh "{cps=35}Setelah beberapa waktu sampai sekarang, perjalanan kami dari tempat duduk umum pun berakhir {/cps}"
+        sh "{cps=17}Di perjalanan kami berdua terdiam entah kenapa{/cps}"
+        sh "{cps=17}Setelah beberapa waktu sampai sekarang, perjalanan kami dari tempat duduk umum pun berakhir {/cps}"
         sh "{cps=25}Kami berdua pun sampai di rumahku {/cps}"
-        sh "{cps=35}kemudian kami langsung masuk ke ruang tamu, karena kelihatan tidak ada orang di rumah{/cps}"
+        sh "{cps=17}kemudian kami langsung masuk ke ruang tamu, karena kelihatan tidak ada orang di rumah{/cps}"
         hide bg blck
         stop music
 
@@ -1041,11 +1041,11 @@ label start:
         play music "audio/musikpiano-santai.ogg" fadein 0.5 loop
         show bg blck
         with dissolve
-        sh "{cps=35}Kami pun mulai mengerjakan PR Matematika bersama-sama{/cps}"
-        sh "{cps=35}Dengan saling bertanya satu sama lain ketika kebingungan{/cps}"
-        sh "{cps=35}Kami pun selesai mengerjakannya dengan puas{/cps}"
-        sh "{cps=35}Dalam sisa waktu yang kami habiskan sebelum hari menjelang malam{/cps}"
-        sh "{cps=35}Tanpa kami sadari waktu pun berlalu setelah kami baru saja selesai mengerjakan PR kami{/cps}"
+        sh "{cps=17}Kami pun mulai mengerjakan PR Matematika bersama-sama{/cps}"
+        sh "{cps=17}Dengan saling bertanya satu sama lain ketika kebingungan{/cps}"
+        sh "{cps=17}Kami pun selesai mengerjakannya dengan puas{/cps}"
+        sh "{cps=17}Dalam sisa waktu yang kami habiskan sebelum hari menjelang malam{/cps}"
+        sh "{cps=17}Tanpa kami sadari waktu pun berlalu setelah kami baru saja selesai mengerjakan PR kami{/cps}"
         hide bg blck
 
         show bg mcHouse
@@ -1093,12 +1093,12 @@ label start:
         show bg blck
         with dissolve
         play music "audio/musikpiano-santai.ogg" fadein 0.3 loop
-        sh "{cps=35}Di perjalanan kami berdua terdiam entah kenapa{/cps}"
-        sh "{cps=35}Menurutku mungkin dia sedang memikirkan bagaimana pembicaraan kami nanti dengan orang tuanya{/cps}"
-        sh "{cps=35}Setelah beberapa waktu sampai sekarang, perjalanan kami dari tempat duduk umum pun berakhir {/cps}"
+        sh "{cps=17}Di perjalanan kami berdua terdiam entah kenapa{/cps}"
+        sh "{cps=17}Menurutku mungkin dia sedang memikirkan bagaimana pembicaraan kami nanti dengan orang tuanya{/cps}"
+        sh "{cps=17}Setelah beberapa waktu sampai sekarang, perjalanan kami dari tempat duduk umum pun berakhir {/cps}"
         sh "{cps=25}Kami berdua pun sampai di rumahnya {/cps}"
-        sh "{cps=35}kemudian dia mengetok pintu dan langsung masuk ke ruang tamu{/cps}"
-        sh "{cps=35}Aku pun juga ikut masuk kedalam{/cps}"
+        sh "{cps=17}kemudian dia mengetok pintu dan langsung masuk ke ruang tamu{/cps}"
+        sh "{cps=17}Aku pun juga ikut masuk kedalam{/cps}"
         hide bg blck
         stop music fadeout 0.5
 
@@ -1107,20 +1107,29 @@ label start:
         with slowdissolve
         play music "audio/musik-cafe.ogg" fadein 0.5 loop
         pttm "{cps=25}Kita sampai nih [name].....{/cps}"
-        mc "{cps=25}Lumayan sihh rumahmu{/cps}"
+        pttm "{cps=25}Kebetulan Papahku belum pulang kerja, jadi kita bakalan bicara dengan Ibuku dulu{/cps}"
+        mcd "{cps=25}Hmmm, lumayan untuk mengurangi panas suasana nanti{/cps}"
+        mc "{cps=25}Oh, bagus tuh{/cps}" 
+        pttm "{cps=25}Kenapa memangnya?{/cps}"
+        mcd "{cps=25}Sepertinya aku lebih baik tidak memberitahunya dulu{/cps}"
+        mc "{cps=25}Liat aja nanti..{/cps}" 
+        pttm "{cps=25}Okelah kalo gitu{/cps}"
+        mc "{cps=25}Btw lumayan bagus juga rumahmu{/cps}"
         pttm "{cps=25}Biasa aja sih....{/cps}"
         mc "{cps=25}Setidaknya layak untuk dihuni di zaman sekarang{/cps}"
         stop music
         play sound "audio/bell-ding.ogg"
         anon "{cps=25}ADA SIAPA ITU!!?{/cps}"
-        # tambahkan lagu yang bikin thriller kaya backsound ace attorney 
         mcd "{cps=25}Siapa yang berteriak ya?{/cps}"
-        pttm "{cps=25}Ini Putri Pah...{/cps}"
+        pttm "{cps=25}Ini Putri Mah...{/cps}"
+        play sound "audio/bell-ding.ogg"
         mcd "{cps=25}ehh!? Putri......?{/cps}"
         ibuputri "{cps=25}Kamu dengan Siapa itu?{/cps}"
-        pt "{cps=25}Sama [name] Mah teman lama Putri yang itu...{/cps}"        
+        pt "{cps=25}Sama [name] Mah teman lama Putri yang itu...{/cps}"  
+        # mulai show karakter ibu putri disini
         ibuputri "{cps=25}Oh.., Ibu tidak kenal{/cps}"
         mcd "{cps=25}Sepertinya Ibunya Putri ini dingin sekali{/cps}"
+        # tambahkan lagu yang bikin thriller kaya backsound ace attorney kalo udah dibuat
         ibuputri "{cps=25}Mau apa kamu sama dia disini?{/cps}"
         mcd "{cps=25}Hmmmmm, apakah aku yang harus menjelaskannya?{/cps}"
 
@@ -1135,11 +1144,17 @@ label start:
             jump debatIbuPutri3
 
     label debatIbuPutri1:
+        mc "{cps=25}Nahh.. Jadi begini Bu...{/cps}"
+
 
     label debatIbuPutri2:
+        mc "{cps=25}Nahh.. Jadi begini Bu...{/cps}"
+
 
     label debatIbuPutri3:
-    
+        pt "{cps=25}Anu.... Bisa nggak Putri bahas masalah askjakjsjcasujjasjasd{/cps}"  
+        
+
 
     label kerumahTemenBareng21:
         # show bg temenHouse
@@ -1158,12 +1173,12 @@ label start:
 
         show bg blck
         with dissolve
-        sh "{cps=35}Di perjalanan kami berdua terdiam entah kenapa{/cps}"
-        sh "{cps=35}Menurutku mungkin karena fokus kami terahlihkan melihat orang-orang di jalan pulang{/cps}"
-        sh "{cps=35}Setelah beberapa waktu sampai sekarang, perjalanan kami dari tempat duduk umum pun berakhir {/cps}"
+        sh "{cps=17}Di perjalanan kami berdua terdiam entah kenapa{/cps}"
+        sh "{cps=17}Menurutku mungkin karena fokus kami terahlihkan melihat orang-orang di jalan pulang{/cps}"
+        sh "{cps=17}Setelah beberapa waktu sampai sekarang, perjalanan kami dari tempat duduk umum pun berakhir {/cps}"
         sh "{cps=25}Kami berdua pun sampai di rumahnya {/cps}"
-        sh "{cps=35}kemudian dia mengetok pintu dan langsung masuk ke ruang tamu{/cps}"
-        sh "{cps=35}Aku pun juga ikut masuk kedalam{/cps}"
+        sh "{cps=17}kemudian dia mengetok pintu dan langsung masuk ke ruang tamu{/cps}"
+        sh "{cps=17}Aku pun juga ikut masuk kedalam{/cps}"
         hide bg blck
 
         show bg temenHouse
@@ -1185,12 +1200,12 @@ label start:
 
         show bg blck
         with dissolve
-        sh "{cps=35}Di perjalanan kami berdua terdiam entah kenapa{/cps}"
-        sh "{cps=35}Menurutku mungkin karena fokus kami terahlihkan melihat orang-orang di jalan pulang{/cps}"
-        sh "{cps=35}Setelah beberapa waktu sampai sekarang, perjalanan kami dari tempat duduk umum pun berakhir {/cps}"
+        sh "{cps=17}Di perjalanan kami berdua terdiam entah kenapa{/cps}"
+        sh "{cps=17}Menurutku mungkin karena fokus kami terahlihkan melihat orang-orang di jalan pulang{/cps}"
+        sh "{cps=17}Setelah beberapa waktu sampai sekarang, perjalanan kami dari tempat duduk umum pun berakhir {/cps}"
         sh "{cps=25}Kami berdua pun sampai di rumahnya {/cps}"
-        sh "{cps=35}kemudian dia mengetok pintu dan langsung masuk ke ruang tamu{/cps}"
-        sh "{cps=35}Aku pun juga ikut masuk kedalam{/cps}"
+        sh "{cps=17}kemudian dia mengetok pintu dan langsung masuk ke ruang tamu{/cps}"
+        sh "{cps=17}Aku pun juga ikut masuk kedalam{/cps}"
         hide bg blck
 
         show bg temenHouse
@@ -1213,12 +1228,12 @@ label start:
 
         show bg blck
         with dissolve
-        sh "{cps=35}Di perjalanan kami berdua terdiam entah kenapa{/cps}"
-        sh "{cps=35}Menurutku mungkin karena fokus kami terahlihkan melihat orang-orang di jalan pulang{/cps}"
-        sh "{cps=35}Setelah beberapa waktu sampai sekarang, perjalanan kami dari tempat duduk umum pun berakhir {/cps}"
+        sh "{cps=17}Di perjalanan kami berdua terdiam entah kenapa{/cps}"
+        sh "{cps=17}Menurutku mungkin karena fokus kami terahlihkan melihat orang-orang di jalan pulang{/cps}"
+        sh "{cps=17}Setelah beberapa waktu sampai sekarang, perjalanan kami dari tempat duduk umum pun berakhir {/cps}"
         sh "{cps=25}Kami berdua pun sampai di rumahnya {/cps}"
-        sh "{cps=35}kemudian dia mengetok pintu dan langsung masuk ke ruang tamu{/cps}"
-        sh "{cps=35}Aku pun juga ikut masuk kedalam{/cps}"
+        sh "{cps=17}kemudian dia mengetok pintu dan langsung masuk ke ruang tamu{/cps}"
+        sh "{cps=17}Aku pun juga ikut masuk kedalam{/cps}"
         hide bg blck
 
         show bg temenHouse
@@ -1250,12 +1265,12 @@ label start:
 
         show bg blck
         with dissolve
-        sh "{cps=35}Di perjalanan kami berdua terdiam entah kenapa{/cps}"
-        sh "{cps=35}Menurutku mungkin karena fokus kami terahlihkan melihat orang-orang di jalan pulang{/cps}"
-        sh "{cps=35}Setelah beberapa waktu sampai sekarang, perjalanan kami dari tempat duduk umum pun berakhir {/cps}"
+        sh "{cps=17}Di perjalanan kami berdua terdiam entah kenapa{/cps}"
+        sh "{cps=17}Menurutku mungkin karena fokus kami terahlihkan melihat orang-orang di jalan pulang{/cps}"
+        sh "{cps=17}Setelah beberapa waktu sampai sekarang, perjalanan kami dari tempat duduk umum pun berakhir {/cps}"
         sh "{cps=25}Kami berdua pun sampai di rumahnya {/cps}"
-        sh "{cps=35}kemudian dia mengetok pintu dan langsung masuk ke ruang tamu{/cps}"
-        sh "{cps=35}Aku pun juga ikut masuk kedalam{/cps}"
+        sh "{cps=17}kemudian dia mengetok pintu dan langsung masuk ke ruang tamu{/cps}"
+        sh "{cps=17}Aku pun juga ikut masuk kedalam{/cps}"
         hide bg blck
 
         show bg temenHouse

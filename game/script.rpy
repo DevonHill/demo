@@ -1149,10 +1149,44 @@ label start:
 
     label debatIbuPutri2:
         mc "{cps=25}Nahh.. Jadi begini Bu...{/cps}"
+        mc "{cps=25}Putri ngajak main saya kerumahnya, jadi saya ikut deh...{/cps}"
+        ibuputri "{cps=25}Terus..?{/cps}"
+        mc "{cps=25}Pas kami di jalan tadi Putri sempat bilang, kalonya lulus SMA nanti Ibu dengan Bapak yang nentuin gimana Putri setelahnya kan...?{/cps}"
+        ibuputri "{cps=25}Masih mau bahas masalah itu kamu Putri?{/cps}"
+        pt "{cps=25}Emm, iya mah....{/cps}"  
+        ibuputri "{cps=25}Kan aku sudah bilang berkali-kali Put{/cps}"
+        ibuputri "{cps=25}Kamu HARUS jadi PNS biar bisa ngikutin jejak Mamah Papah disini{/cps}"
+        ibuputri "{cps=25}Kamu pikir bisa jadi dokter yang kamu mau, HAH!?{/cps}"
+        pt "{cps=25}........{/cps}"  
+        ibuputri "{cps=25}Kamu juga lupa napa?{/cps}"
+        play sound "audio/bell-ding.ogg"
+        ibuputri "{cps=25}Kewajiban seorang Anak itu mengikuti Apa kata Orang Tua{/cps}"
+        ibuputri "{cps=25}Kalo nggak mau dengerin lagi, kamu Keluar aja dari Rumah INI!!{/cps}"
+        pt "{cps=25}I...i..i..y{/cps}"  
+        mc "{cps=25}Bu, mohon maaf, Bukannya masalah lulus sekolah mau kemana itu diserahkan aja ke Putrinya yang lebih paham dengan dirinya sendiri{/cps}"
+        ibuputri "{cps=25}KAMU MAU IKUT CAMPUR JUGA HAH!?{/cps}"
+        mc "{cps=25}Lebih tepatnya saya ingin menyarankan seperti itu Bu...{/cps}"
+        mc "{cps=25}Tapi sebelum itu, bukannya Ibu sudah mempertimbangkan tentang apa yang terjadi kedepannya dengan Putri kalo Jalan yang dipilih oleh Ibu dan Bapak mungkin belum tentu yang terbaik bagi Putri?{/cps}"
+        ibuputri "{cps=25}Sudah berkali-kali sebenarnya kami bilang ke Putri, tapi dia tetep ngeyel pengen jadi Dokter melulu{/cps}"
+        mc "{cps=25}Nahh... kalo boleh tau Bu, pertimbangan kenapa Si Putri harus jadi PNS ini kenapa Bu?{/cps}"
+        ibuputri "{cps=25}Karena udah terlanjur saya akan bahas sekalian aja...{/cps}"
+        ibuputri "{cps=25}Yang pertama karena lebih baik menurut kami untuk anak mengikuti jejak kedua orang tuanya, karena Kami sendiri sudah pernah menjalani bagaimana Jerih payahnya untuk menjadi seorang PNS.{/cps}"
+        ibuputri "{cps=25}Jadi akan lebih mudah untk Putri untuk menjadi PNS juga yang sudah pasti berhasil seperti kami...{/cps}"
+        ibuputri "{cps=25}Kata Bapaknya juga daripada ngambil keputusan yang tidak pasti, lebih baik mencari yang sudah pasti untuk masa depan anak{/cps}"
+        ibuputri "{cps=25}Itu alasan yang kedua, kalo alasan yang ketiga{/cps}"
+        ibuputri "{cps=25}Memangnya berani Si Putri nanggung nasib Pasien segala, kalo misalkan Pasien meninggal gimana akibat kesalahan Putri sendiri?{/cps}"
+        mc "{cps=25}Nah... Bukannya Pertimbangan Ibu ada lagi pasti nih??{/cps}"
+        ibuputri "{cps=25}Itu aja udah cukup pertimbangan yang besar bagi kami{/cps}"
+        mc "{cps=25}Kalo begitu Mohon maaf karena saya sudah terlanjur ikut campur, tapi saya juga ingin ikut memberikan saran dan pertimbangan untuk Si Putri{/cps}"
 
 
     label debatIbuPutri3:
-        pt "{cps=25}Anu.... Bisa nggak Putri bahas masalah askjakjsjcasujjasjasd{/cps}"  
+        pt "{cps=25}.........{/cps}"  
+        mc "{cps=25}...........{/cps}"
+        pt "{cps=25}Anu.......{/cps}"  
+        pt "{cps=25}Kalonya Putri lulus SMA nanti bisa nggak jadi Dokter??{/cps}"  
+        ibuputri "{cps=25}asdqdcasdqw{/cps}"
+
         
 
 

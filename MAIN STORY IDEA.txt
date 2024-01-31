@@ -1,0 +1,10 @@
+Note : Bisa dimasukan ke xmind 
+
+STORY L :
+	Pertama McL adalah seorang domisili yang pindah kota kemudian balik lagi disaat SMA yang sedang Mencari tempat tinggal dan menemukan tempat yang cocok baginya. Alasan dia balik ke kota itu karena ingin menepati janjinya kepada seorang teman masa kecilnya untuk bersekolah disana, waktu ini adalah minggu pendaftaran sekolah dan berbeda waktu dari McP setidaknya 3 minggu, yaitu masa pendaftaran, masa mpls, dan masa minggu pertama disekolah.
+
+
+
+
+STORY P : 
+	Pertama dimulai dari McP bertemu teman lamanya di saat dia duduk di tepi kota, kemudian berbicara menentukan pola pikir utama pemain (MC) melalui choice, kemudian memilih alur cerita yang terbagi 3 untuk kerumah McP bersama putri atau Kerumah Putri atau pulang sendiri-sendiri. Kemudian apapun pilihannya akan menjadi 1 jalur untuk sementara disaat McP tidur dirumah setelah beberapa momen, Mc terbangun dan diberi pilihan untuk bangun langsung atau lanjut tidur, pilihan ini berpengaruh kepada keesokan siangnya yang membuat dia mengantuk atau tidak disekolah atau yang membuat dia panik karena kerjaan pagi atau rutinitasnya kacau. Disaat hendak berangkat ke sekolah, akan teringat tentang bagaimana hari sebelumnya (choice sebelumnya) secara sekilas, dan mengingat tentang event apa yang akan ada disekolah atau kegiatan apa yang akan dilakukannya. Dan berlanjut kesekolah dengan bersepeda, sesampainya disekolah dia akan datang pada pukul 06.00/06.15/06.30/06.45 tergantung choice sebelum-sebelumnya, Disekolah berhubungan dengan pembicaraan awalan akan dibuat setidaknya MC banyak disukai npc sekolah. Dan main story disini adalah time lapse setelah MPLS (Masa Pengenalan Lingkungan Sekolah) bisa dibilang minggu kedua di SMA. 

@@ -2,9 +2,21 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 840: expected statement.
-    music stop
-              ^
+File "game/script.rpy", line 1127: menu statement expects a non-empty block.
+    menu: 
+        ^
+
+File "game/script.rpy", line 1128: expected statement.
+    "Jelaskan dengan lantang dan jujur":
+                                       ^
+
+File "game/script.rpy", line 1131: expected statement.
+    "Jelaskan dengan santun dan sopan, tapi menggunakan kata sindiran untuk hal sensitif":
+                                                                                         ^
+
+File "game/script.rpy", line 1134: expected statement.
+    "Biarkan Putri yang menjelaskan sambil temani":
+                                                  ^
 
 Ren'Py Version: Ren'Py 8.1.1.23060707
-Wed Jan 17 14:58:31 2024
+Thu Jan 25 12:02:54 2024

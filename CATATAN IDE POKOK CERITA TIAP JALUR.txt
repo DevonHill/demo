@@ -25,7 +25,16 @@ Alur KerumahMcBareng 3 =
 	akan tetapi pemikiran mereka standar orang-orang biasanya atau bisa dibilang mengikuti mayoritas 	setempat (PR mtknya selesai tepat saat waktu habis atau saat si putri mo pulang)
 
 Alur KerumahTemenBareng 1 =
-	Membicarakan mengenai Masa depan Putri yang bergantung kepada pilihan player terhadap situasi 		pembicaraan nanti	
+	Membicarakan mengenai Masa depan Putri yang bergantung kepada pilihan player terhadap situasi 		pembicaraan nanti, kemudian pilihan ini akan membuat alur yang berbeda pada saat ayahnya pulang 	kerja, tetapi pada akhirnya akan berakhir jadi 2 ending yaitu, harapan terkabul dan sirna. Berisi 		choice awalan:
+
+	debatIbuPutri1 = MC menjelaskan dengan lantang, jujur, dan berani seolah olah membela Keadilan 			dengan pembawaan seperti kriteria MC Pada umummnya. Ending = pukulan telak kepada ibu putri 	dan membuatnya terdiam pada debat selanjutnya
+
+	debatIbuPutri2 = MC menjelaskan dengan bahasa yang santun dan sopan, dengan menggunakan 
+	kata sindirian untuk kata kata sensitif. Ending = membuat Ibu paham dengan perasaan kemudian 		pada debat selanjutnya akan membuat ibu ikut membantu juga
+
+	debatIbuPutri3 = MC membiarkan Putri yang bicara kemudian MC akan membantu Putri sedikit 	sedikit yang bertujuan agar Putri bisa mengatasi Trauma kdrtnya yg tidak disebutkan di cerita tapi 	akan di spill untuk membuat player penasaran dan membuat putri mandiri dengan hidupnya. Akan 	tetapi Ending yang didapat justru akan membuat MC dan Putri melawan kedua orang tuanya karena 	ibunya masih dalam keraguan
+
+	Ketiga JALUR diatas hanya membuat seperti apa kondisi debat kedepannya, untuk berhasil atau 	tidaknya nanti bergantung pada 2 atau 3 pilihan yang dipilih player selanjutnya, barulah Didapat 2 	Ending seperti yang sudah dijelaskan diatas
 
 Alur KerumahTemenBareng 21, 22, 23 =
 	Hanya menceritakan sekilas hal tentang tipe cowo dikemudian hari atau didalam pembicaraan, tetapi 	tetap saja keinginan hidup masih tidak punya tujuan, karena hanya masih ingin hidup di zona 			nyaman (Hanya main-main di rumah Putri) 
@@ -34,4 +43,4 @@ Alur KerumahTemenBareng 3 =
 	Pembicaraan Mengenai takdir hingga mc dan putri bosan dengan hal itu (sampai akhir chapter 1)
 	akan tetapi pemikiran mereka standar orang-orang biasanya atau bisa dibilang mengikuti mayoritas 		setempat (Hanya main main di rumah Putri)
 
-	
+

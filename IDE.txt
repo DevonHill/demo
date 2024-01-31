@@ -5,7 +5,3 @@
 3. Alur cerita tetap multiple ending tapi pada saat tertentu dibuat games untuk player memilih kembali opsinya setelah tahu apa yang terjadi setelah memilih choice agar tidak kebanyakan alur. Untuk opsinya tergantung alur cerita, misalkan pertanyaan soal sekolah ada pilihan jawaban benar, jawaban salah yg hampir benar, dan jawaban nalar satu atau dua yg jadi satu jalur. opsi yg lain seperti pilihan penentuan kondisi penting diberikan 2 kali atau 3 kali choice, sedangkan untuk pemilihan alur cerita langsung bercabang seperti pada choice pertama dan kedua pada alur P.
 
 4. penambahan sound ketikan retro agar feelnya ada dan timingnya sesuai cps
-
-5. Untuk penamaan Label apakah perlu dengan angka angka atau menyambung dengan choice sebelumnya agar lebih mudah dimengerti bagi sesama walaupun panjang atau hanya perlu dengan angka atau simbol yang menandakan dijalur mana player itu?
-
-6. Bagaimana cara agar McP dan McL bertemu? dan siapa nama asli mereka? Apakah perlu diketahui nama asli mereka berdua setelah Ending atau cukup dimasukan pada default nama jika Player bingung memasukan nama? Kapan mereka bertemu? Apa pemicu mereka bertemu disaat Satu sekolah? Apakah McL dan McP ada hubungan khusus di masa lalu atau di masa mendatang ataupun sebuah hubungan darah? Saat ada label mereka berbicara bukankah sikap mereka tergantung choice? Kemudian bagaimanakah Percakapan dan kegiatan antara mereka berdua? Apakah dimasukan kedalam Alur label khusus atau Label alur utama story? 

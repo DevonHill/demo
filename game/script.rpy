@@ -29,7 +29,7 @@ define ayahputri = Character("Ayah Putri")
 screen gender():
     vbox:
         xalign 0.5 ypos 0.2
-        text "Pilih Karakter"
+        text "Gendermu?"
 
 
 #  SCREEN P
@@ -37,12 +37,11 @@ screen gender():
 # Next job = 
 # 1. Fix bagian takdir, sekira terlihat berlebih dan tak Sberdaya *
 # 2. Kerjain bagian tipe cowok *
-# 3. Kerjain bagian choice buat next story yg 15 label (chapter 1 mid game)
+# 3. Kerjain bagian choice buat next story yg 15 label (chapter 2)
 # 4. Fix cps sesuai suasana
 # 5. Pemisahan Part  *
 # 6. Fixproblem kedap kedip tiap part *
 # 7. Edit percakapan seolah olah mc belum terlalu akrab dengan putri *
-# 8. menyelesaikan 3 alur utama yaitu KerumahMcBareng, KerumahTemenBareng, dan PulangSendiri_sendiri
 
 screen gabut1():
     vbox:
@@ -82,7 +81,7 @@ screen find_home3():
         xalign 0.5 ypos 0.4
         text "aku telah menemukan tempat tinggal yang murah dan nyaman"
 
-# SCREEN BAB DAN JUDUL CAMPUR
+# SCREEN BAB DAN JUDUL L
 
 screen bab1_l():
     vbox:

@@ -1146,7 +1146,71 @@ label start:
 
     label debatIbuPutri1:
         mc "{cps=25}Nahh.. Jadi begini Bu...{/cps}"
+        mc "{cps=25}Sebenarnya, Putri tadi ketemu saya pas saya lagi duduk di tepi kota.{/cps}"
+        mc "{cps=25}Kami itu teman lama sih Bu.....{/cps}"
+        mc "{cps=25}Jadi kami tadi banyak bicara tentang kabar masing-masing{/cps}"
+        mc "{cps=25}Terus......{/cps}"
+        ibuputri "{cps=25}Langsung ke intinya aja..{/cps}"
+        mcd "{cps=25}....!!{/cps}"
+        mcd "{cps=25}Kayaknya aku nggak perlu basa-basi lagi{/cps}"
+        mcd "{cps=25}Aku harus membuat Skakmat bagaimana pun caranya{/cps}"
+        mc "{cps=25}Apakah Ibu tau kondisi anak Ibu sendiri sekarang??{/cps}"
+        play sound "audio/bell-ding.ogg"
+        ibuputri "{cps=25}Baik-baik aja, memangnya ada masalah APA INI...!??{/cps}"
+        mc "{cps=25}Kondisi yang saya maksud disini adalah kondisi mental dan pikirannya{/cps}"
+        mc "{cps=25}Dia sedang merasa hancur dan tertekan, ini semua karena hal yang Ibu dan Bapak putri lakukan{/cps}"
+        ibuputri "{cps=25}Memangnya apa yang telah kami perbuat sampai-sampai saya harus percaya pada kata-katamu ITU!?{/cps}"
+        ibuputri "{cps=25}Kamu ini masih kecil mau buat masalah aja sama orang{/cps}"
+        mc "{cps=25}Bu....{/cps}"
+        mc "{cps=25}SAYA DISINI BUKAN UNTUK MEMBUAT MASALAH..!{/cps}"
+        mc "{cps=25}Saya disini untuk memberi solusi terhadap bagaimana kehidupan Putri di masa depan..{/cps}"
+        mc "{cps=25}Tapi sebelum itu..{/cps}"
+        mc "{cps=25}Kenapa Putri tidak bisa mengikuti keinginan hatinya, padahal dia ingin jadi dokter...{/cps}"
+        mc "{cps=25}Dan malah Ibu dan Bapak sendiri yang memaksakan Putri untuk jadi PNS..!{/cps}"
+        ibuputri "{cps=25}Kamu masih mau bahas masalah itu Putri!??{/cps}"
+        mcd "{cps=25}Dengan keadaan seperti ini harus aku dan Ibunya saja yang berbicara, jika sampai dia berhasil membuat Putri kena mental...{/cps}"
+        mcd "{cps=25}Aku akan gagal membantunya untuk kuliah kedokteran{/cps}"
+        ibuputri "{cps=25}Sudah Mamah bilang berkali-kali, dan ini untuk kamu juga [name] agar tau kenapa alasan kami memilih Putri untuk menjadi PNS{/cps}"
+        mcd "{cps=25}Hmmm.....{/cps}"
+        mcd "{cps=25}Aku sepertinya tau alasannya...{/cps}"
+        mcd "{cps=25}Tapi untuk bisa membuatnya terdiam aku harus mendengar penjelasannya dan mencari Kata-kata yang bisa kuputar balik untuk melakukannya{/cps}"
+        ibuputri "{cps=25}Yang pertama, Jika Putri mengikuti jejak kedua orang tuanya, akan lebih baik pastinya....{/cps}"
+        ibuputri "{cps=25}Karena Kami sendiri sudah pernah menjalani bagaimana Jerih payahnya untuk menjadi seorang PNS.{/cps}"
+        ibuputri "{cps=25}Untuk masalah tes dan sebagainya pun kami sudah bisa pastikan dia lolos CPNS{/cps}"
+        mc "{cps=25}Ibu yakin...?{/cps}"
+        mc "{cps=25}Tes CPNS itu juga tiap tahun selalu diperbarui soalnya, lalu diperketat seleksinya yang berhubungan dengan Data Statistik dan membuktikan jika dulu bisa tembus ratusan orang tiap diadakan tes CPNS...{/cps}"
+        mc "{cps=25}Sekarang hanya puluhan orang saja yang bisa lolos, Bahkan pesertanya tiap tahun makin bertambah yang membuat tesnya jadi makin sulit.{/cps}"
+        ibuputri "{cps=25}Begitukah.....?{/cps}"
+        ibuputri "{cps=25}Kalau begitu mau tau kenapa Putri kami suruh jadi PNS...?.{/cps}"
+        ibuputri "{cps=25}Jika Putri menjadi dokter, biayanya cukup besar dan Kami sendiri pun tidak sanggup membayarnya...{/cps}"
+        ibuputri "{cps=25}Dan jika Putri belajarnya asal-asalan, yang ada cuman jadi Dokter gadungan aja nantinya{/cps}"
+        ibuputri "{cps=25}Belum lagi jika ada salah-salah pada pasien resikonya sangat besar, bahkan bisa membuat pasien meninggal...{/cps}"
+        ibuputri "{cps=25}Dan terakhir, ini dari Ayahnya putri....{/cps}"
+        ibuputri "{cps=25}Bukankah lebih baik memilih hal yang pasti daripada hal yang belum tentu bisa berhasil!??{/cps}"
+        mc "{cps=25}Kalo begitu coba Ibu pikirkan lagi......{/cps}"
+        mc "{cps=25}Jika Putri Tidak terima dan merasa tertekan.... Bukankah dia jadi lebih menderita dan berakibat tidak ingin menjalani hidupnya lagi!??{/cps}"
+        ibuputri "{cps=25}AghHhH....{/cps}"
+        mc "{cps=25}Kalau yang jadi masalah biaya dan belajarnya..{/cps}"
+        mc "{cps=25}Bukankah ada Jalur Prestasi yang mengurangi biaya kuliah hingga 60%??{/cps}"
+        ibuputri "{cps=25}Hah...?{/cps}"
+        ibuputri "{cps=25}Memangnya ada hal kayak gituan dari pemerintah?{/cps}"
+        mc "{cps=25}Sebagai PNS... Bagaimana saya bisa sebut Ibu itu PNS yang bagus dan berkualitas jika Ibu saja tidak tau hal seperti ini{/cps}"
+        ibuputri "{cps=25}Saya sudah muak mendengar ocehan kamu!{/cps}"
+        ibuputri "{cps=25}Kalau kamu memang bisa membuat pilihan yang lebih baik...{/cps}"
+        ibuputri "{cps=25}Lalu buktikan, bagaimana cara kamu yakin sekali pilihan kamu jauh lebih baik...{/cps}"
+        mcd "{cps=25}Nah ini dia waktunya....{/cps}"
+        mcd "{cps=25}Saran apa yang akan kubilang ke Ibunya sekaligus memberikan serangan terakhir untuknya...{/cps}"
 
+    menu:
+        "......":
+            jump saranIbuPutri11
+
+        "......":
+            jump saranIbuPutri12
+
+        "......":
+            jump saranIbuPutri13
+ 
 
     label debatIbuPutri2:
         mc "{cps=25}Nahh.. Jadi begini Bu...{/cps}"
@@ -1179,6 +1243,21 @@ label start:
         mc "{cps=25}Nah... Bukannya Pertimbangan Ibu ada lagi pasti nih??{/cps}"
         ibuputri "{cps=25}Itu aja udah cukup pertimbangan yang besar bagi kami{/cps}"
         mc "{cps=25}Kalo begitu Mohon maaf karena saya sudah terlanjur ikut campur, tapi saya juga ingin ikut memberikan saran dan pertimbangan untuk Si Putri{/cps}"
+        ibuputri "{cps=25}Saran apa..!?{/cps}"
+        mcd "{cps=25}Nah ini dia waktunya....{/cps}"
+        mcd "{cps=25}Aku sepertinya bisa mengambil hati ibunya pada kesempatan kali ini{/cps}"
+        mcd "{cps=25}Saran apa ya.... yang cocok untuk kondisi ini...{/cps}"
+
+    menu:
+        "......":
+            jump saranIbuPutri21
+
+        "......":
+            jump saranIbuPutri22
+
+        "......":
+            jump saranIbuPutri23
+ 
 
 
     label debatIbuPutri3:
@@ -1188,7 +1267,51 @@ label start:
         pt "{cps=25}Kalonya Putri lulus SMA nanti bisa nggak jadi Dokter??{/cps}"  
         ibuputri "{cps=25}asdqdcasdqw{/cps}"
 
+
+    menu:
+        "......":
+            jump saranIbuPutri31
+
+        "......":
+            jump saranIbuPutri32
+
+        "......":
+            jump saranIbuPutri33
+
+
+
+    
+    label saranIbuPutri11:
+        mc "{cps=25}...........{/cps}"
+
+    label saranIbuPutri12:
+        mc "{cps=25}...........{/cps}"
         
+    label saranIbuPutri13:
+        mc "{cps=25}...........{/cps}"
+
+
+
+    label saranIbuPutri21:
+        mc "{cps=25}...........{/cps}"
+
+    label saranIbuPutri22:
+        mc "{cps=25}...........{/cps}"
+        
+    label saranIbuPutri23:
+        mc "{cps=25}...........{/cps}"
+        
+
+
+    label saranIbuPutri31:
+        mc "{cps=25}...........{/cps}"
+
+    label saranIbuPutri32:
+        mc "{cps=25}...........{/cps}"
+        
+    label saranIbuPutri33:
+        mc "{cps=25}...........{/cps}"
+
 
 
     label kerumahTemenBareng21:

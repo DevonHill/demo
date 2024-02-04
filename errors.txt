@@ -2,21 +2,35 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 1127: menu statement expects a non-empty block.
-    menu: 
-        ^
+The label saranIbuPutri2 is defined twice, at File "game/script.rpy", line 1285:
+    label saranIbuPutri2:
+and File "game/script.rpy", line 1294:
+    label saranIbuPutri2:
 
-File "game/script.rpy", line 1128: expected statement.
-    "Jelaskan dengan lantang dan jujur":
-                                       ^
 
-File "game/script.rpy", line 1131: expected statement.
-    "Jelaskan dengan santun dan sopan, tapi menggunakan kata sindiran untuk hal sensitif":
-                                                                                         ^
+The label saranIbuPutri3 is defined twice, at File "game/script.rpy", line 1288:
+    label saranIbuPutri3:
+and File "game/script.rpy", line 1297:
+    label saranIbuPutri3:
 
-File "game/script.rpy", line 1134: expected statement.
-    "Biarkan Putri yang menjelaskan sambil temani":
-                                                  ^
+
+The label saranIbuPutri1 is defined twice, at File "game/script.rpy", line 1291:
+    label saranIbuPutri1:
+and File "game/script.rpy", line 1300:
+    label saranIbuPutri1:
+
+
+The label saranIbuPutri2 is defined twice, at File "game/script.rpy", line 1294:
+    label saranIbuPutri2:
+and File "game/script.rpy", line 1303:
+    label saranIbuPutri2:
+
+
+The label saranIbuPutri3 is defined twice, at File "game/script.rpy", line 1297:
+    label saranIbuPutri3:
+and File "game/script.rpy", line 1306:
+    label saranIbuPutri3:
+
 
 Ren'Py Version: Ren'Py 8.1.1.23060707
-Thu Jan 25 12:02:54 2024
+Sun Feb  4 19:49:59 2024

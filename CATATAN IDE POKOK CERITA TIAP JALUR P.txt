@@ -25,7 +25,7 @@ Alur KerumahMcBareng 3 =
 	akan tetapi pemikiran mereka standar orang-orang biasanya atau bisa dibilang mengikuti mayoritas 	setempat (PR mtknya selesai tepat saat waktu habis atau saat si putri mo pulang)
 
 Alur KerumahTemenBareng 1 =
-	Membicarakan mengenai Masa depan Putri yang bergantung kepada pilihan player terhadap situasi 		pembicaraan nanti, kemudian pilihan ini akan membuat alur yang berbeda pada saat ayahnya pulang 	kerja, tetapi pada akhirnya akan berakhir jadi 2 ending yaitu, harapan terkabul dan sirna. Berisi 		choice awalan:
+	Membicarakan mengenai Masa depan Putri yang bergantung kepada pilihan player terhadap situasi 		pembicaraan nanti, kemudian pilihan ini akan membuat alur yang berbeda pada saat ayahnya pulang 	kerja, tetapi pada akhirnya akan berakhir jadi 2 ending yaitu, harapan terkabul dan sirna. Ayahnya akan tiba-tiba datang pada choice 2 (habis choice awalan) .Berisi choice awalan:
 
 	debatIbuPutri1 = MC menjelaskan dengan lantang, jujur, dan berani seolah olah membela Keadilan 			dengan pembawaan seperti kriteria MC Pada umummnya. Ending = pukulan telak kepada ibu putri 	dan membuatnya terdiam pada debat selanjutnya
 

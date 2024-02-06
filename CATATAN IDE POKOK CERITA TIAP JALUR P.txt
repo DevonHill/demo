@@ -34,7 +34,27 @@ Alur KerumahTemenBareng 1 =
 
 	debatIbuPutri3 = MC membiarkan Putri yang bicara kemudian MC akan membantu Putri sedikit 	sedikit yang bertujuan agar Putri bisa mengatasi Trauma kdrtnya yg tidak disebutkan di cerita tapi 	akan di spill untuk membuat player penasaran dan membuat putri mandiri dengan hidupnya. Akan 	tetapi Ending yang didapat justru akan membuat MC dan Putri melawan kedua orang tuanya karena 	ibunya masih dalam keraguan
 
-	Ketiga JALUR diatas hanya membuat seperti apa kondisi debat kedepannya, untuk berhasil atau 	tidaknya nanti bergantung pada 2 atau 3 pilihan yang dipilih player selanjutnya, barulah Didapat 2 	Ending seperti yang sudah dijelaskan diatas
+	Ketiga JALUR diatas hanya membuat seperti apa kondisi debat kedepannya, untuk berhasil atau 	tidaknya nanti bergantung pada 2 atau 3 pilihan yang dipilih player selanjutnya, barulah Didapat 2 	Ending seperti yang sudah dijelaskan diatas. Berikut Next isi cerita pada next Choice yaitu :
+
+saranIbuPutri11 =
+
+saranIbuPutri12 =
+
+saranIbuPutri13 =
+
+saranIbuPutri21 =
+
+saranIbuPutri22 =
+
+saranIbuPutri23 =
+
+saranIbuPutri31 =
+
+saranIbuPutri32 =
+
+saranIbuPutri33 =
+
+
 
 Alur KerumahTemenBareng 21, 22, 23 =
 	Hanya menceritakan sekilas hal tentang tipe cowo dikemudian hari atau didalam pembicaraan, tetapi 	tetap saja keinginan hidup masih tidak punya tujuan, karena hanya masih ingin hidup di zona 			nyaman (Hanya main-main di rumah Putri) 

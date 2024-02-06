@@ -13,6 +13,7 @@ image prologue = "images/prologue.jpg"
 image bg jett = "images/jett.jpg"
 image bg mcHouse = "images/mcHouse.jpg"
 image bg temenHouse = "images/temenHouse.jpg"
+image bg kamarMc = "images/kamarMc.png"
 
 define slowdissolve = Dissolve(1.0)
 define sh = Character("", window_background=None)
@@ -1451,14 +1452,18 @@ label start:
         show bg blck
         with dissolve
         sh "{cps=25}Pada akhirnya kami pulang kerumah masing-masing{/cps}"
-        sh "{cps=25}Dan aku pun juga lupa bertanya namanya {/cps}"
+        sh "{cps=25}Dan aku pun ternyata lupa menanyakan namanya{/cps}"
         sh "{cps=25}Setelah menempuh beberapa waktu{/cps}"
         sh "{cps=25}Aku pun sampai dirumahku sendiri{/cps}"
         hide bg blck
 
         show bg mcHouse
         with slowdissolve
-        mc "{cps=25}asasas {/cps}" 
+        mc "{cps=25}Saya pulang....!{/cps}" 
+        mc "{cps=25}.......{/cps}" 
+        mcd "{cps=25}Aneh...{/cps}" 
+        mcd "{cps=25}Sepertinya tidak ada orang dirumah{/cps}" 
+        mcd "{cps=25}Kalau begitu aku lebih baik mengerjakan PR Matematika di kamar{/cps}" 
 
     label pulangSendiri_sendiri21:
         # show bg mcHouse
@@ -1474,15 +1479,27 @@ label start:
         with dissolve
         sh "{cps=25}Pada akhirnya kami pulang kerumah masing-masing{/cps}"
         sh "{cps=25}Aku berjalan sambil melihat orang-orang sekitar{/cps}"
-        sh "{cps=25}Dan aku pun juga lupa bertanya namanya ternyata{/cps}"
-        sh "{cps=25}Setelah menempuh beberapa waktu{/cps}"
-        sh "{cps=25}Aku pun sampai dirumahku sendiri{/cps}"
+        sh "{cps=25}Dan aku pun ternyata lupa menanyakan namanya{/cps}"
+        sh "{cps=25}Setelah menempuh beberapa saat...{/cps}"
+        sh "{cps=25}Waktu menunjukan pukul 04.00 PM sore{/cps}"
+        sh "{cps=25}Dan Aku pun sampai dirumahku sendiri{/cps}"
         hide bg blck
 
         show bg mcHouse
         with slowdissolve
-        mc "{cps=25}asasas {/cps}" 
+        mc "{cps=25}Saya pulang....!{/cps}" 
+        mc "{cps=25}.......{/cps}" 
+        mcd "{cps=25}Aneh...{/cps}" 
+        mcd "{cps=25}Kayaknya nggak ada orang dirumah deh...{/cps}" 
+        mcd "{cps=25}Kekamar nyantai dulu ahh...{/cps}" 
+        hide bg mcHouse
         
+        show bg kamarMc
+        with slowdissolve
+        mc "{cps=25}Ahh.... akhirnya aku kembali ke istanaku{/cps}" 
+        mc "{cps=25}Sore ini aku bakal ngapain yaa{/cps}" 
+
+
     label pulangSendiri_sendiri22:
         # show bg mcHouse
         pttm "{cps=25}Oalah, gituu........{/cps}"
@@ -1497,14 +1514,17 @@ label start:
         with dissolve
         sh "{cps=25}Pada akhirnya kami pulang kerumah masing-masing{/cps}"
         sh "{cps=25}Aku berjalan sambil melihat orang-orang sekitar{/cps}"
-        sh "{cps=25}Dan aku pun juga lupa bertanya namanya ternyata{/cps}"
+        sh "{cps=25}Dan aku pun ternyata lupa menanyakan namanya{/cps}"
         sh "{cps=25}Setelah menempuh beberapa waktu{/cps}"
         sh "{cps=25}Aku pun sampai dirumahku sendiri{/cps}"
         hide bg blck
 
         show bg mcHouse
         with slowdissolve
-        mc "{cps=25}asasas {/cps}" 
+        mc "{cps=25}Saya pulang....!{/cps}" 
+        mc "{cps=25}.......{/cps}" 
+        mcd "{cps=25}Aneh...{/cps}" 
+        mcd "{cps=25}Kayaknya nggak ada orang dirumah deh...{/cps}" 
         
     label pulangSendiri_sendiri23:
         # show bg mcHouse
@@ -1520,14 +1540,17 @@ label start:
         with dissolve
         sh "{cps=25}Pada akhirnya kami pulang kerumah masing-masing{/cps}"
         sh "{cps=25}Aku berjalan sambil melihat orang-orang sekitar{/cps}"
-        sh "{cps=25}Dan aku pun juga lupa bertanya namanya ternyata{/cps}"
+        sh "{cps=25}Dan aku pun ternyata lupa menanyakan namanya{/cps}"
         sh "{cps=25}Setelah menempuh beberapa waktu{/cps}"
         sh "{cps=25}Aku pun sampai dirumahku sendiri{/cps}"
         hide bg blck
 
         show bg mcHouse
         with slowdissolve
-        mc "{cps=25}asasas {/cps}" 
+        mc "{cps=25}Saya pulang....!{/cps}" 
+        mc "{cps=25}.......{/cps}" 
+        mcd "{cps=25}Aneh...{/cps}" 
+        mcd "{cps=25}Kayaknya nggak ada orang dirumah deh...{/cps}" 
 
     label pulangSendiri_sendiri3:
         # show bg mcHouse
@@ -1550,8 +1573,12 @@ label start:
 
         show bg mcHouse
         with slowdissolve
-        mc "{cps=25}asasas {/cps}" 
-
+        mc "{cps=25}Saya pulang....!{/cps}" 
+        mc "{cps=25}.......{/cps}" 
+        mcd "{cps=25}Aneh...{/cps}" 
+        mcd "{cps=25}Rumah sepertinya sedang kosong penghuninya{/cps}" 
+        mcd "{cps=25}hmmm....{/cps}" 
+        mcd "{cps=25}Aku mungkin akan istirahat sebentar dulu di kamar{/cps}" 
 
     return
 

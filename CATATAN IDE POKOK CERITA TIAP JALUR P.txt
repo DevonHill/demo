@@ -32,7 +32,7 @@ Alur KerumahTemenBareng 1 =
 	debatIbuPutri2 = MC menjelaskan dengan bahasa yang santun dan sopan, dengan menggunakan 
 	kata sindirian untuk kata kata sensitif. Ending = membuat Ibu paham dengan perasaan kemudian 		pada debat selanjutnya akan membuat ibu ikut membantu juga
 
-	debatIbuPutri3 = MC membiarkan Putri yang bicara kemudian MC akan membantu Putri sedikit 	sedikit yang bertujuan agar Putri bisa mengatasi Trauma kdrtnya yg tidak disebutkan di cerita tapi 	akan di spill untuk membuat player penasaran dan membuat putri mandiri dengan hidupnya. Akan 	tetapi Ending yang didapat justru akan membuat MC dan Putri melawan kedua orang tuanya karena 	ibunya masih dalam keraguan
+	debatIbuPutri3 = MC membiarkan Putri yang bicara kemudian MC akan membantu Putri sedikit 	sedikit yang bertujuan agar Putri bisa mengatasi Trauma kdrtnya yg tidak disebutkan di cerita tapi 	akan di spill untuk membuat player penasaran dan membuat putri mandiri dengan hidupnya. Akan 	tetapi Ending yang didapat justru akan membuat MC dan Putri melawan kedua orang tuanya karena ibunya masih dalam keraguan
 
 	Ketiga JALUR diatas hanya membuat seperti apa kondisi debat kedepannya, untuk berhasil atau 	tidaknya nanti bergantung pada 2 atau 3 pilihan yang dipilih player selanjutnya, barulah Didapat 2 	Ending seperti yang sudah dijelaskan diatas
 

@@ -1477,9 +1477,12 @@ label start:
         show bg blck
         with dissolve
         sh "{cps=25}Pada akhirnya kami pulang kerumah masing-masing{/cps}"
-        sh "{cps=25}Dan aku pun juga lupa bertanya namanya {/cps}"
+        sh "{cps=25}Aku berjalan sambil melihat orang-orang sekitar{/cps}"
+        sh "{cps=25}Dan Aku pun merasakan sesuatu yang aneh{/cps}"
         sh "{cps=25}Setelah menempuh beberapa waktu{/cps}"
-        sh "{cps=25}Aku pun sampai dirumahku sendiri{/cps}"
+        sh "{cps=25}Akhirnya aku mengingat sesuatu...{/cps}"
+        sh "{cps=25}Ternyata Aku lupa bertanya siapa namanya{/cps}"
+        sh "{cps=25}Aku pun tidak lama sampai dirumahku{/cps}"
         hide bg blck
 
         show bg mcHouse
@@ -1500,9 +1503,11 @@ label start:
         with dissolve
         sh "{cps=25}Pada akhirnya kami pulang kerumah masing-masing{/cps}"
         sh "{cps=25}Aku berjalan sambil melihat orang-orang sekitar{/cps}"
-        sh "{cps=25}Dan aku pun juga lupa bertanya namanya ternyata{/cps}"
+        sh "{cps=25}Dan Aku pun merasakan sesuatu yang aneh{/cps}"
         sh "{cps=25}Setelah menempuh beberapa waktu{/cps}"
-        sh "{cps=25}Aku pun sampai dirumahku sendiri{/cps}"
+        sh "{cps=25}Akhirnya aku mengingat sesuatu...{/cps}"
+        sh "{cps=25}Ternyata Aku lupa bertanya siapa namanya{/cps}"
+        sh "{cps=25}Aku pun tidak lama sampai dirumahku{/cps}"
         hide bg blck
 
         show bg mcHouse
@@ -1523,9 +1528,11 @@ label start:
         with dissolve
         sh "{cps=25}Pada akhirnya kami pulang kerumah masing-masing{/cps}"
         sh "{cps=25}Aku berjalan sambil melihat orang-orang sekitar{/cps}"
-        sh "{cps=25}Dan aku pun juga lupa bertanya namanya ternyata{/cps}"
+        sh "{cps=25}Dan Aku pun merasakan sesuatu yang aneh{/cps}"
         sh "{cps=25}Setelah menempuh beberapa waktu{/cps}"
-        sh "{cps=25}Aku pun sampai dirumahku sendiri{/cps}"
+        sh "{cps=25}Akhirnya aku mengingat sesuatu...{/cps}"
+        sh "{cps=25}Ternyata Aku lupa bertanya siapa namanya{/cps}"
+        sh "{cps=25}Aku pun tidak lama sampai dirumahku{/cps}"
         hide bg blck
 
         show bg mcHouse
@@ -1546,9 +1553,11 @@ label start:
         with dissolve
         sh "{cps=25}Pada akhirnya kami pulang kerumah masing-masing{/cps}"
         sh "{cps=25}Aku berjalan sambil melihat orang-orang sekitar{/cps}"
-        sh "{cps=25}Dan aku pun juga lupa bertanya namanya ternyata{/cps}"
+        sh "{cps=25}Dan Aku pun merasakan sesuatu yang aneh{/cps}"
         sh "{cps=25}Setelah menempuh beberapa waktu{/cps}"
-        sh "{cps=25}Aku pun sampai dirumahku sendiri{/cps}"
+        sh "{cps=25}Akhirnya aku mengingat sesuatu...{/cps}"
+        sh "{cps=25}Ternyata Aku lupa bertanya siapa namanya{/cps}"
+        sh "{cps=25}Aku pun tidak lama sampai dirumahku{/cps}"
         hide bg blck
 
         show bg mcHouse
@@ -1568,11 +1577,12 @@ label start:
         show bg blck
         with dissolve
         sh "{cps=25}Pada akhirnya kami pulang kerumah masing-masing{/cps}"
-        sh "{cps=25}Dan Aku pun juga lupa bertanya namanya {/cps}"
-        sh "{cps=25}Aku pun berpikir bahwa takdir membuatku lupa bertanya namanya{/cps}"
+        sh "{cps=25}Aku berjalan sambil melihat orang-orang sekitar{/cps}"
+        sh "{cps=25}Dan Aku pun merasakan sesuatu yang aneh{/cps}"
         sh "{cps=25}Setelah menempuh beberapa waktu{/cps}"
-        sh "{cps=25}Aku pun sampai dirumahku sendiri{/cps}"
-        hide bg blck
+        sh "{cps=25}Akhirnya aku mengingat sesuatu...{/cps}"
+        sh "{cps=25}Ternyata takdir melupakanku bertanya akan namanya{/cps}"
+        sh "{cps=25}Aku pun tidak lama sampai dirumahku{/cps}"
 
         show bg mcHouse
         with slowdissolve

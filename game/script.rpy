@@ -13,6 +13,7 @@ image prologue = "images/prologue.jpg"
 image bg jett = "images/jett.jpg"
 image bg mcHouse = "images/mcHouse.jpg"
 image bg temenHouse = "images/temenHouse.jpg"
+image bg kamarMc = "images/kamarMc.png"
 image bg putriRoom = "images/putriRoom.jpg"
 
 define slowdissolve = Dissolve(1.0)
@@ -1309,36 +1310,34 @@ label start:
 
 
     
-    label saranIbuPutri11:
-        mc "{cps=25}...........{/cps}"
+label saranIbuPutri11:
+    mc "{cps=25}Ibu, saya memahami bahwa keputusan Anda untuk Putri adalah yang terbaik menurut sudut pandang Anda. Namun, perlu dipertimbangkan juga apa yang menjadi impian dan cita-cita Putri sendiri.{/cps}"
 
-    label saranIbuPutri12:
-        mc "{cps=25}...........{/cps}"
-        
-    label saranIbuPutri13:
-        mc "{cps=25}...........{/cps}"
+label saranIbuPutri12:
+    mc "{cps=25}Saya yakin Putri sangat ingin membuat Anda bangga, tetapi menjadi PNS atau profesi lain seharusnya tidak mengorbankan kebahagiaan dan kepuasan pribadinya.{/cps}"
 
-
-
-    label saranIbuPutri21:
-        mc "{cps=25}...........{/cps}"
-
-    label saranIbuPutri22:
-        mc "{cps=25}...........{/cps}"
-        
-    label saranIbuPutri23:
-        mc "{cps=25}...........{/cps}"
-        
+label saranIbuPutri13:
+    mc "{cps=25}Apakah ada ruang untuk mendengar dan memahami apa yang sebenarnya diinginkan oleh Putri? Bukan hanya dari perspektif keluarga, tetapi juga dari hatinya yang muda dan bersemangat.{/cps}"
 
 
-    label saranIbuPutri31:
-        mc "{cps=25}...........{/cps}"
+label saranIbuPutri21:
+    mc "{cps=25}Ibu, memang benar bahwa menjadi PNS adalah pilihan yang stabil dan aman. Namun, stabilitas itu tidak selalu berarti kebahagiaan dan pemenuhan diri.{/cps}"
 
-    label saranIbuPutri32:
-        mc "{cps=25}...........{/cps}"
-        
-    label saranIbuPutri33:
-        mc "{cps=25}...........{/cps}"
+label saranIbuPutri22:
+    mc "{cps=25}Saya ingin menyarankan agar kita membuka ruang untuk mendengarkan apa yang sebenarnya ingin diraih oleh Putri dalam hidupnya.{/cps}"
+
+label saranIbuPutri23:
+    mc "{cps=25}Apakah kita bisa mencari jalan tengah yang memungkinkan Putri mengejar mimpinya, sambil tetap mempertahankan nilai-nilai dan keinginan keluarga?{/cps}"
+
+
+label saranIbuPutri31:
+    mc "{cps=25}Ibu, saya sangat menghormati pendirian Anda dan apa yang dianggap terbaik untuk Putri. Namun, saya juga ingin meminta pertimbangan untuk mengakomodasi keinginan dan mimpi Putri sendiri.{/cps}"
+
+label saranIbuPutri32:
+    mc "{cps=25}Saya percaya bahwa kebahagiaan Putri dalam mengejar cita-citanya adalah hal yang sangat penting. Bisa kita cari jalan bersama untuk mendukungnya dalam hal ini?{/cps}"
+
+label saranIbuPutri33:
+    mc "{cps=25}Mungkin kita bisa mencari kompromi yang memungkinkan Putri mengejar mimpinya, sambil tetap mempertimbangkan kekhawatiran dan harapan keluarga.{/cps}"
 
 
 # Mereka mulai menampilkan sebagaimana harga diri mereka karena mereka memiliki tipe cowok selangit, mungkin mereka akan beradu olok2an. Hingga akhirnya mereka menjadi rival
@@ -1577,7 +1576,11 @@ label start:
 
         show bg mcHouse
         with slowdissolve
-        mc "{cps=25}asasas {/cps}" 
+        mc "{cps=25}Saya pulang....!{/cps}" 
+        mc "{cps=25}.......{/cps}" 
+        mcd "{cps=25}Aneh...{/cps}" 
+        mcd "{cps=25}Sepertinya tidak ada orang dirumah{/cps}" 
+        mcd "{cps=25}Kalau begitu aku lebih baik mengerjakan PR Matematika di kamar{/cps}" 
 
     label pulangSendiri_sendiri21:
         # show bg mcHouse
@@ -1602,8 +1605,19 @@ label start:
 
         show bg mcHouse
         with slowdissolve
-        mc "{cps=25}asasas {/cps}" 
+        mc "{cps=25}Saya pulang....!{/cps}" 
+        mc "{cps=25}.......{/cps}" 
+        mcd "{cps=25}Aneh...{/cps}" 
+        mcd "{cps=25}Kayaknya nggak ada orang dirumah deh...{/cps}" 
+        mcd "{cps=25}Kekamar nyantai dulu ahh...{/cps}" 
+        hide bg mcHouse
         
+        show bg kamarMc
+        with slowdissolve
+        mc "{cps=25}Ahh.... akhirnya aku kembali ke istanaku{/cps}" 
+        mc "{cps=25}Sore ini aku bakal ngapain yaa{/cps}" 
+
+
     label pulangSendiri_sendiri22:
         # show bg mcHouse
         pttm "{cps=25}Oalah, gituu........{/cps}"
@@ -1627,7 +1641,10 @@ label start:
 
         show bg mcHouse
         with slowdissolve
-        mc "{cps=25}asasas {/cps}" 
+        mc "{cps=25}Saya pulang....!{/cps}" 
+        mc "{cps=25}.......{/cps}" 
+        mcd "{cps=25}Aneh...{/cps}" 
+        mcd "{cps=25}Kayaknya nggak ada orang dirumah deh...{/cps}" 
         
     label pulangSendiri_sendiri23:
         # show bg mcHouse
@@ -1652,7 +1669,10 @@ label start:
 
         show bg mcHouse
         with slowdissolve
-        mc "{cps=25}asasas {/cps}" 
+        mc "{cps=25}Saya pulang....!{/cps}" 
+        mc "{cps=25}.......{/cps}" 
+        mcd "{cps=25}Aneh...{/cps}" 
+        mcd "{cps=25}Kayaknya nggak ada orang dirumah deh...{/cps}" 
 
     label pulangSendiri_sendiri3:
         # show bg mcHouse
@@ -1676,8 +1696,12 @@ label start:
 
         show bg mcHouse
         with slowdissolve
-        mc "{cps=25}asasas {/cps}" 
-
+        mc "{cps=25}Saya pulang....!{/cps}" 
+        mc "{cps=25}.......{/cps}" 
+        mcd "{cps=25}Aneh...{/cps}" 
+        mcd "{cps=25}Rumah sepertinya sedang kosong penghuninya{/cps}" 
+        mcd "{cps=25}hmmm....{/cps}" 
+        mcd "{cps=25}Aku mungkin akan istirahat sebentar dulu di kamar{/cps}" 
 
     return
 

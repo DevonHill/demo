@@ -13,6 +13,7 @@ image prologue = "images/prologue.jpg"
 image bg jett = "images/jett.jpg"
 image bg mcHouse = "images/mcHouse.jpg"
 image bg temenHouse = "images/temenHouse.jpg"
+image bg putriRoom = "images/putriRoom.jpg"
 
 define slowdissolve = Dissolve(1.0)
 define sh = Character("", window_background=None)
@@ -43,6 +44,7 @@ screen gender():
 # 6. Fixproblem kedap kedip tiap part *
 # 7. Edit percakapan seolah olah mc belum terlalu akrab dengan putri *
 # 8. menyelesaikan 3 alur utama yaitu KerumahMcBareng, KerumahTemenBareng, dan PulangSendiri_sendiri
+# 9. Banyak kata-kata yang kurang pas setiap dimainkan ulang (Pendapat pribadi), bahkan ada yang tidak nyambung atau kurang menantang
 
 screen gabut1():
     vbox:
@@ -52,7 +54,7 @@ screen gabut1():
 screen gabut2():
     vbox:
         xalign 0.5 ypos 0.4
-        text "Aku sedang duduk di tepi kota sambil melihat pemandangan kota dan merenung"
+        text "Aku sedang duduk di tepi kota sambil melihat pemandangan kota dan telah merenungkan banyak hal"
 
 screen gabut3():
     vbox:
@@ -209,7 +211,7 @@ label start:
         with slowdissolve
         mc "{cps=35}Ahh......{/cps}{cps=25} kota ini memang membosankan ya... {/cps}"
         mc "{cps=25}Mungkin Aku doang yang kerjaannya itu itu aja pas SMP dulu {/cps}"
-        mc "{cps=20}Sepertinya ini sebuah tanda{/cps}"
+        mc "{cps=20}Sepertinya, inilah perasaanku yang sesungguhnya......{/cps}"
         mc "{cps=13}Jadi inikah kehampaan tanpa sepi? {/cps}"
         stop music fadeout 2.3
 
@@ -258,7 +260,7 @@ label start:
         with dissolve
 
 # ---------------------------------------------------------------------------------------------------------------------
-# JANGAN LUPA MATIKAN / KOMENTAR BACKGROUND SEMENTARA SEBELUM COMMIT DAN PUSH KE GITHUB (jika gambar dari ilustrator belum rilis ngab :)
+# JANGAN LUPA MATIKAN / KOMENTAR BACKGROUND SEMENTARA SEBELUM COMMIT DAN PUSH KE GITHUB (jika gambar dari ilustrator udah rilis ngab :)
         show bg jett
         with slowdissolve
 # ---------------------------------------------------------------------------------------------------------------------
@@ -267,7 +269,7 @@ label start:
 
         anon"{cps=25}Apa kabar nih.. [name]? {/cps}"
         play sound "audio/bell-ding.ogg"
-        mc "{cps=25}!?{/cps}"
+        mc "{cps=25}Ehhh...!?{/cps}"
         mc "{cps=25}Lumayan sih...{/cps}"
         "Teman disamping" "{cps=25}Udah lama nggak ketemu kamu nih...{/cps}"
         mc "{cps=25}Perasaan aku masih gitu gitu aja dah kerjaannya, mungkin kamu yang jarang liat{/cps}"
@@ -496,7 +498,7 @@ label start:
 
         show bg blck
         with dissolve
-        play music "audio/musikpiano-santai" fadein 0.5
+        play music "audio/musikpiano-santai.ogg" fadein 0.5
         sh "{cps=17}Di perjalanan kami berdua terdiam entah kenapa{/cps}"
         sh "{cps=17}Menurutku mungkin karena dia sedang memikirkan apa yang telah kami bicarakan tadi{/cps}"
         sh "{cps=17}Setelah beberapa waktu sampai sekarang, perjalanan kami dari tempat duduk umum pun berakhir {/cps}"
@@ -1141,7 +1143,7 @@ label start:
         "Jelaskan dengan santun dan sopan, tapi menggunakan kata sindiran untuk hal sensitif" :
             jump debatIbuPutri2
         
-        "Biarkan Putri yang menjelaskan sambil temani" :
+        "Biarkan Putri yang menjelaskan dengan sedikit bantuan" :
             jump debatIbuPutri3
 
     label debatIbuPutri1:
@@ -1339,7 +1341,7 @@ label start:
         mc "{cps=25}...........{/cps}"
 
 
-
+# Mereka mulai menampilkan sebagaimana harga diri mereka karena mereka memiliki tipe cowok selangit, mungkin mereka akan beradu olok2an. Hingga akhirnya mereka menjadi rival
     label kerumahTemenBareng21:
         # show bg temenHouse
         pttm "{cps=25}Bisa aja sih, sekalian liat-liat kalo ada cowok ganteng dijalan {/cps}"
@@ -1357,6 +1359,7 @@ label start:
 
         show bg blck
         with dissolve
+        play music "audio/musikpiano-santai.ogg" fadein 0.3 loop
         sh "{cps=17}Di perjalanan kami berdua terdiam entah kenapa{/cps}"
         sh "{cps=17}Menurutku mungkin karena fokus kami terahlihkan melihat orang-orang di jalan pulang{/cps}"
         sh "{cps=17}Setelah beberapa waktu sampai sekarang, perjalanan kami dari tempat duduk umum pun berakhir {/cps}"
@@ -1364,12 +1367,98 @@ label start:
         sh "{cps=17}kemudian dia mengetok pintu dan langsung masuk ke ruang tamu{/cps}"
         sh "{cps=17}Aku pun juga ikut masuk kedalam{/cps}"
         hide bg blck
+        stop music fadeout 0.5
 
         show bg temenHouse
         with slowdissolve
-        mc "{cps=25}asasas {/cps}"
-        
+        mc "{cps=25}Mmmm..........{/cps}"
+        pttm "{cps=25}Ohh, langsung masuk aja nggak papa kok..{/cps}"
+        mc "{cps=25}Permisi{/cps}"
+        pttm "{cps=25}........{/cps}"
+        pttm "{cps=25}Kita naik keatas aja [name], langsung ke kamarku{/cps}"
+        mc "{cps=25}Oke{/cps}"
+        mc "{cps=25}Oiya, orang tuamu gak ada??{/cps}"
+        pttm "{cps=25}Uhm.... Kalo itu sih.....{/cps}"
+        pttm "{cps=25}Lagi kerja diluar belum pulang..{/cps}"
+        pttm "{cps=25}Emang kenapa??{/cps}"
+        mc "{cps=25}Hmmm......{/cps}"
+    
+    menu:
+        "Ikuti arahan Putri dengan santai":
+            jump ikutiAlur
 
+        "Tanya pekerjaan orang tuanya":
+            jump tanyaKerjaan
+
+    label ikutiAlur:
+        mc "{cps=25}Nggak ada kok, cuman nanya{/cps}"
+        mcd "{cps=25}Akan kutunggu apa yang ingin dibicarakannya saat sudah di kamarnya{/cps}"
+        mcd "{cps=25}Setelah itu aku sepertinya akan menyesuaikan suasana{/cps}"
+        pttm "{cps=25}Oalah... lagian aku juga males ngasih taunya{/cps}"
+        mc "{cps=25}Ahh, okelah{/cps}"
+        mcd "{cps=25}Mungkin aku sedikit mengusiknya{/cps}"
+        jump kerumahTemenBareng21n
+
+
+    label tanyaKerjaan:
+        mc "{cps=25}Pekerjaan Orang tua kamu apa ya kalo boleh tau??{/cps}"
+        pttm "{cps=25}Ohh, kaloitu sih aku sebenarnya males ngasih tau. Dan juga aku sendiri.....{/cps}"
+        pttm "{cps=25}Yahh.... begitulah{/cps}"
+        mc "{cps=25}Okelah{/cps}"
+        mcd "{cps=25}Mungkin Aku sedikit mengusiknya{/cps}"
+        jump kerumahTemenBareng21n
+
+    label kerumahTemenBareng21n:
+        pttm "{cps=25}Eeitss, aku punya satu pertanyaan dulu buat kamu...{/cps}"
+        play sound "audio/bell-ding.ogg"
+        mc "{cps=25}!??{/cps}"
+        pttm "{cps=25}Kamu bukan tipikal orang yang takut gelap kan?{/cps}"
+        mc "{cps=25}Uhm...{/cps}"
+
+    menu:
+        "Takut sih...":
+            jump takutGelap
+
+        "Nggak kok...":
+            jump nggakTakutGelap
+
+        "Malahan suka banget":
+            jump sukaGelap
+    
+    label takutGelap:
+        pttm "{cps=25}Hahahahahahaha, di kamarku banyak sarang hantu sih...{/cps}"
+        mc "{cps=25}Ehhh....!?{/cps}"
+        pttm "{cps=25}Kita masuk....!!{/cps}"
+        mcd "{cps=25}Aduh, ditarik pula tanganku....{/cps}"
+        mcd "{cps=25}Mudahan nggak ada yang aneh-aneh{/cps}"
+# Show gambar Kamar Putri
+        show bg putriRoom
+        mcd "{cps=25}Mu{/cps}"
+
+    label nggakTakutGelap:
+        pttm "{cps=25}Oalah... kirain takut{/cps}"
+        mc "{cps=25}Memang segelap apa sih...?{/cps}"
+        pttm "{cps=25}Mending liat sendiri deh..{/cps}"
+        mc "{cps=25}Okelah kalo begitu{/cps}"
+        pttm "{cps=25}Kita Masuk....!!{/cps}"
+        mcd "{cps=25}Hmm... aku akan nilai segelap apa kamarnya{/cps}"
+# Show gambar Kamar Putri
+        show bg putriRoom
+        mcd "{cps=25}Ha{/cps}"
+
+    label sukaGelap:
+        pttm "{cps=25}Lah...!?{/cps}"
+        pttm "{cps=25}Kalo gitu yaa... sama kita{/cps}"
+        mc "{cps=25}Hmm...{/cps}"
+        pttm "{cps=25}Okelah, Waktunya kita Masuk....!!{/cps}"
+        mcd "{cps=25}Waktunya liat sebagus apa vibe kamarnya sih...{/cps}"
+        mcd "{cps=25}Bau-bau seru pastinya...!{/cps}"
+# Show gambar Kamar Putri
+        show bg putriRoom
+        mcd "{cps=25}Ha{/cps}"
+
+        
+# Pada label ini mereka lebih mengenalkan pada kebiasaan atau hobi masing masing sesuai tipikal cowo mereka yaitu satu frekuensi.
     label kerumahTemenBareng22:
         # show bg temenHouse
         pttm "{cps=25}Bebas aja sih, kalo mau ikut sepedaku sini{/cps}"
@@ -1396,6 +1485,7 @@ label start:
         with slowdissolve
         mc "{cps=25}asasas {/cps}"
 
+# Pada label kali ini lebih menekankan kepada keputusasaan takdir, namun sedikit berbeda dengan label KerumahTemenBareng3, yaitu berbicara tentang pendapat dengan ber-andai andai jikalau ada yang mengerti dirinya seperti cowok yang bisa menutup kekurangan layaknya pilihan sebelumnya (imajinasi mereka berdua).
     label kerumahTemenBareng23:
         # show bg temenHouse
         pttm "{cps=25}Santai aja loh, lagian kita paling-paling ngerjain PR doang kan{/cps}"
@@ -1424,7 +1514,7 @@ label start:
         with slowdissolve
         mc "{cps=25}asasas {/cps}"
 
-
+# Inti alur cerita disini adalah bagaimana mereka bisa menikmati waktu yang telah direggut oleh takdir, kemaudian mereka akan bersantai dan bermimpi di atas atap rumah Putri
     label kerumahTemenBareng3:
         # show bg temenHouse
         pttm "{cps=25}Boleh kok, jarang-jarang juga temenku yang mau main kerumahku {/cps}"

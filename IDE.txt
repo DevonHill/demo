@@ -11,3 +11,5 @@
 6. Bagaimana cara agar McP dan McL bertemu? dan siapa nama asli mereka? Apakah perlu diketahui nama asli mereka berdua setelah Ending atau cukup dimasukan pada default nama jika Player bingung memasukan nama? Kapan mereka bertemu? Apa pemicu mereka bertemu disaat Satu sekolah? Apakah McL dan McP ada hubungan khusus di masa lalu atau di masa mendatang ataupun sebuah hubungan darah? Saat ada label mereka berbicara bukankah sikap mereka tergantung choice? Kemudian bagaimanakah Percakapan dan kegiatan antara mereka berdua? Apakah dimasukan kedalam Alur label khusus atau Label alur utama story? 
 
 7. Membuat versi advance visual novel berbasis karakter AI, yang dimana AI akan membalas apa yang diketik oleh pemain, dan kemudian menyimpan memori di tiap karakternya tentang bagaimana mereka memilih keadaan, memilih kata kata, banyak typo atau tidak, kemudian akan membuat perilaku tertentu pada batasan waktu jika player terlalu lama berpikir atau bertindak.
+
+8. membuat perbandingan choice berdasarkan bukubuku yang telah dibaca sekiranya lebih bagus kualitas pemilihannnya

@@ -1,22 +1,47 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 1194, in script
-    mc "{cps=25}Bukankah ada Jalur Prestasi yang mengurangi biaya kuliah hingga 60%??{/cps}"
-ValueError: unsupported format character '?' (0x3f) at index 75
+  File "game/script.rpy", line 501, in script
+    sh "{cps=17}Di perjalanan kami berdua terdiam entah kenapa{/cps}"
+OSError: Couldn't find file 'audio/musikpiano-santai'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 1194, in script
-    mc "{cps=25}Bukankah ada Jalur Prestasi yang mengurangi biaya kuliah hingga 60%??{/cps}"
+  File "game/script.rpy", line 501, in script
+    sh "{cps=17}Di perjalanan kami berdua terdiam entah kenapa{/cps}"
   File "X:\Tasir\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 930, in execute
     renpy.exports.say(who, what, *args, **kwargs)
-  File "X:\Tasir\RenPy\renpy-8.1.1-sdk\renpy\exports.py", line 1462, in say
-    what = what % tag_quoting_dict
-ValueError: unsupported format character '?' (0x3f) at index 75
+  File "X:\Tasir\RenPy\renpy-8.1.1-sdk\renpy\exports.py", line 1473, in say
+    who(what, *args, **kwargs)
+  File "X:\Tasir\RenPy\renpy-8.1.1-sdk\renpy\character.py", line 1352, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "X:\Tasir\RenPy\renpy-8.1.1-sdk\renpy\character.py", line 1003, in do_display
+    display_say(who,
+  File "X:\Tasir\RenPy\renpy-8.1.1-sdk\renpy\character.py", line 693, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "X:\Tasir\RenPy\renpy-8.1.1-sdk\renpy\ui.py", line 299, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "X:\Tasir\RenPy\renpy-8.1.1-sdk\renpy\display\core.py", line 3579, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "X:\Tasir\RenPy\renpy-8.1.1-sdk\renpy\display\core.py", line 4376, in interact_core
+    renpy.audio.audio.periodic()
+  File "X:\Tasir\RenPy\renpy-8.1.1-sdk\renpy\audio\audio.py", line 1222, in periodic
+    raise_(exc[0], exc[1], exc[2])
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 444, in raise_
+  File "X:\Tasir\RenPy\renpy-8.1.1-sdk\renpy\audio\audio.py", line 1200, in periodic_thread_main
+    periodic_pass()
+  File "X:\Tasir\RenPy\renpy-8.1.1-sdk\renpy\audio\audio.py", line 1142, in periodic_pass
+    c.periodic()
+  File "X:\Tasir\RenPy\renpy-8.1.1-sdk\renpy\audio\audio.py", line 534, in periodic
+    topf = load(filename)
+  File "X:\Tasir\RenPy\renpy-8.1.1-sdk\renpy\audio\audio.py", line 72, in load
+    rv = renpy.loader.load(fn, directory="audio")
+  File "X:\Tasir\RenPy\renpy-8.1.1-sdk\renpy\loader.py", line 833, in load
+    raise IOError("Couldn't find file '%s'." % name)
+OSError: Couldn't find file 'audio/musikpiano-santai'.
 
 Windows-10-10.0.17763 AMD64
 Ren'Py 8.1.1.23060707
 Demo 1.0
-Tue Feb 20 14:17:34 2024
+Fri May  3 21:50:30 2024

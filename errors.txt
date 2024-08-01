@@ -2,35 +2,9 @@
 errors listed below, and try again.
 
 
-The label saranIbuPutri2 is defined twice, at File "game/script.rpy", line 1285:
-    label saranIbuPutri2:
-and File "game/script.rpy", line 1294:
-    label saranIbuPutri2:
-
-
-The label saranIbuPutri3 is defined twice, at File "game/script.rpy", line 1288:
-    label saranIbuPutri3:
-and File "game/script.rpy", line 1297:
-    label saranIbuPutri3:
-
-
-The label saranIbuPutri1 is defined twice, at File "game/script.rpy", line 1291:
-    label saranIbuPutri1:
-and File "game/script.rpy", line 1300:
-    label saranIbuPutri1:
-
-
-The label saranIbuPutri2 is defined twice, at File "game/script.rpy", line 1294:
-    label saranIbuPutri2:
-and File "game/script.rpy", line 1303:
-    label saranIbuPutri2:
-
-
-The label saranIbuPutri3 is defined twice, at File "game/script.rpy", line 1297:
-    label saranIbuPutri3:
-and File "game/script.rpy", line 1306:
-    label saranIbuPutri3:
-
+File "game/script.rpy", line 1427: expected 'label_name_declare' not found.
+    label
+         ^
 
 Ren'Py Version: Ren'Py 8.1.1.23060707
-Sun Feb  4 19:49:59 2024
+Sat Jul 20 14:30:55 2024
